@@ -1,0 +1,46 @@
+<section id="hero" class="hero-section bg1 bg-cover window-height light-text">
+  <ul class="socials-nav">
+    <li class="socials-nav-item"><a href="#"><span class="fa fa-facebook"></span></a></li>
+    <li class="socials-nav-item"><a href="#"><span class="fa fa-instagram"></span></a></li>
+  </ul>
+  <header [title]="title" [subTitle]="subTitle" [location]="location" [date]="datetime"></header>
+</section>
+
+<menu-bar></menu-bar>
+
+<section id="about" class="section align-center">
+  <div class="container">
+    <span class="icon section-icon icon-multimedia-12"></span>
+    <h3>KOSTA New zealand</h3>
+    <!--<p class="text-alt">Starting your own IT business and picking right niche in less then <span class="highlight">30 days</span></p>-->
+    <br />
+    <br />
+
+    <conference-intro [introductionList]="kostaIntro"></conference-intro>
+
+  </div>
+</section>
+
+
+<section id="speakers" class="section align-center">
+  <div class="container">
+    <speakers [speakerList]="speakers"></speakers>
+  </div>
+</section>
+
+<section class="section align-center">
+  <div class="container">
+    <schedule [scheduleList]="schedules"></schedule>
+  </div>
+</section>
+
+
+<section id="contacts">
+  <div class="contacts-wrapper">
+    <location [address]="address" [email]="email" [phone]="phoneNumber"></location>
+  </div>
+</section>
+
+<!--gallery-->
+
+<!--registration modal-->

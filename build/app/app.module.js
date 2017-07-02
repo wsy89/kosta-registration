@@ -1,4 +1,4 @@
-System.register(["@angular/core", "@angular/platform-browser", "./app.component", "./app.routing", "@angular/forms"], function (exports_1, context_1) {
+System.register(["@angular/core", "@angular/platform-browser", "./app.component", "./app.routing", "@angular/forms", "./kosta-nz.component", "./youth-kosta-nz.component", "./shared/header.component", "./shared/menu-bar.component", "./shared/conference-intro.component", "./shared/speakers.component", "./shared/schedule.component", "./shared/location.component", "./shared/footer.component"], function (exports_1, context_1) {
     "use strict";
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -7,7 +7,7 @@ System.register(["@angular/core", "@angular/platform-browser", "./app.component"
         return c > 3 && r && Object.defineProperty(target, key, r), r;
     };
     var __moduleName = context_1 && context_1.id;
-    var core_1, platform_browser_1, app_component_1, app_routing_1, forms_1, AppModule;
+    var core_1, platform_browser_1, app_component_1, app_routing_1, forms_1, kosta_nz_component_1, youth_kosta_nz_component_1, header_component_1, menu_bar_component_1, conference_intro_component_1, speakers_component_1, schedule_component_1, location_component_1, footer_component_1, AppModule;
     return {
         setters: [
             function (core_1_1) {
@@ -24,6 +24,33 @@ System.register(["@angular/core", "@angular/platform-browser", "./app.component"
             },
             function (forms_1_1) {
                 forms_1 = forms_1_1;
+            },
+            function (kosta_nz_component_1_1) {
+                kosta_nz_component_1 = kosta_nz_component_1_1;
+            },
+            function (youth_kosta_nz_component_1_1) {
+                youth_kosta_nz_component_1 = youth_kosta_nz_component_1_1;
+            },
+            function (header_component_1_1) {
+                header_component_1 = header_component_1_1;
+            },
+            function (menu_bar_component_1_1) {
+                menu_bar_component_1 = menu_bar_component_1_1;
+            },
+            function (conference_intro_component_1_1) {
+                conference_intro_component_1 = conference_intro_component_1_1;
+            },
+            function (speakers_component_1_1) {
+                speakers_component_1 = speakers_component_1_1;
+            },
+            function (schedule_component_1_1) {
+                schedule_component_1 = schedule_component_1_1;
+            },
+            function (location_component_1_1) {
+                location_component_1 = location_component_1_1;
+            },
+            function (footer_component_1_1) {
+                footer_component_1 = footer_component_1_1;
             }
         ],
         execute: function () {
@@ -40,7 +67,16 @@ System.register(["@angular/core", "@angular/platform-browser", "./app.component"
                         app_routing_1.routing
                     ],
                     declarations: [
-                        app_component_1.AppComponent
+                        app_component_1.AppComponent,
+                        kosta_nz_component_1.KostaComponent,
+                        youth_kosta_nz_component_1.YouthKostaComponent,
+                        header_component_1.HeaderComponent,
+                        menu_bar_component_1.MenuBarComponent,
+                        conference_intro_component_1.ConferenceIntroComponent,
+                        speakers_component_1.SpeakersComponent,
+                        schedule_component_1.ScheduleComponent,
+                        location_component_1.LocationComponent,
+                        footer_component_1.FooterComponent
                     ],
                     providers: [
                         app_routing_1.appRoutingProviders

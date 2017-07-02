@@ -1,0 +1,21 @@
+<div class="tabs-wrapper tabs-horizontal">
+  <ul class="nav nav-tabs">
+    <li *ngFor="let intro of introductionList; let i=index" [class.active]="i === 0">
+      <a href="#{{intro.title}}" data-toggle="tab">
+        <h6 class="heading-alt"><span class="fa fa-code"></span> {{intro.title}}</h6>
+      </a>
+    </li>
+  </ul>
+
+  <div class="tab-content">
+    <div *ngFor="let intro of introductionList; let i=index" id="{{intro.title}}" class="tab-pane fade in" [class.in]="i === 0" [class.active]="i === 0">
+      <div class="col-sm-5 img-column">
+        <img src="{{intro.image}}" alt="" class="img-responsive" />
+      </div>
+      <div class="col-sm-7 align-left">
+        <h6>{{intro.title}}</h6>
+        {{intro.text}}
+      </div>
+    </div>
+  </div>
+</div>
