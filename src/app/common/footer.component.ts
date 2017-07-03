@@ -3,12 +3,8 @@ import {Speaker} from "../model/speaker";
 
 @Component({
   selector: "footer",
-  templateUrl: "./app/shared/footer.html"
+  templateUrl: "./app/common/footer.html"
 })
-export class FooterComponent implements OnInit {
+export class FooterComponent {
 
-
-  ngOnInit() {
-
-  }
 }

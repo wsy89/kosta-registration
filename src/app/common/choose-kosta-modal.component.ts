@@ -2,9 +2,9 @@ import {Component, OnInit} from "@angular/core";
 
 @Component({
   selector: "choose-kosta",
-  templateUrl: "./app/shared/choose-kosta.html"
+  templateUrl: "./app/common/choose-kosta-modal.html"
 })
-export class ChooseKostaComponent implements OnInit {
+export class ChooseKostaModalComponent implements OnInit {
   ngOnInit() {
 
   }

@@ -13,7 +13,8 @@ import {ConferenceIntroComponent} from "./shared/conference-intro.component";
 import {SpeakersComponent} from "./shared/speakers.component";
 import {ScheduleComponent} from "./shared/schedule.component";
 import {LocationComponent} from "./shared/location.component";
-import {FooterComponent} from "./shared/footer.component";
+import {FooterComponent} from "./common/footer.component";
+import {RegistrationComponent} from "./shared/registeration.component";
 
 @NgModule({
   imports: [
@@ -31,7 +32,8 @@ import {FooterComponent} from "./shared/footer.component";
     SpeakersComponent,
     ScheduleComponent,
     LocationComponent,
-    FooterComponent
+    FooterComponent,
+    RegistrationComponent
   ],
   providers: [
     appRoutingProviders
