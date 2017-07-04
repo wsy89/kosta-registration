@@ -25,7 +25,6 @@
     "@angular/upgrade": "~2.2.4",
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
-    "jquery": "^3.2.1",
     "jquery-plugin": "0.0.0-ignored",
     "jquery-validate": "^2.0.0",
     "jquery-waypoints": "^2.0.5",
@@ -35,10 +34,10 @@
     "rxjs": "5.0.0-beta.12",
     "systemjs": "0.19.27",
     "toastr": "^2.1.2",
+    "typings": "^2.0.0",
     "zone.js": "^0.6.23"
   },
   "devDependencies": {
-    "@types/jquery": "<2.2",
     "concurrently": "^3.1.0",
     "del": "^2.2.0",
     "gulp": "^3.9.1",
@@ -48,7 +47,6 @@
     "lite-server": "^2.2.2",
     "ts-node": "^1.7.2",
     "tslint": "^4.0.2",
-    "typescript": "~2.3.4",
-    "typings": "^2.0.0"
+    "typescript": "~2.3.4"
   }
 }
