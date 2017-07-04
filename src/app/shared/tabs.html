@@ -1,4 +1,4 @@
-<ul class="nav nav-tabs">
+<ul class="nav {{tabsStyle}}">
   <li *ngFor="let tab of tabs" (click)="selectTab(tab)" [class.active]="tab.active">
     <a>
       <h6 class="heading-alt"><span class="fa fa-code"></span> {{tab.title}}</h6>
