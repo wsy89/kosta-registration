@@ -16,6 +16,8 @@ import {LocationComponent} from "./shared/location.component";
 import {FooterComponent} from "./common/footer.component";
 import {RegistrationComponent} from "./shared/registeration.component";
 import {WindowRefService} from "./service/window-ref.service";
+import {TabsComponent} from "./shared/tabs.component";
+import {TabComponent} from "./shared/tab.component";
 
 @NgModule({
   imports: [
@@ -34,7 +36,9 @@ import {WindowRefService} from "./service/window-ref.service";
     ScheduleComponent,
     LocationComponent,
     FooterComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    TabsComponent,
+    TabComponent
   ],
   providers: [
     appRoutingProviders,
