@@ -3,6 +3,7 @@ import {Introduction} from './model/introduction';
 import {Speaker} from './model/speaker';
 import {Schedules} from './model/schedules';
 import {ScheduleItem} from './model/scheduleItem';
+import {Image} from 'app/model/image';
 
 @Component({
   selector: 'kosta',
@@ -19,6 +20,7 @@ export class KostaComponent implements OnInit {
   address: String;
   email: String;
   phoneNumber: String;
+  galleryImages: Array<Image> = new Array<Image>();
 
   ngOnInit() {
     this.loadBasicDetails();
@@ -26,13 +28,19 @@ export class KostaComponent implements OnInit {
     this.loadSpeakers();
     this.loadSchedules();
     this.loadContacts();
+    this.loadImages();
   }
 
   private loadContacts() {
     this.address = 'Waikato University, Hillcrest, Hamilton 3216, New Zealand';
     this.email = 'kostanz@gmail.com';
     this.phoneNumber = '021 84 9191';
+  }
 
+  private loadImages() {
+    this.galleryImages.push(new Image('gallery1-thumb.jpg', 'gallery1.jpg', 'Gallery Image 1'));
+    this.galleryImages.push(new Image('gallery2-thumb.jpg', 'gallery2.jpg', 'Gallery Image 2'));
+    this.galleryImages.push(new Image('gallery3-thumb.jpg', 'gallery3.jpg', 'Gallery Image 3'));
   }
 
   private loadBasicDetails() {

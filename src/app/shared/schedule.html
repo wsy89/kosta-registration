@@ -8,7 +8,7 @@
 
     <tabs [tabsStyle]="'nav-schedule'">
       <div class="tab-content">
-        <tab *ngFor="let schedule of scheduleList" [tabTitle]="schedule.date">
+        <tab *ngFor="let schedule of scheduleList; let i=index" [tabTitle]="schedule.date">
           <!-- Accordion start -->
           <div class="panel-group" id="schedule_day{{i}}_timeline">
 
