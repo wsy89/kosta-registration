@@ -7,7 +7,7 @@ import {appRoutingProviders, routing} from './app.routing';
 import {FormsModule} from '@angular/forms';
 import {KostaComponent} from './kosta-nz.component';
 import {YouthKostaComponent} from './youth-kosta-nz.component';
-import {HeaderComponent} from './shared/header.component';
+import {HeaderComponent} from './common/header.component';
 import {MenuBarComponent} from './shared/menu-bar.component';
 import {ConferenceIntroComponent} from './shared/conference-intro.component';
 import {SpeakersComponent} from './shared/speakers.component';
@@ -20,10 +20,11 @@ import {TabsComponent} from './shared/tabs.component';
 import {TabComponent} from './shared/tab.component';
 import {GalleryComponent} from "./shared/gallery.component";
 import {ConferenceInfoComponent} from "./shared/conference-info.component";
-import {ChooseKostaModalComponent} from "./common/choose-kosta-modal.component";
-import {GalleryModalComponent} from './shared/gallery-modal.component';
+import {ChooseKostaModalComponent} from "./modal/choose-kosta-modal.component";
+import {GalleryModalComponent} from './modal/gallery-modal.component';
 import {GalleryThumbnailComponent} from './shared/gallery-thumbnail.component';
 import {Ng2PageScrollModule} from 'ng2-page-scroll';
+import {RegisterModalComponent} from './modal/register-modal.component';
 
 @NgModule({
   imports: [
@@ -50,7 +51,8 @@ import {Ng2PageScrollModule} from 'ng2-page-scroll';
     GalleryThumbnailComponent,
     GalleryModalComponent,
     ConferenceInfoComponent,
-    ChooseKostaModalComponent
+    ChooseKostaModalComponent,
+    RegisterModalComponent
   ],
   providers: [
     appRoutingProviders,

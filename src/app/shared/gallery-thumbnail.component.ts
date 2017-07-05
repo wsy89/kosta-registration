@@ -1,6 +1,6 @@
 import {Component, Input, OnInit, ViewChild} from '@angular/core';
 import {Image} from '../model/image';
-import {GalleryModalComponent} from './gallery-modal.component';
+import {GalleryModalComponent} from '../modal/gallery-modal.component';
 
 @Component({
   selector: 'gallery-thumbnail',

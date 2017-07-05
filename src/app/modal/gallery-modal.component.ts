@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {Image} from '../model/image';
 
 @Component({
@@ -16,11 +16,9 @@ export class GalleryModalComponent {
 
   open() {
     this.show = true;
-    console.log("open! " + this.index);
   }
 
   close() {
     this.show = false;
-    console.log("close! " + this.index);
   }
 }
