@@ -6744,7 +6744,6 @@ button[type="submit"] .loading {
   right: 0;
   bottom: 0;
   left: 0;
-  display: none;
   cursor: default;
   z-index: 9999;
 }

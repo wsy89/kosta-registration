@@ -14,13 +14,20 @@ export class KostaComponent implements OnInit {
   subTitle: String;
   location: String;
   datetime: String;
-  kostaIntro: Array<Introduction> = new Array<Introduction>();
-  speakers: Array<Speaker> = new Array<Speaker>();
-  schedules: Array<Schedules> = new Array<Schedules>();
+  kostaIntro: Array<Introduction>;
+  speakers: Array<Speaker>;
+  schedules: Array<Schedules>;
   address: String;
   email: String;
   phoneNumber: String;
-  galleryImages: Array<Image> = new Array<Image>();
+  galleryImages: Array<Image>;
+  
+  constructor() {
+    this.kostaIntro = new Array<Introduction>();
+    this.speakers = new Array<Speaker>();
+    this.schedules = new Array<Schedules>();
+    this.galleryImages = new Array<Image>();
+  }
 
   ngOnInit() {
     this.loadBasicDetails();

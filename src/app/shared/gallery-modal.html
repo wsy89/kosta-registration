@@ -1,0 +1,11 @@
+<div class="modal-window gallery-{{index}}" *ngIf="show" (click)="close()">
+  <div class="modal-box" (click)="$event.stopPropagation()">
+  <!--<div class="modal-box medium animated" data-animation="zoomIn" data-duration="700">-->
+    <span class="close-btn icon icon-office-52" (click)="close()"></span>
+
+    <h5 class="heading-alt">{{image.name}}</h5>
+    <br/>
+
+    <img src="assets/img/gallery/{{image.src}}" class="full-width-img" alt="{{image.name}}">
+  </div>
+</div>

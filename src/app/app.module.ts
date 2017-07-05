@@ -21,6 +21,8 @@ import {TabComponent} from './shared/tab.component';
 import {GalleryComponent} from "./shared/gallery.component";
 import {ConferenceInfoComponent} from "./shared/conference-info.component";
 import {ChooseKostaModalComponent} from "./common/choose-kosta-modal.component";
+import {GalleryModalComponent} from './shared/gallery-modal.component';
+import {GalleryThumbnailComponent} from './shared/gallery-thumbnail.component';
 
 @NgModule({
   imports: [
@@ -43,6 +45,8 @@ import {ChooseKostaModalComponent} from "./common/choose-kosta-modal.component";
     TabsComponent,
     TabComponent,
     GalleryComponent,
+    GalleryThumbnailComponent,
+    GalleryModalComponent,
     ConferenceInfoComponent,
     ChooseKostaModalComponent
   ],

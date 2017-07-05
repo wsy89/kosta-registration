@@ -4,21 +4,8 @@
 <br/>
 
 <div class="gallery masonry">
-      <span class="masonry-item" *ngFor="let image of imageList; let i = index">
-        <a href="#" class="gallery-thumb-link" data-modal-link="gallery-1">
-          <img src="assets/img/gallery/{{image.thumbnail}}" alt="">
-        </a>
-
-        <div class="modal-window gallery-{{i}}">
-          <div class="modal-box medium animated" data-animation="zoomIn" data-duration="700">
-            <span class="close-btn icon icon-office-52"></span>
-
-            <h5 class="heading-alt">{{image.name}}</h5>
-            <br/>
-
-            <img src="assets/img/gallery/{{image.src}}" class="full-width-img" alt="gallery{{i}}">
-          </div>
-        </div>
-      </span>
+  <span class="masonry-item" *ngFor="let image of imageList; let i = index">
+    <gallery-thumbnail [image]="image" [index]="i"></gallery-thumbnail>
+  </span>
 
 </div>
