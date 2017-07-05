@@ -1,7 +1,7 @@
 export class Introduction {
-  title : String;
-  text : String;
-  image : String;
+  title: String;
+  text: String;
+  image: String;
 
   constructor(title: String, text: String, image) {
     this.title = title;

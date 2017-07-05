@@ -1,8 +1,8 @@
-import {Component, OnInit} from "@angular/core";
+import {Component, OnInit} from '@angular/core';
 
 @Component({
-  selector: "choose-kosta",
-  templateUrl: "./app/common/choose-kosta-modal.html"
+  selector: 'choose-kosta',
+  templateUrl: 'choose-kosta-modal.html'
 })
 export class ChooseKostaModalComponent implements OnInit {
   ngOnInit() {

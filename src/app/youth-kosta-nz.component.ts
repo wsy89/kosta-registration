@@ -2,7 +2,7 @@ import {Component, OnInit} from "@angular/core";
 
 @Component({
   selector: "youth-kosta",
-  templateUrl: "./app/youth-kosta-nz.html"
+  templateUrl: "youth-kosta-nz.html"
 })
 export class YouthKostaComponent implements OnInit {
   ngOnInit() {

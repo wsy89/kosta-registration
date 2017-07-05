@@ -1,10 +1,10 @@
 export class ScheduleItem {
-  start : String;
-  end : String;
+  start: String;
+  end: String;
   title: String;
-  speaker : String;
+  speaker: String;
   details: String;
-  icon : String;
+  icon: String;
 
   constructor(start: String, end: String, title: String, speaker: String, details: String, icon: String) {
     this.start = start;

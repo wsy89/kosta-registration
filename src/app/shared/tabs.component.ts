@@ -3,7 +3,7 @@ import { TabComponent } from './tab.component';
 
 @Component({
   selector: 'tabs',
-  templateUrl: "./app/shared/tabs.html"
+  templateUrl: 'tabs.html'
 })
 export class TabsComponent implements AfterContentInit {
 
@@ -21,12 +21,12 @@ export class TabsComponent implements AfterContentInit {
     }
   }
 
-  selectTab(tab: TabComponent) {
+  selectTab(current: TabComponent) {
     // deactivate all tabs
-    this.tabs.toArray().forEach(tab => tab.active = false);
+    this.tabs.toArray().forEach(tab => tab.deactivate());
 
     // activate the tab the user has clicked on.
-    tab.active = true;
+    current.activate();
   }
 
 }

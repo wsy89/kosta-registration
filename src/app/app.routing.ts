@@ -1,7 +1,7 @@
-import {Routes, RouterModule} from "@angular/router";
-import {ModuleWithProviders} from "@angular/core";
-import {KostaComponent} from "./kosta-nz.component";
-import {YouthKostaComponent} from "./youth-kosta-nz.component";
+import {RouterModule, Routes} from '@angular/router';
+import {ModuleWithProviders} from '@angular/core';
+import {KostaComponent} from './kosta-nz.component';
+import {YouthKostaComponent} from './youth-kosta-nz.component';
 
 const appRoutes: Routes = [
   {path: '', redirectTo: 'kosta', pathMatch: 'full'},

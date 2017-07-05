@@ -1,11 +1,8 @@
-import {AfterViewInit, Component, HostListener, OnInit} from "@angular/core";
-import '../assets/js/ventcamp.js';
-// import * as $ from 'jquery';
-declare var Ventcamp: any;
+import {Component, OnInit} from "@angular/core";
 
 @Component({
-    selector: "app",
-    templateUrl: "./app/app.html"
+  selector: 'app',
+  templateUrl: 'app.html'
 })
 export class AppComponent implements OnInit {
 

@@ -1,9 +1,8 @@
-import {Component, Input, OnInit} from "@angular/core";
-import {Speaker} from "../model/speaker";
+import {Component} from '@angular/core';
 
 @Component({
-  selector: "footer",
-  templateUrl: "./app/common/footer.html"
+  selector: 'footer',
+  templateUrl: 'footer.html'
 })
 export class FooterComponent {
 

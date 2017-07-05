@@ -1,9 +1,9 @@
-import {Component, ElementRef, HostListener, OnInit, ViewChild} from "@angular/core";
-import {WindowRefService} from "../service/window-ref.service";
+import {Component, ElementRef, HostListener, OnInit, ViewChild} from '@angular/core';
+import {WindowRefService} from '../service/window-ref.service';
 
 @Component({
-  selector: "menu-bar",
-  templateUrl: "./app/shared/menu-bar.html"
+  selector: 'menu-bar',
+  templateUrl: 'menu-bar.html'
 })
 export class MenuBarComponent implements OnInit {
   @ViewChild('menuHeader') menuHeader;
@@ -14,7 +14,7 @@ export class MenuBarComponent implements OnInit {
     this._window = winRef.nativeWindow;
   }
 
-  @HostListener("window:scroll", [])
+  @HostListener('window:scroll', [])
   onWindowScroll() {
 
     let menuTop = this.menuHeader.nativeElement.offsetTop;
