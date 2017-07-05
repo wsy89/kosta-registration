@@ -23,12 +23,14 @@ import {ConferenceInfoComponent} from "./shared/conference-info.component";
 import {ChooseKostaModalComponent} from "./common/choose-kosta-modal.component";
 import {GalleryModalComponent} from './shared/gallery-modal.component';
 import {GalleryThumbnailComponent} from './shared/gallery-thumbnail.component';
+import {Ng2PageScrollModule} from 'ng2-page-scroll';
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
-    routing
+    routing,
+    Ng2PageScrollModule.forRoot()
   ],
   declarations: [
     AppComponent,
