@@ -3681,6 +3681,7 @@ button.btn.btn-block {
   display: inline-block;
   line-height: 38px;
   border: none;
+  padding-top: 10px;
 }
 .schedule.schedule-light .schedule-item .schedule-item-toggle .lecture-icon-wrapper * {
   color: #ffffff;
