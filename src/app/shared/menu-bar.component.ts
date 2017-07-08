@@ -8,9 +8,8 @@ import {WindowRefService} from '../service/window-ref.service';
 export class MenuBarComponent implements OnInit {
   @ViewChild('menuHeader') menuHeader;
   @Input() type: String;
-  private _window: Window;
-  private stickMenu: boolean = false;
-
+  _window: Window;
+  stickMenu: boolean = false;
   registrationUrl: String;
   routerLink: String;
   labelLink: String;

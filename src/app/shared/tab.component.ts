@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
 })
 export class TabComponent {
   @Input('tabTitle') title: string;
-  @Input() active: boolean = false;
+  active: boolean = false;
 
   activate() {
     this.active = true;
