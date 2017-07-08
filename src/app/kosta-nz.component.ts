@@ -4,12 +4,15 @@ import {Speaker} from './model/speaker';
 import {Schedules} from './model/schedules';
 import {ScheduleItem} from './model/scheduleItem';
 import {Image} from 'app/model/image';
+import {WindowRefService} from './service/window-ref.service';
 
 @Component({
   selector: 'kosta',
   templateUrl: 'kosta-nz.html'
 })
 export class KostaComponent implements OnInit {
+  _window: WindowRefService;
+  minHeight: number;
   title: String;
   subTitle: String;
   location: String;
@@ -21,8 +24,11 @@ export class KostaComponent implements OnInit {
   email: String;
   phoneNumber: String;
   galleryImages: Array<Image>;
-  
-  constructor() {
+
+  constructor(private winRef: WindowRefService) {
+    this._window = winRef;
+    this.minHeight = this._window.nativeWindow.innerHeight;
+
     this.kostaIntro = new Array<Introduction>();
     this.speakers = new Array<Speaker>();
     this.schedules = new Array<Schedules>();
@@ -58,7 +64,30 @@ export class KostaComponent implements OnInit {
   }
 
   private loadIntroduction() {
-    this.kostaIntro.push(new Introduction('title', 'text', 'assets/img/imac-371x412.png'));
+    this.kostaIntro.push(new Introduction('새 시대의 제사장과 소명', `
+      종교개혁 5백년을 기념하는 해입니다.
+      종교개혁의 중요한 교리적 기초가 만인제사장론 이었습니다. 
+      사제만이 아닌 모든 신자가 제사장이라는 것이었습니다. 
+      하나님과 인간 사이에 그리스도만이 유일한 중보자이시고 
+      그리스도를 통해 우린 모두 직접적으로 신께 나아갈 수 있음은 
+      종교제도에 구속된 당시의 신자들의 해방이었습니다.
+      
+      성도들은 직접 성경을 읽기 시작했으며 직접 하나님께 기도하기 시작했습니다.
+      그리고 그들을 해방하신 구주를 전하기 시작했습니다. 
+      그리스도의 아름다운 구원의 덕을 선전하기 시작했습니다. 
+      더 나아가 모든 직업이 소명임을 발견하기 시작했습니다. 우리의 일터에 그리스도의 주권이 실현되기 시작했습니다.
+      
+      그러나 종교개혁의 숙제는 아직도 미완성입니다.
+      교회 내 모든 평신도들이 자신의 미션을 발견할 수 있어야 하고 
+      그들의 모든 직업의 장에서 하나님 나라가 임함을 소명으로 알 때 
+      그리고 이 땅의 모든 교회들이 평신도들을 기꺼이 해방할 수 있을 때 
+      우리는 교회와 일터에 임하는 하나님 나라의 영광을 보게 될 것입니다.
+      이 밝아오는 새 시대의 주인공이 코스탄이기를 소망합니다.
+      
+      우리의 교회가 교회되어지고 일터가 또 하나의 교회가 되도록 
+      학문과 직업이 연결되는 그 위대한 비전의 시간이기를 축복합니다.
+      `,
+      'assets/img/imac-371x412.png'));
     this.kostaIntro.push(new Introduction('title2', 'text2', 'assets/img/imac-371x412.png'));
   }
 
