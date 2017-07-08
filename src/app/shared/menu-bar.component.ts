@@ -1,4 +1,4 @@
-import {Component, ElementRef, HostListener, OnInit, ViewChild} from '@angular/core';
+import {Input, Component, ElementRef, HostListener, OnInit, ViewChild} from '@angular/core';
 import {WindowRefService} from '../service/window-ref.service';
 
 @Component({
@@ -7,6 +7,9 @@ import {WindowRefService} from '../service/window-ref.service';
 })
 export class MenuBarComponent implements OnInit {
   @ViewChild('menuHeader') menuHeader;
+  @Input() type: String;
+  registrationUrl: String;
+  
   private _window: Window;
   private stickMenu: boolean = false;
 
@@ -24,6 +27,9 @@ export class MenuBarComponent implements OnInit {
   }
 
   ngOnInit() {
-
+    this.registrationUrl = "http://www.google.com";
+    if(this.type === "kosta"){
+      this.registrationUrl = "https://docs.google.com/forms/d/e/1FAIpQLSe7aZPQTF7QtZVb6Y4g4NLw9QjA1WFcrJvu56r9KmVJtqdRPQ/viewform?usp=sf_link";
+    }
   }
 }
