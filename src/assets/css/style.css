@@ -3417,6 +3417,7 @@ button.btn.btn-block {
   text-decoration: none;
   padding: 20px 15px 12px;
   text-align: center;
+  cursor: pointer;
 }
 .nav.nav-schedule > li > a *:first-child {
   margin-top: 0;

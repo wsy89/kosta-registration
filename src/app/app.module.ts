@@ -25,6 +25,7 @@ import {GalleryModalComponent} from './modal/gallery-modal.component';
 import {GalleryThumbnailComponent} from './shared/gallery-thumbnail.component';
 import {Ng2PageScrollModule} from 'ng2-page-scroll';
 import {RegisterModalComponent} from './modal/register-modal.component';
+import {SnsListComponent} from './common/sns-list.component';
 
 @NgModule({
   imports: [
@@ -52,7 +53,8 @@ import {RegisterModalComponent} from './modal/register-modal.component';
     GalleryModalComponent,
     ConferenceInfoComponent,
     ChooseKostaModalComponent,
-    RegisterModalComponent
+    RegisterModalComponent,
+    SnsListComponent
   ],
   providers: [
     appRoutingProviders,
