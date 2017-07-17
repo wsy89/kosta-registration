@@ -5,12 +5,8 @@ import {Introduction} from '../model/introduction';
   selector: 'conference-intro',
   templateUrl: 'conference-intro.html'
 })
-export class ConferenceIntroComponent implements OnInit {
+export class ConferenceIntroComponent {
   @Input() introductionList : Array<Introduction>;
-
-  ngOnInit() {
-
-  }
 
   goTo(location: string): void {
     window.location.hash = location;
