@@ -9,7 +9,7 @@
 
 <section id="about" class="section align-center" trackScroll (trackScrollEnter)="enter('about')">
   <div class="container">
-    <span class="icon section-icon icon-multimedia-12"></span>
+    <span class="icon section-icon icon-emoticons-02"></span>
     <h3>KOSTA New zealand</h3>
     <!--<p class="text-alt">Starting your own IT business and picking right niche in less then <span class="highlight">30 days</span></p>-->
     <br />
@@ -34,6 +34,13 @@
 </section>
 
 
+<section id="info" class="section align-center" trackScroll (trackScrollEnter)="enter('info')">
+  <div class="container">
+    <conference-info [information]="conferenceInfo"></conference-info>
+  </div>
+</section>
+
+
 <section id="gallery" class="section align-center" trackScroll (trackScrollEnter)="enter('gallery')">
   <div class="container">
 
@@ -42,7 +49,7 @@
 </section>
 
 
-<section id="contacts" class="section" trackScroll (trackScrollEnter)="enter('contacts')">
+<section id="contacts" trackScroll (trackScrollEnter)="enter('contacts')">
   <div class="contacts-wrapper">
     <location [address]="address" [email]="email" [phone]="phoneNumber"></location>
   </div>

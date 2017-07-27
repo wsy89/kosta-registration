@@ -1,0 +1,42 @@
+<span class="icon section-icon icon-emoticons-27"></span>
+<h3>Information</h3>
+<br />
+<br />
+
+<div class="col-sm-12 mb-5">
+  <table class="table">
+    <thead>
+    <tr>
+      <th></th>
+      <th>북섬</th>
+      <th>남섬</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let price of information.prices">
+      <td>{{price.description}}</td>
+      <td>{{price.north}}</td>
+      <td>{{price.south}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="col-sm-12 mb-5">
+  <span *ngFor="let note of information.notes">{{note}}</span>
+</div>
+
+<div class="col-sm-12">
+  <h6>신청 방법</h6>
+  <span *ngFor="let note of information.howTo">{{note}}</span>
+</div>
+
+<div class="col-sm-12">
+  <h6>납입 방법</h6>
+  <span *ngFor="let note of information.howToDeposite">{{note}}</span>
+</div>
+
+<div class="col-sm-12">
+  <h6>유의 사항</h6>
+  <span *ngFor="let note of information.attention">{{note}}</span>
+</div>
