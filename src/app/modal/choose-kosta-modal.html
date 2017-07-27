@@ -1,11 +1,16 @@
 <div class="modal-window" style="background-color: rgba(2, 2, 2, 0.85);">
-  <div class="modal-box" (click)="$event.stopPropagation()" [style.top.px]="topPosition">
+  <div id="choose-kosta" class="modal-box" (click)="$event.stopPropagation()" [style.top.px]="topPosition" #chooseModal>
+    <div id="modal-content pt-4 pb-2">
 
-    Where do you want to go?
+      <div class="align-center pb-2">
+        <h5>Where do you want to go?</h5>
+      </div>
 
-    <div class="btns-container">
-      <a routerLink="/kosta" routerLinkActive="active" class="btn btn-md">KOSTA</a>
-      <a routerLink="/youth-kosta" routerLinkActive="active" class="btn btn-md">YOUTH KOSTA</a>
+      <div class="btns-container align-center">
+        <a routerLink="/kosta" routerLinkActive="active" class="btn btn-md pt-1">KOSTA</a>
+        <a routerLink="/youth-kosta" routerLinkActive="active" class="btn btn-md pt-1">YOUTH KOSTA</a>
+      </div>
+
     </div>
   </div>
 </div>
