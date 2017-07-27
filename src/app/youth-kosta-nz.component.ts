@@ -14,6 +14,7 @@ export class YouthKostaComponent implements OnInit {
 
   _window: WindowRefService;
   minHeight: number;
+  currentSection: String;
   title: String;
   subTitle: String;
   location: String;
@@ -44,6 +45,11 @@ export class YouthKostaComponent implements OnInit {
     this.loadContacts();
     this.loadImages();
   }
+
+  private enter(name: String) {
+    this.currentSection = name;
+  }
+
 
   private loadContacts() {
     this.address = 'Waikato University, Hillcrest, Hamilton 3216, New Zealand';
