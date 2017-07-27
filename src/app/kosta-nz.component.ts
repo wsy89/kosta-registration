@@ -13,6 +13,7 @@ import {WindowRefService} from './service/window-ref.service';
 export class KostaComponent implements OnInit {
   _window: WindowRefService;
   minHeight: number;
+  currentSection: String;
   title: String;
   subTitle: String;
   location: String;
@@ -42,6 +43,10 @@ export class KostaComponent implements OnInit {
     this.loadSchedules();
     this.loadContacts();
     this.loadImages();
+  }
+
+  private enter(name: String) {
+    this.currentSection = name;
   }
 
   private loadContacts() {

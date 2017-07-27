@@ -5,9 +5,9 @@
   <header [title]="title" [subTitle]="subTitle" [location]="location" [date]="datetime"></header>
 </section>
 
-<menu-bar [type]="'kosta'"></menu-bar>
+<menu-bar [type]="'kosta'" [current]="currentSection"></menu-bar>
 
-<section id="about" class="section align-center">
+<section id="about" class="section align-center" trackScroll (trackScrollEnter)="enter('about')" (trackScrollLeave)="leave('about')">
   <div class="container">
     <span class="icon section-icon icon-multimedia-12"></span>
     <h3>KOSTA New zealand</h3>
@@ -21,20 +21,20 @@
 </section>
 
 
-<section id="speakers" class="section align-center">
+<section id="speakers" class="section align-center" trackScroll (trackScrollEnter)="enter('speakers')" (trackScrollLeave)="leave('speaker')">
   <div class="container">
     <speakers [speakerList]="speakers"></speakers>
   </div>
 </section>
 
-<section id="schedule" class="section align-center">
+<section id="schedule" class="section align-center" trackScroll (trackScrollEnter)="enter('schedule')" (trackScrollLeave)="leave('schedule')">
   <div class="container">
     <schedule [scheduleList]="schedules"></schedule>
   </div>
 </section>
 
 
-<section id="gallery" class="section align-center">
+<section id="gallery" class="section align-center" trackScroll (trackScrollEnter)="enter('gallery')" (trackScrollLeave)="leave('gallery')">
   <div class="container">
 
     <gallery [imageList]="galleryImages"></gallery>
@@ -42,7 +42,7 @@
 </section>
 
 
-<section id="contacts">
+<section id="contacts" trackScroll (trackScrollEnter)="enter('contacts')" (trackScrollLeave)="leave('contacts')">
   <div class="contacts-wrapper">
     <location [address]="address" [email]="email" [phone]="phoneNumber"></location>
   </div>

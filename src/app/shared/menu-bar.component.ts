@@ -1,13 +1,19 @@
-import {Input, Component, ElementRef, HostListener, OnInit, ViewChild} from '@angular/core';
+import {Input, Component, ElementRef, HostListener, OnInit, ViewChild, ContentChildren, QueryList} from '@angular/core';
 import {WindowRefService} from '../service/window-ref.service';
+import {MenuItemComponent} from './menu-item.component';
 
 @Component({
   selector: 'menu-bar',
   templateUrl: 'menu-bar.html'
 })
 export class MenuBarComponent implements OnInit {
+
   @ViewChild('menuHeader') menuHeader;
+
+  @ContentChildren(MenuItemComponent) menuItem: QueryList<MenuItemComponent>;
+
   @Input() type: String;
+  @Input() current: String;
   _window: Window;
   stickMenu: boolean = false;
   registrationUrl: String;
@@ -20,7 +26,6 @@ export class MenuBarComponent implements OnInit {
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-
     let menuTop = this.menuHeader.nativeElement.offsetTop;
     let windowTop = this._window.pageYOffset;
 
