@@ -22,21 +22,39 @@
   </table>
 </div>
 
-<div class="col-sm-12 mb-5">
-  <span *ngFor="let note of information.notes">{{note}}</span>
+<br/>
+
+<div class="note align-left">
+  <div class="col-sm-12 mb-5">
+    <span *ngFor="let note of information.notes">{{note}}</span>
+  </div>
 </div>
 
-<div class="col-sm-12">
-  <h6>신청 방법</h6>
-  <span *ngFor="let note of information.howTo">{{note}}</span>
+<br/>
+
+<div class="howTo align-left">
+  <div class="col-sm-12">
+    <h6>신청 방법</h6>
+    <span *ngFor="let note of information.howTo">{{note}}</span>
+  </div>
 </div>
 
-<div class="col-sm-12">
-  <h6>납입 방법</h6>
-  <span *ngFor="let note of information.howToDeposite">{{note}}</span>
+<br/>
+
+<div class="howToDeposite align-left">
+  <div class="col-sm-12">
+    <h6>납입 방법</h6>
+    <span *ngFor="let note of information.howToDeposite">{{note}}</span>
+  </div>
 </div>
 
-<div class="col-sm-12">
-  <h6>유의 사항</h6>
-  <span *ngFor="let note of information.attention">{{note}}</span>
+<br/>
+
+<div class="attention align-left">
+  <div class="col-sm-12">
+    <h6>유의 사항</h6>
+    <span *ngFor="let note of information.attention">{{note}}</span>
+  </div>
 </div>
+
+<br/>
