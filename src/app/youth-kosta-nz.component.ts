@@ -58,9 +58,9 @@ export class YouthKostaComponent implements OnInit {
   }
 
   private loadImages() {
-    this.galleryImages.push(new Image('gallery1-thumb.jpg', 'gallery1.jpg', 'Gallery Image 1'));
-    this.galleryImages.push(new Image('gallery2-thumb.jpg', 'gallery2.jpg', 'Gallery Image 2'));
-    this.galleryImages.push(new Image('gallery3-thumb.jpg', 'gallery3.jpg', 'Gallery Image 3'));
+    this.galleryImages.push(new Image('gallery1-thumb.jpg', 'gallery1.jpg', ''));
+    this.galleryImages.push(new Image('gallery2-thumb.jpg', 'gallery2.jpg', ''));
+    this.galleryImages.push(new Image('gallery3-thumb.jpg', 'gallery3.jpg', ''));
   }
 
   private loadBasicDetails() {

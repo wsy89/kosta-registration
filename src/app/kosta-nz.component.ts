@@ -61,16 +61,16 @@ export class KostaComponent implements OnInit {
   }
 
   private loadImages() {
-    this.galleryImages.push(new Image('gallery1-thumb.jpg', 'gallery1.jpg', 'Gallery Image 1'));
-    this.galleryImages.push(new Image('gallery2-thumb.jpg', 'gallery2.jpg', 'Gallery Image 2'));
-    this.galleryImages.push(new Image('gallery3-thumb.jpg', 'gallery3.jpg', 'Gallery Image 3'));
+    this.galleryImages.push(new Image('gallery1-thumb.jpg', 'gallery1.jpg', ''));
+    this.galleryImages.push(new Image('gallery2-thumb.jpg', 'gallery2.jpg', ''));
+    this.galleryImages.push(new Image('gallery3-thumb.jpg', 'gallery3.jpg', ''));
   }
 
   private loadBasicDetails() {
-    this.subTitle = 'KOSTA';
+    this.subTitle = '';
     this.title = 'KOSTA';
-    this.location = 'Hamilton, Auckland';
-    this.datetime = '21.Nov ~ 24.Nov 2017';
+    this.location = 'University of Waikato';
+    this.datetime = '21 - 24.Nov.2017';
   }
 
   private loadIntroduction() {
