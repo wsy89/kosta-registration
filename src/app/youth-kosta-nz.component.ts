@@ -116,7 +116,7 @@ export class YouthKostaComponent implements OnInit {
 
   private loadSchedules() {
     let firstDay: Array<ScheduleItem> = new Array<ScheduleItem>();
-    firstDay.push(new ScheduleItem('1:30 PM', '3:00 PM', '등록 / 숙소 배정', '', '', 'fa-calendar-check-o'));
+    firstDay.push(new ScheduleItem('1:30 PM', '3:00 PM', '등록 / 숙소 배정', '', '', 'fa-calendar'));
     firstDay.push(new ScheduleItem('3:00 PM', '4:15 PM', '개회예배', '양승봉', '', 'fa-institution'));
     firstDay.push(new ScheduleItem('4:15 PM', '5:00 PM', '오리엔테이션', '', '', 'fa-bullhorn'));
     firstDay.push(new ScheduleItem('5:00 PM', '5:30 PM', '조별 모임', '', '', 'fa-users'));
@@ -157,7 +157,7 @@ export class YouthKostaComponent implements OnInit {
     lastDay.push(new ScheduleItem('11:20 AM', '12:30 PM', '주제 강의', '', '', 'fa-institution'));
     lastDay.push(new ScheduleItem('12:30 PM', '1:30 PM', '점심식사', '', '', 'fa-cutlery'));
     lastDay.push(new ScheduleItem('1:50 PM', '3:15 PM', '폐회 예배', '송병주', '', 'fa-institution'));
-    lastDay.push(new ScheduleItem('3:15 PM', '4:15 PM', '악수례 / 단체 사진촬영', '', '', ''));
+    lastDay.push(new ScheduleItem('3:15 PM', '4:15 PM', '악수례 / 단체 사진촬영', '', '', 'fa-camera'));
 
     let tuesday: Schedules = new Schedules('TUE 21 NOV', firstDay);
     let wednesday: Schedules = new Schedules('WED 22 NOV', secondDay);
