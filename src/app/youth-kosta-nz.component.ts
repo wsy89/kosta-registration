@@ -59,13 +59,17 @@ export class YouthKostaComponent implements OnInit {
   private loadContacts() {
     this.address = 'Waikato University, Hillcrest, Hamilton 3216, New Zealand';
     this.email = 'kostanz@gmail.com';
-    this.phoneNumber = '021 84 9191';
   }
 
   private loadImages() {
     this.galleryImages.push(new Image('gallery1-thumb.jpg', 'gallery1.jpg', ''));
     this.galleryImages.push(new Image('gallery2-thumb.jpg', 'gallery2.jpg', ''));
     this.galleryImages.push(new Image('gallery3-thumb.jpg', 'gallery3.jpg', ''));
+    this.galleryImages.push(new Image('gallery1-thumb.jpg', 'gallery1.jpg', ''));
+    this.galleryImages.push(new Image('gallery2-thumb.jpg', 'gallery2.jpg', ''));
+    this.galleryImages.push(new Image('gallery3-thumb.jpg', 'gallery3.jpg', ''));
+    this.galleryImages.push(new Image('gallery1-thumb.jpg', 'gallery1.jpg', ''));
+    this.galleryImages.push(new Image('gallery1-thumb.jpg', 'gallery1.jpg', ''));
   }
 
   private loadBasicDetails() {

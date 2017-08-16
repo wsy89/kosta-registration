@@ -25,7 +25,9 @@
 
 <div class="note align-left">
   <div class="col-md-10 col-md-offset-1">
-    <span *ngFor="let note of information.notes">{{note}}</span>
+    <div *ngFor="let note of information.notes">
+      <p style="font-size: 14px"><i>{{note}}</i></p>
+    </div> <br/>
   </div>
 </div>
 
@@ -34,7 +36,9 @@
 <div class="howTo align-left">
   <div class="col-md-10 col-md-offset-1">
     <h6>신청 방법</h6>
-    <span *ngFor="let note of information.howTo">{{note}}</span>
+    <span *ngFor="let note of information.howTo">
+      <p>{{note}}</p>
+    </span>
   </div>
 </div>
 
@@ -43,7 +47,9 @@
 <div class="howToDeposite align-left">
   <div class="col-md-10 col-md-offset-1">
     <h6>납입 방법</h6>
-    <span *ngFor="let note of information.howToDeposite">{{note}}</span>
+    <span *ngFor="let note of information.howToDeposite">
+      <p>{{note}}</p>
+    </span>
   </div>
 </div>
 
@@ -52,7 +58,9 @@
 <div class="attention align-left">
   <div class="col-md-10 col-md-offset-1">
     <h6>유의 사항</h6>
-    <span *ngFor="let note of information.attention">{{note}}</span>
+    <span *ngFor="let note of information.attention">
+      <p>{{note}}</p>
+    </span>
   </div>
 </div>
 

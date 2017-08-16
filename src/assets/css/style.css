@@ -2259,6 +2259,9 @@ body > .container {
 img {
   max-width: 100%;
 }
+.logo img {
+  max-width: 90%;
+}
 .retina-show {
   display: none;
 }

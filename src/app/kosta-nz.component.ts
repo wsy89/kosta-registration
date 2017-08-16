@@ -57,12 +57,16 @@ export class KostaComponent implements OnInit {
   private loadContacts() {
     this.address = 'Waikato University, Hillcrest, Hamilton 3216, New Zealand';
     this.email = 'kostanz@gmail.com';
-    this.phoneNumber = '021 84 9191';
   }
 
   private loadImages() {
     this.galleryImages.push(new Image('gallery1-thumb.jpg', 'gallery1.jpg', ''));
     this.galleryImages.push(new Image('gallery2-thumb.jpg', 'gallery2.jpg', ''));
+    this.galleryImages.push(new Image('gallery3-thumb.jpg', 'gallery3.jpg', ''));
+    this.galleryImages.push(new Image('gallery3-thumb.jpg', 'gallery3.jpg', ''));
+    this.galleryImages.push(new Image('gallery1-thumb.jpg', 'gallery1.jpg', ''));
+    this.galleryImages.push(new Image('gallery2-thumb.jpg', 'gallery2.jpg', ''));
+    this.galleryImages.push(new Image('gallery3-thumb.jpg', 'gallery3.jpg', ''));
     this.galleryImages.push(new Image('gallery3-thumb.jpg', 'gallery3.jpg', ''));
   }
 
@@ -74,7 +78,7 @@ export class KostaComponent implements OnInit {
   }
 
   private loadIntroduction() {
-    this.kostaIntro.push(new Introduction('새 시대의 제사장과 소명', `
+    this.kostaIntro.push(new Introduction('Theme', `
       종교개혁 5백년을 기념하는 해입니다.
       종교개혁의 중요한 교리적 기초가 만인제사장론 이었습니다. 
       사제만이 아닌 모든 신자가 제사장이라는 것이었습니다. 
@@ -98,7 +102,8 @@ export class KostaComponent implements OnInit {
       학문과 직업이 연결되는 그 위대한 비전의 시간이기를 축복합니다.
       `,
       'assets/img/imac-371x412.png'));
-    this.kostaIntro.push(new Introduction('title2', 'text2', 'assets/img/imac-371x412.png'));
+    this.kostaIntro.push(new Introduction('Video', 'text2', 'assets/img/imac-371x412.png'));
+    this.kostaIntro.push(new Introduction('Promotion package', 'text2', 'assets/img/imac-371x412.png'));
   }
 
   private loadSpeakers() {
@@ -164,8 +169,8 @@ export class KostaComponent implements OnInit {
 
   private loadConferenceInformation() {
     let prices: Array<Price> = new Array<Price>();
-    let earlyBird: Price = new Price("Early Bird Registration 02/10/16 – 13/11/16","$240","$210");
-    let full: Price = new Price("Full Registration 14/11/16 – 22/11/16","$260","$230");
+    let earlyBird: Price = new Price("Early Bird Registration 01/10/17 – 12/11/17","$240","$210");
+    let full: Price = new Price("Full Registration 13/11/16 – 21/11/16","$260","$230");
     let ministry: Price = new Price("사역자","$120","$120");
     let oneDay: Price = new Price("당일 (1일)*","$70","$70");
     let oneDayPlusSleep: Price = new Price("당일 (1일 + 숙박)**","$100","$100");
@@ -198,7 +203,7 @@ export class KostaComponent implements OnInit {
 
     let attention: Array<String> = new Array<String>();
     attention.push("신청서를 보냈어도 참가비를 완납하셔야 등록이 됨을 유의하시기 바랍니다.");
-    attention.push("11월 14일 까지 취소할 경우에 100% 환불되며 (할인등록 제외), 그 이후는 환불이 되지 않습니다.");
+    attention.push("11월 13일 까지 취소할 경우에 100% 환불되며, 그 이후는 환불이 되지 않습니다.");
     attention.push("집회 당일 등록하시는 경우에는 현금, 체크 또는 eftpos로 참가비를 받습니다.");
 
     this.conferenceInfo.prices = prices;
