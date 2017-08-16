@@ -61,16 +61,16 @@ export class KostaComponent implements OnInit {
   }
 
   private loadImages() {
-    this.galleryImages.push(new Image('gallery1-thumb.jpg', 'gallery1.jpg', 'Gallery Image 1'));
-    this.galleryImages.push(new Image('gallery2-thumb.jpg', 'gallery2.jpg', 'Gallery Image 2'));
-    this.galleryImages.push(new Image('gallery3-thumb.jpg', 'gallery3.jpg', 'Gallery Image 3'));
+    this.galleryImages.push(new Image('gallery1-thumb.jpg', 'gallery1.jpg', ''));
+    this.galleryImages.push(new Image('gallery2-thumb.jpg', 'gallery2.jpg', ''));
+    this.galleryImages.push(new Image('gallery3-thumb.jpg', 'gallery3.jpg', ''));
   }
 
   private loadBasicDetails() {
-    this.subTitle = 'KOSTA';
+    this.subTitle = '';
     this.title = 'KOSTA';
-    this.location = 'Hamilton, Auckland';
-    this.datetime = '21.Nov ~ 24.Nov 2017';
+    this.location = 'University of Waikato';
+    this.datetime = '21 - 24.Nov.2017';
   }
 
   private loadIntroduction() {
@@ -145,17 +145,17 @@ export class KostaComponent implements OnInit {
 
     let lastDay: Array<ScheduleItem> = new Array<ScheduleItem>();
     lastDay.push(new ScheduleItem('7:00 AM', '8:00 AM', '조별 QT 및 나눔', '', '', ''));
-    lastDay.push(new ScheduleItem('8:00 AM', '9:00 AM', '아침 식사 / 숙소 Checkout', '', '', 'fa-cutlery'));
+    lastDay.push(new ScheduleItem('8:00 AM', '9:00 AM', '숙소 Checkout 후 아침 식사', '', '', 'fa-cutlery'));
     lastDay.push(new ScheduleItem('9:15 AM', '10:55 AM', '성경 강해', '배덕만', '', ''));
     lastDay.push(new ScheduleItem('11:20 AM', '12:30 PM', '주제 강의', '', '', ''));
     lastDay.push(new ScheduleItem('12:30 PM', '1:30 PM', '점심식사', '', '', 'fa-cutlery'));
     lastDay.push(new ScheduleItem('1:50 PM', '3:15 PM', '폐회 예배', '송병주', '', ''));
     lastDay.push(new ScheduleItem('3:15 PM', '4:15 PM', '악수례 / 단체 사진촬영', '', '', ''));
 
-    let tuesday: Schedules = new Schedules('TUESDAY, NOV.21', firstDay);
-    let wednesday: Schedules = new Schedules('WEDNESDAY, NOV.22', secondDay);
-    let thursday: Schedules = new Schedules('THURSDAY, NOV.23', thirdDay);
-    let friday: Schedules = new Schedules('FRIDAY, NOV.24', lastDay);
+    let tuesday: Schedules = new Schedules('TUE 21 NOV', firstDay);
+    let wednesday: Schedules = new Schedules('WED 22 NOV', secondDay);
+    let thursday: Schedules = new Schedules('THUR 23 NOV', thirdDay);
+    let friday: Schedules = new Schedules('FRI 24 NOV', lastDay);
     this.schedules.push(tuesday);
     this.schedules.push(wednesday);
     this.schedules.push(thursday);
