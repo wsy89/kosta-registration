@@ -78,7 +78,7 @@ export class KostaComponent implements OnInit {
   }
 
   private loadIntroduction() {
-    this.kostaIntro.push(new Introduction('Theme', `
+    this.kostaIntro.push(new Introduction('fa-book', 'Theme', `
       종교개혁 5백년을 기념하는 해입니다.
       종교개혁의 중요한 교리적 기초가 만인제사장론 이었습니다. 
       사제만이 아닌 모든 신자가 제사장이라는 것이었습니다. 
@@ -102,8 +102,8 @@ export class KostaComponent implements OnInit {
       학문과 직업이 연결되는 그 위대한 비전의 시간이기를 축복합니다.
       `,
       'assets/img/imac-371x412.png'));
-    this.kostaIntro.push(new Introduction('Video', 'text2', 'assets/img/imac-371x412.png'));
-    this.kostaIntro.push(new Introduction('Promotion package', 'text2', 'assets/img/imac-371x412.png'));
+    this.kostaIntro.push(new Introduction('fa-video-camera', 'Video', 'text2', 'assets/img/imac-371x412.png'));
+    this.kostaIntro.push(new Introduction('fa-file-text-o', 'Promotion package', 'text2', 'assets/img/imac-371x412.png'));
   }
 
   private loadSpeakers() {
@@ -115,46 +115,46 @@ export class KostaComponent implements OnInit {
   private loadSchedules() {
     let firstDay: Array<ScheduleItem> = new Array<ScheduleItem>();
     firstDay.push(new ScheduleItem('1:30 PM', '3:00 PM', '등록 / 숙소 배정', '', '', ''));
-    firstDay.push(new ScheduleItem('3:00 PM', '4:15 PM', '개회예배', '양승봉', '', ''));
-    firstDay.push(new ScheduleItem('4:15 PM', '5:00 PM', '오리엔테이션', '', '', ''));
-    firstDay.push(new ScheduleItem('5:00 PM', '5:30 PM', '조별 모임', '', '', ''));
+    firstDay.push(new ScheduleItem('3:00 PM', '4:15 PM', '개회예배', '양승봉', '', 'fa-institution'));
+    firstDay.push(new ScheduleItem('4:15 PM', '5:00 PM', '오리엔테이션', '', '', 'fa-bullhorn'));
+    firstDay.push(new ScheduleItem('5:00 PM', '5:30 PM', '조별 모임', '', '', 'fa-users'));
     firstDay.push(new ScheduleItem('5:30 PM', '6:30 PM', '저녁 식사', '', '', 'fa-cutlery'));
-    firstDay.push(new ScheduleItem('6:30 PM', '9:30 PM', '저녁 집회', '김대로', '', ''));
-    firstDay.push(new ScheduleItem('9:40 PM', '11:00 PM', '조별 나눔', '', '', ''));
+    firstDay.push(new ScheduleItem('6:30 PM', '9:30 PM', '저녁 집회', '김대로', '', 'fa-institution'));
+    firstDay.push(new ScheduleItem('9:40 PM', '11:00 PM', '조별 나눔', '', '', 'fa-users'));
 
     let secondDay: Array<ScheduleItem> = new Array<ScheduleItem>();
-    secondDay.push(new ScheduleItem('7:00 AM', '8:00 AM', '조별 QT 및 나눔', '', '', ''));
+    secondDay.push(new ScheduleItem('7:00 AM', '8:00 AM', '조별 QT 및 나눔', '', '', 'fa-users'));
     secondDay.push(new ScheduleItem('8:00 AM', '9:00 AM', '아침 식사', '', '', 'fa-cutlery'));
-    secondDay.push(new ScheduleItem('9:15 AM', '10:55 AM', '성경 강해', '배덕만', '', ''));
-    secondDay.push(new ScheduleItem('11:20 AM', '12:30 PM', '오전특강', '탁지원', '', ''));
+    secondDay.push(new ScheduleItem('9:15 AM', '10:55 AM', '성경 강해', '배덕만', '', 'fa-institution'));
+    secondDay.push(new ScheduleItem('11:20 AM', '12:30 PM', '오전특강', '탁지원', '', 'fa-institution'));
     secondDay.push(new ScheduleItem('12:30 PM', '1:30 PM', '점심식사', '', '', 'fa-cutlery'));
-    secondDay.push(new ScheduleItem('1:50 PM', '3:20 PM', '세미나1', '', '', ''));
-    secondDay.push(new ScheduleItem('3:40 PM', '5:10 PM', '세미나2', '', '', ''));
+    secondDay.push(new ScheduleItem('1:50 PM', '3:20 PM', '세미나1', '', '', 'fa-edit'));
+    secondDay.push(new ScheduleItem('3:40 PM', '5:10 PM', '세미나2', '', '', 'fa-edit'));
 
     secondDay.push(new ScheduleItem('5:30 PM', '6:30 PM', '저녁 식사', '', '', 'fa-cutlery'));
-    secondDay.push(new ScheduleItem('6:30 PM', '9:30 PM', '저녁 집회', '송병주', '', ''));
-    secondDay.push(new ScheduleItem('9:40 PM', '11:00 PM', '조별 나눔', '', '', ''));
+    secondDay.push(new ScheduleItem('6:30 PM', '9:30 PM', '저녁 집회', '송병주', '', 'fa-institution'));
+    secondDay.push(new ScheduleItem('9:40 PM', '11:00 PM', '조별 나눔', '', '', 'fa-users'));
 
     let thirdDay: Array<ScheduleItem> = new Array<ScheduleItem>();
-    thirdDay.push(new ScheduleItem('7:00 AM', '8:00 AM', '조별 QT 및 나눔', '', '', ''));
+    thirdDay.push(new ScheduleItem('7:00 AM', '8:00 AM', '조별 QT 및 나눔', '', '', 'fa-users'));
     thirdDay.push(new ScheduleItem('8:00 AM', '9:00 AM', '아침 식사', '', '', 'fa-cutlery'));
-    thirdDay.push(new ScheduleItem('9:15 AM', '10:55 AM', '성경 강해', '배덕만', '', ''));
-    thirdDay.push(new ScheduleItem('11:20 AM', '12:30 PM', '주제 강의', '이영길', '', ''));
+    thirdDay.push(new ScheduleItem('9:15 AM', '10:55 AM', '성경 강해', '배덕만', '', 'fa-institution'));
+    thirdDay.push(new ScheduleItem('11:20 AM', '12:30 PM', '주제 강의', '이영길', '', 'fa-institution'));
     thirdDay.push(new ScheduleItem('12:30 PM', '1:30 PM', '점심식사', '', '', 'fa-cutlery'));
-    thirdDay.push(new ScheduleItem('1:50 PM', '3:20 PM', '세미나3', '', '', ''));
-    thirdDay.push(new ScheduleItem('3:40 PM', '5:10 PM', '세미나4 / 교역자 세미나', '', '', ''));
+    thirdDay.push(new ScheduleItem('1:50 PM', '3:20 PM', '세미나3', '', '', 'fa-edit'));
+    thirdDay.push(new ScheduleItem('3:40 PM', '5:10 PM', '세미나4 / 교역자 세미나', '', '', 'fa-edit'));
 
     thirdDay.push(new ScheduleItem('5:30 PM', '6:30 PM', '저녁 식사', '', '', 'fa-cutlery'));
-    thirdDay.push(new ScheduleItem('6:30 PM', '9:30 PM', '저녁 집회', '송병주', '', ''));
-    thirdDay.push(new ScheduleItem('9:40 PM', '11:00 PM', '조별 나눔', '', '', ''));
+    thirdDay.push(new ScheduleItem('6:30 PM', '9:30 PM', '저녁 집회', '송병주', '', 'fa-institution'));
+    thirdDay.push(new ScheduleItem('9:40 PM', '11:00 PM', '조별 나눔', '', '', 'fa-users'));
 
     let lastDay: Array<ScheduleItem> = new Array<ScheduleItem>();
-    lastDay.push(new ScheduleItem('7:00 AM', '8:00 AM', '조별 QT 및 나눔', '', '', ''));
+    lastDay.push(new ScheduleItem('7:00 AM', '8:00 AM', '조별 QT 및 나눔', '', '', 'fa-users'));
     lastDay.push(new ScheduleItem('8:00 AM', '9:00 AM', '숙소 Checkout 후 아침 식사', '', '', 'fa-cutlery'));
-    lastDay.push(new ScheduleItem('9:15 AM', '10:55 AM', '성경 강해', '배덕만', '', ''));
+    lastDay.push(new ScheduleItem('9:15 AM', '10:55 AM', '성경 강해', '배덕만', '', 'fa-institution'));
     lastDay.push(new ScheduleItem('11:20 AM', '12:30 PM', '주제 강의', '', '', ''));
     lastDay.push(new ScheduleItem('12:30 PM', '1:30 PM', '점심식사', '', '', 'fa-cutlery'));
-    lastDay.push(new ScheduleItem('1:50 PM', '3:15 PM', '폐회 예배', '송병주', '', ''));
+    lastDay.push(new ScheduleItem('1:50 PM', '3:15 PM', '폐회 예배', '송병주', '', 'fa-institution'));
     lastDay.push(new ScheduleItem('3:15 PM', '4:15 PM', '악수례 / 단체 사진촬영', '', '', ''));
 
     let tuesday: Schedules = new Schedules('TUE 21 NOV', firstDay);

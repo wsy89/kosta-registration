@@ -1,6 +1,6 @@
 <div class="tabs-wrapper tabs-horizontal">
   <tabs [tabsStyle]="'nav-tabs'">
-    <tab *ngFor="let intro of introductionList" [tabTitle]="intro.title">
+    <tab *ngFor="let intro of introductionList" [tabTitle]="intro.title" [tabIcon]="intro.icon">
       <div class="col-sm-5 img-column">
         <img src="{{intro.image}}" alt="" class="img-responsive" />
       </div>

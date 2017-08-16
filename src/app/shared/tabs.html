@@ -1,6 +1,7 @@
 <ul class="nav {{tabsStyle}}">
   <li *ngFor="let tab of tabs" (click)="selectTab(tab)" [class.active]="tab.active">
     <a>
+      <span class="fa {{tab.icon}}"></span>
       <h6 class="heading-alt">{{tab.title}}</h6>
     </a>
   </li>
