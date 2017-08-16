@@ -1,14 +1,16 @@
-import {Component, OnInit} from "@angular/core";
+import {Component, OnInit} from '@angular/core';
 import {Image} from './model/image';
 import {Schedules} from './model/schedules';
 import {Speaker} from './model/speaker';
 import {Introduction} from './model/introduction';
 import {ScheduleItem} from './model/scheduleItem';
 import {WindowRefService} from './service/window-ref.service';
+import {Information} from 'app/model/information';
+import {Price} from './model/Price';
 
 @Component({
-  selector: "youth-kosta",
-  templateUrl: "youth-kosta-nz.html"
+  selector: 'youth-kosta',
+  templateUrl: 'youth-kosta-nz.html'
 })
 export class YouthKostaComponent implements OnInit {
 
@@ -26,6 +28,7 @@ export class YouthKostaComponent implements OnInit {
   email: String;
   phoneNumber: String;
   galleryImages: Array<Image>;
+  conferenceInfo: Information;
 
   constructor(private winRef: WindowRefService) {
     this._window = winRef;
@@ -35,6 +38,7 @@ export class YouthKostaComponent implements OnInit {
     this.speakers = new Array<Speaker>();
     this.schedules = new Array<Schedules>();
     this.galleryImages = new Array<Image>();
+    this.conferenceInfo = new Information();
   }
 
   ngOnInit() {
@@ -42,6 +46,7 @@ export class YouthKostaComponent implements OnInit {
     this.loadIntroduction();
     this.loadSpeakers();
     this.loadSchedules();
+    this.loadConferenceInformation();
     this.loadContacts();
     this.loadImages();
   }
@@ -180,4 +185,52 @@ export class YouthKostaComponent implements OnInit {
     this.schedules.push(thursday);
     this.schedules.push(friday);
   }
+
+
+  private loadConferenceInformation() {
+    let prices: Array<Price> = new Array<Price>();
+    let earlyBird: Price = new Price('Early Bird Registration 02/10/16 – 13/11/16','$240','$210');
+    let full: Price = new Price('Full Registration 14/11/16 – 22/11/16','$260','$230');
+    let ministry: Price = new Price('사역자','$120','$120');
+    let oneDay: Price = new Price('당일 (1일)*','$70','$70');
+    let oneDayPlusSleep: Price = new Price('당일 (1일 + 숙박)**','$100','$100');
+    prices.push(earlyBird);
+    prices.push(full);
+    prices.push(ministry);
+    prices.push(oneDay);
+    prices.push(oneDayPlusSleep);
+
+    let notes: Array<String> = new Array<String>();
+    notes.push('*당일참석은 아침 6시부터 밤 12시까지이며 모든 식사를 포함합니다.');
+    notes.push('**숙박을 하는 당일참석은 아침 6시부터 다음날 12시까지이며 모든 식사를 포함합니다.');
+
+    let howTo: Array<String> = new Array<String>();
+    howTo.push('» ONLINE: 웹사이트를 통해 등록할 경우 여기를 클릭해 주세요.');
+    howTo.push('» OFFLINE: 여기를 클릭하여 신청서를 다운로드 받아 작성하신 후 우편으로 발송해 주세요.');
+
+    let howToDeposit: Array<String> = new Array<String>();
+    howToDeposit.push(`
+    » CHEQUE:
+      우편 발송 주소: PO Box 300487, Albany, Auckland 0752 (봉투에 "KOSTA"라고 기입).
+      체크 받는 사람 (Payable to)은 "KOSTA"로 해주시기 바랍니다.
+      » BANK DEPOSIT:
+      Bank: Westpac
+      Branch: Downtown
+      Account Name: KOSTA
+      Account Number: 03-1509-0195677-02 (청년 코스타)
+    `);
+    howToDeposit.push('주의사항: 참가비를 입금할 때는 reference에 반드시 등록하신 영문이름과 같은 이름이나 핸드폰 번호를 적으셔야합니다.');
+
+    let attention: Array<String> = new Array<String>();
+    attention.push('신청서를 보냈어도 참가비를 완납하셔야 등록이 됨을 유의하시기 바랍니다.');
+    attention.push('11월 14일 까지 취소할 경우에 100% 환불되며 (할인등록 제외), 그 이후는 환불이 되지 않습니다.');
+    attention.push('집회 당일 등록하시는 경우에는 현금, 체크 또는 eftpos로 참가비를 받습니다.');
+
+    this.conferenceInfo.prices = prices;
+    this.conferenceInfo.notes = notes;
+    this.conferenceInfo.howTo = howTo;
+    this.conferenceInfo.howToDeposite = howToDeposit;
+    this.conferenceInfo.attention = attention;
+  }
+
 }
