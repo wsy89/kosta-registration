@@ -51,7 +51,7 @@ export class YouthKostaComponent implements OnInit {
     this.loadImages();
   }
 
-  private enter(name: String) {
+  enter(name: String) {
     this.currentSection = name;
   }
 

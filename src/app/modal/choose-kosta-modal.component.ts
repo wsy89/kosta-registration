@@ -9,7 +9,7 @@ export class ChooseKostaModalComponent implements AfterViewInit{
 
   @ViewChild('chooseModal') chooseModal: ElementRef;
   private _window: Window;
-  private topPosition: number;
+  topPosition: number;
 
   constructor(private winRef : WindowRefService) {
     this._window = winRef.nativeWindow;
