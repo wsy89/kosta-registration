@@ -6292,7 +6292,7 @@ button[type="submit"] .loading {
 }
 .navigation-header .logo {
   display: inline-block;
-  padding: 3px 0;
+  padding: 16px 0;
   font-family: "PT Sans Caption", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 23px;
   font-weight: 700;
@@ -7161,7 +7161,7 @@ button[type="submit"] .loading {
     padding: 0;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 769px) {
   .line-heading:before,
   .line-heading:after {
     width: 5.5%;
@@ -7188,6 +7188,9 @@ button[type="submit"] .loading {
   .hero-section > .container {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
+  }
+  .logo {
+    padding-top: 16px;
   }
 }
 @media (max-width: 480px) {
@@ -7216,5 +7219,8 @@ button[type="submit"] .loading {
   .signup-section .form .form-group {
     margin-bottom: 0;
     width: 100%;
+  }
+  .logo img {
+    max-width: 40%;
   }
 }

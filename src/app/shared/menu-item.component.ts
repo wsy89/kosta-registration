@@ -10,8 +10,9 @@ export class MenuItemComponent {
   @Input() current: String;
 
   isActive(): boolean {
-    return this.name.toLowerCase() === this.current.toLowerCase();
+    if(this.name !== undefined && this.current !== undefined)
+      return this.name.toLowerCase() === this.current.toLowerCase();
+
+    return false;
   }
-
-
 }
