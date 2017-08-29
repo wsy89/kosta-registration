@@ -7,8 +7,19 @@ import {Introduction} from '../model/introduction';
 })
 export class ConferenceIntroComponent {
   @Input() introductionList : Array<Introduction>;
+  shouldShowList: boolean = false;
+  currentView: number = 0;
 
   goTo(location: string): void {
     window.location.hash = location;
+  }
+
+  toggleList(){
+    this.shouldShowList = !this.shouldShowList;
+  }
+
+  viewTab(viewNum: number){
+    this.currentView = viewNum;
+    this.shouldShowList = false;
   }
 }

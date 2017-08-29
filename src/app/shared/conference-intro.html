@@ -1,13 +1,28 @@
 <div class="tabs-wrapper tabs-horizontal">
-  <tabs [tabsStyle]="'nav-tabs'">
-    <tab *ngFor="let intro of introductionList" [tabTitle]="intro.title" [tabIcon]="intro.icon">
+  <div class="nav-wrapper">                  
+    <span class="nav-current" (click)="toggleList()">
+      <h6 class="heading-alt"><span class="fa {{introductionList[currentView].icon}}"></span> {{introductionList[currentView].title}}</h6>
+    </span>
+
+    <ul class="nav nav-tabs" [style.display]="shouldShowList ? 'block' : null">
+      <li class="{{i===currentView ? 'active' : ''}}"  *ngFor="let intro of introductionList; let i = index">
+        <a (click)="viewTab(i)" data-toggle="tab">
+          <h6 class="heading-alt"><span class="fa {{intro.icon}}"></span> {{intro.title}}</h6>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="tab-content">
+    <div *ngFor="let intro of introductionList; let i = index" class="tab-pane fade {{i===currentView ? 'active in': ''}}">
       <div class="col-sm-5 img-column">
-        <img src="{{intro.image}}" alt="" class="img-responsive" />
+        <img src="{{intro.image}}" alt="" class="img-responsive">
       </div>
       <div class="col-sm-7 align-left">
         <h6>{{intro.title}}</h6>
         <div [innerText]="intro.text"></div>
       </div>
-    </tab>
-  </tabs>
+    </div>
+  </div>
+ 
 </div>
