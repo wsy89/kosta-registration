@@ -18,6 +18,6 @@ export class ChooseKostaModalComponent implements AfterViewInit{
   ngAfterViewInit(){
     // var modalHeight = this.chooseModal.nativeElement.offsetHeight;
     // this.topPosition = (this._window.innerHeight - modalHeight) / 2;
-  }
+
   }
 }
