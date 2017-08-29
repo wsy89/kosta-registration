@@ -1,5 +1,4 @@
-import {Input, Component, ElementRef, HostListener, OnInit, ViewChild} from '@angular/core';
-import {WindowRefService} from '../service/window-ref.service';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'menu-item',

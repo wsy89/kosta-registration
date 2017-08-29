@@ -6560,7 +6560,33 @@ button[type="submit"] .loading {
     max-height: none;
     background-color: #ffffff;
     padding: 30px 0;
-    max-height: 100px;
+  }
+  @media (max-width:767px){
+    .navbar-collapse {
+      overflow: scroll;
+      height: auto;
+      background-color: #ffffff;
+      padding: 30px 0;
+      text-align: center;
+      max-height: none;
+    }
+    .header .btn {
+      float: none !important;
+    }
+    .navbar-collapse.in, .navbar-collapse.collapsing {
+      -webkit-box-shadow: -1px 4px 20px 0 rgba(0, 0, 0, 0.18);
+      -moz-box-shadow: -1px 4px 20px 0 rgba(0, 0, 0, 0.18);
+      box-shadow: -1px 4px 20px 0 rgba(0, 0, 0, 0.18);
+    }
+    .navigation-list {
+      float: none !important;
+      text-align: center;
+    }
+  }
+  @media(min-width:768px){
+    .navbar-collapse {
+      max-height: 100px;
+    }
   }
   .navbar-collapse.in,
   .navbar-collapse.collapsing {
