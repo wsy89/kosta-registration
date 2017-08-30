@@ -6565,6 +6565,10 @@ button[type="submit"] .loading {
     padding: 30px 0;
   }
   @media (max-width:767px){
+    .navigation-header .logo {
+      display: inline;
+    }
+
     .navbar-collapse {
       overflow: scroll;
       height: auto;
@@ -7256,7 +7260,7 @@ button[type="submit"] .loading {
     width: 100%;
   }
   .logo img {
-    max-width: 40%;
+    max-width: 60%;
   }
   #contacts-map{
     display: none;

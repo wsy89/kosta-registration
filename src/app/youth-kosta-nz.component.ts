@@ -198,9 +198,11 @@ export class YouthKostaComponent implements OnInit {
 
     let howToDeposit: Array<String> = new Array<String>();
     howToDeposit.push(`
-    » CHEQUE:
+      » CHEQUE:
       우편 발송 주소: PO Box 300487, Albany, Auckland 0752 (봉투에 "KOSTA"라고 기입).
       체크 받는 사람 (Payable to)은 "KOSTA"로 해주시기 바랍니다.
+    `);
+    howToDeposit.push(`
       » BANK DEPOSIT:
       Bank: Westpac
       Branch: Downtown

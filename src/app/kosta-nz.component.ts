@@ -157,7 +157,7 @@ export class KostaComponent implements OnInit {
     lastDay.push(new ScheduleItem('7:00 AM', '8:00 AM', '조별 QT 및 나눔', '', '', 'fa-users'));
     lastDay.push(new ScheduleItem('8:00 AM', '9:00 AM', '숙소 Checkout 후 아침 식사', '', '', 'fa-cutlery'));
     lastDay.push(new ScheduleItem('9:15 AM', '10:55 AM', '성경 강해', '배덕만', '', 'fa-institution'));
-    lastDay.push(new ScheduleItem('11:20 AM', '12:30 PM', '주제 강의', '', '', ''));
+    lastDay.push(new ScheduleItem('11:20 AM', '12:30 PM', '주제 강의', '', '', 'fa-institution'));
     lastDay.push(new ScheduleItem('12:30 PM', '1:30 PM', '점심식사', '', '', 'fa-cutlery'));
     lastDay.push(new ScheduleItem('1:50 PM', '3:15 PM', '폐회 예배', '송병주', '', 'fa-institution'));
     lastDay.push(new ScheduleItem('3:15 PM', '4:15 PM', '악수례 / 단체 사진촬영', '', '', 'fa-camera'));
@@ -195,9 +195,11 @@ export class KostaComponent implements OnInit {
 
     let howToDeposit: Array<String> = new Array<String>();
     howToDeposit.push(`
-    » CHEQUE:
+      » CHEQUE:
       우편 발송 주소: PO Box 300487, Albany, Auckland 0752 (봉투에 "KOSTA"라고 기입).
       체크 받는 사람 (Payable to)은 "KOSTA"로 해주시기 바랍니다.
+    `);
+    howToDeposit.push(`
       » BANK DEPOSIT:
       Bank: Westpac
       Branch: Downtown
