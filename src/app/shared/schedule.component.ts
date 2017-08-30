@@ -7,8 +7,19 @@ import {Schedules} from '../model/schedules';
 })
 export class ScheduleComponent implements OnInit {
   @Input() scheduleList : Array<Schedules>;
-
+  shouldShowList: boolean = false;
+  currentView: number = 0;
+  
   ngOnInit() {
 
+  }
+
+  toggleList(){
+    this.shouldShowList = !this.shouldShowList;
+  }
+
+  viewTab(viewNum: number){
+    this.currentView = viewNum;
+    this.shouldShowList = false;
   }
 }
