@@ -3918,6 +3918,9 @@ button.btn.btn-block {
 .nav.nav-tabs > li > a .fa {
   color: inherit;
 }
+.nav.nav-tabs > li {
+  width: 33%;
+}
 .nav.nav-tabs > li > a h1,
 .nav.nav-tabs > li > a h2,
 .nav.nav-tabs > li > a h3,
@@ -6569,6 +6572,12 @@ button[type="submit"] .loading {
       padding: 30px 0;
       text-align: center;
       max-height: none;
+    }
+    .navbar-collapse.in {
+      overflow-y: auto;
+    }
+    .collapse.in {
+      display: block;
     }
     .header .btn {
       float: none !important;

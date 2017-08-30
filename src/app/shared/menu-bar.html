@@ -19,7 +19,6 @@
               <a pageScroll href="#{{item | lowercase}}" class="navigation-link" (click)="toggleState()" [ngClass]="{'active' : isActive(item)}">{{item}}</a>
             </li>
             <li class="navigation-item"><a target="_blank" href="{{registrationUrl}}" class="navigation-link">Register</a></li>
-
           </ul>
 
           <a routerLink="{{routerLink}}" (click)="_window.scrollTo(0,0)" class="pull-right btn ">{{labelLink}}</a>

@@ -36,8 +36,8 @@ export class MenuBarComponent implements OnInit {
 
   @HostListener('window:resize', ['$event'])
   onResize(event){
-    console.log("Width: " + event.target.innerWidth);
-    console.log("Height: " + event.target.innerHeight);
+    console.log("Width: " + this._window.innerWidth);
+    console.log("Height: " + this._window.innerHeight);
   }
 
   toggleState() { // click handler
