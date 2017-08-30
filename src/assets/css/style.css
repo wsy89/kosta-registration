@@ -7249,4 +7249,7 @@ button[type="submit"] .loading {
   .logo img {
     max-width: 40%;
   }
+  #contacts-map{
+    display: none;
+  }
 }
