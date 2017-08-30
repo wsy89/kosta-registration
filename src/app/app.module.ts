@@ -26,7 +26,6 @@ import {GalleryThumbnailComponent} from './shared/gallery-thumbnail.component';
 import {Ng2PageScrollModule} from 'ng2-page-scroll';
 import {RegisterModalComponent} from './modal/register-modal.component';
 import {SnsListComponent} from './common/sns-list.component';
-import {MenuItemComponent} from './shared/menu-item.component';
 import {Ng2TrackScrollModule} from 'ng2-track-scroll';
 
 @NgModule({
@@ -43,7 +42,6 @@ import {Ng2TrackScrollModule} from 'ng2-track-scroll';
     YouthKostaComponent,
     HeaderComponent,
     MenuBarComponent,
-    MenuItemComponent,
     ConferenceIntroComponent,
     SpeakersComponent,
     ScheduleComponent,

@@ -3344,7 +3344,6 @@ button.btn.btn-block {
   }
   .btn,
   .header .buy-btn {
-    display: block;
     width: auto;
     padding-left: 10px;
     padding-right: 10px;
@@ -6571,11 +6570,11 @@ button[type="submit"] .loading {
 
     .navbar-collapse {
       overflow: scroll;
-      height: auto;
       background-color: #ffffff;
+      min-height: 200px;
       padding: 30px 0;
       text-align: center;
-      max-height: none;
+      max-height: 400px;
     }
     .navbar-collapse.in {
       overflow-y: auto;
@@ -6585,6 +6584,7 @@ button[type="submit"] .loading {
     }
     .header .btn {
       float: none !important;
+      margin: 0;
     }
     .navbar-collapse.in, .navbar-collapse.collapsing {
       -webkit-box-shadow: -1px 4px 20px 0 rgba(0, 0, 0, 0.18);

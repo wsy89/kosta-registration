@@ -1,6 +1,5 @@
-import {Input, Component, ElementRef, HostListener, OnInit, ViewChild, ContentChildren, QueryList} from '@angular/core';
+import {Component, HostListener, Input, OnInit, ViewChild} from '@angular/core';
 import {WindowRefService} from '../service/window-ref.service';
-import {MenuItemComponent} from './menu-item.component';
 
 @Component({
   selector: 'menu-bar',
@@ -9,8 +8,6 @@ import {MenuItemComponent} from './menu-item.component';
 export class MenuBarComponent implements OnInit {
 
   @ViewChild('menuHeader') menuHeader;
-
-  @ContentChildren(MenuItemComponent) menuItem: QueryList<MenuItemComponent>;
 
   @Input() type: String;
   @Input() current: String;
@@ -32,12 +29,6 @@ export class MenuBarComponent implements OnInit {
     let windowTop = this._window.pageYOffset;
 
     this.stickMenu = windowTop >= menuTop;
-  }
-
-  @HostListener('window:resize', ['$event'])
-  onResize(event){
-    console.log("Width: " + this._window.innerWidth);
-    console.log("Height: " + this._window.innerHeight);
   }
 
   toggleState() { // click handler
