@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 import {Introduction} from './model/introduction';
 import {Speaker} from './model/speaker';
 import {Schedules} from './model/schedules';
@@ -38,6 +38,11 @@ export class KostaComponent implements OnInit {
     this.schedules = new Array<Schedules>();
     this.conferenceInfo = new Information();
     this.galleryImages = new Array<Image>();
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event){
+    this.minHeight = this._window.nativeWindow.innerHeight;
   }
 
   ngOnInit() {

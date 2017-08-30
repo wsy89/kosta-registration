@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 import {Image} from './model/image';
 import {Schedules} from './model/schedules';
 import {Speaker} from './model/speaker';
@@ -39,6 +39,11 @@ export class YouthKostaComponent implements OnInit {
     this.schedules = new Array<Schedules>();
     this.galleryImages = new Array<Image>();
     this.conferenceInfo = new Information();
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event){
+    this.minHeight = this._window.nativeWindow.innerHeight;
   }
 
   ngOnInit() {
