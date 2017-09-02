@@ -112,9 +112,9 @@ export class KostaComponent implements OnInit {
   }
 
   private loadSpeakers() {
-    this.speakers.push(new Speaker('../assets/img/speakers/speaker1.jpg', 'name', 'title', 'details'));
-    this.speakers.push(new Speaker('../assets/img/speakers/speaker1.jpg', 'name2', 'title3', 'details4'));
-    this.speakers.push(new Speaker('../assets/img/speakers/speaker1.jpg', 'name2', 'title3', 'details4'));
+    this.speakers.push(new Speaker('assets/img/speakers/speaker1.jpg', 'name', 'title', 'details'));
+    this.speakers.push(new Speaker('assets/img/speakers/speaker1.jpg', 'name2', 'title3', 'details4'));
+    this.speakers.push(new Speaker('assets/img/speakers/speaker1.jpg', 'name2', 'title3', 'details4'));
   }
 
   private loadSchedules() {
@@ -174,8 +174,8 @@ export class KostaComponent implements OnInit {
 
   private loadConferenceInformation() {
     let prices: Array<Price> = new Array<Price>();
-    let earlyBird: Price = new Price("Early Bird Registration 01/10/17 – 12/11/17","$240","$210");
-    let full: Price = new Price("Full Registration 13/11/16 – 21/11/16","$260","$230");
+    let earlyBird: Price = new Price("Early Bird Registration Sunday 01 Oct – Sunday 12 Nov","$240","$210");
+    let full: Price = new Price("Full Registration Monday 13 Nov – Tuesday 21 Nov","$260","$230");
     let ministry: Price = new Price("사역자","$120","$120");
     let oneDay: Price = new Price("당일 (1일)*","$70","$70");
     let oneDayPlusSleep: Price = new Price("당일 (1일 + 숙박)**","$100","$100");
