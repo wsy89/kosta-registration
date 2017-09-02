@@ -112,7 +112,7 @@ export class KostaComponent implements OnInit {
   }
 
   private loadSpeakers() {
-    this.speakers.push(new Speaker('../assets/img/speakers/speaker1.jpg', 'name', 'title', 'detailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetails'));
+    this.speakers.push(new Speaker('../assets/img/speakers/speaker1.jpg', 'name', 'title', 'detail'));
     this.speakers.push(new Speaker('../assets/img/speakers/speaker1.jpg', 'name2', 'title3', 'details4'));
     this.speakers.push(new Speaker('../assets/img/speakers/speaker1.jpg', 'name2', 'title3', 'details4'));
   }
