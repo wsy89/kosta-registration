@@ -96,7 +96,7 @@ export class KostaComponent implements OnInit {
       우리의 교회가 교회되어지고 일터가 또 하나의 교회가 되도록 
       학문과 직업이 연결되는 그 위대한 비전의 시간이기를 축복합니다.
       `,
-      'assets/img/imac-371x412.png'));
+      'assets/img/theme.png'));
     this.kostaIntro.push(new Introduction('fa-video-camera', 'Video', 'text2', 'assets/img/imac-371x412.png'));
     this.kostaIntro.push(new Introduction('fa-file-text-o', 'Promotion package', 'text2', 'assets/img/imac-371x412.png'));
   }

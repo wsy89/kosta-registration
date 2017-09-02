@@ -74,7 +74,7 @@ export class YouthKostaComponent implements OnInit {
   }
 
   private loadIntroduction() {
-    this.kostaIntro.push(new Introduction('fa-book','새 시대의 제사장과 소명', `
+    this.kostaIntro.push(new Introduction('fa-book','Theme', `
       종교개혁 5백년을 기념하는 해입니다.
       종교개혁의 중요한 교리적 기초가 만인제사장론 이었습니다. 
       사제만이 아닌 모든 신자가 제사장이라는 것이었습니다. 
@@ -97,7 +97,7 @@ export class YouthKostaComponent implements OnInit {
       우리의 교회가 교회되어지고 일터가 또 하나의 교회가 되도록 
       학문과 직업이 연결되는 그 위대한 비전의 시간이기를 축복합니다.
       `,
-      'assets/img/imac-371x412.png'));
+      'assets/img/theme.png'));
     this.kostaIntro.push(new Introduction('fa-video-camera', 'Video', 'text2', 'assets/img/imac-371x412.png'));
     this.kostaIntro.push(new Introduction('fa-file-text-o', 'Promotion package', 'text2', 'assets/img/imac-371x412.png'));
   }
