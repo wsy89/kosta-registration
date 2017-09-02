@@ -18,6 +18,7 @@ export class MenuBarComponent implements OnInit {
   routerLink: String;
   labelLink: String;
   menuItems: Array<String>;
+  logoName: String;
 
   constructor(private winRef: WindowRefService) {
     this._window = winRef.nativeWindow;
@@ -47,11 +48,13 @@ export class MenuBarComponent implements OnInit {
     this.registrationUrl = "http://www.google.com";
     this.routerLink = "/kosta";
     this.labelLink = "KOSTA";
+    this.logoName = "youth_logo.png";
 
     if(this.isKosta()){
       this.registrationUrl = "https://docs.google.com/forms/d/e/1FAIpQLSfJn3KmKBFt3F_f4oqbU6HNowetOlVF9sbzdR4RBiCG8alo1w/viewform?usp=sf_link";
       this.routerLink = "/youth-kosta";
-      this.labelLink = "Y.KOSTA";
+      this.labelLink = "Y.KOSTA";      
+      this.logoName = "kosta_logo.png";
     }
     this.menuItems = new Array<String>();
     this.menuItems.push('About');
