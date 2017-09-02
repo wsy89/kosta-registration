@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, HostListener, Input, OnInit} from '@angular/core';
 import {WindowRefService} from '../service/window-ref.service';
 import {Observable} from 'rxjs/Observable';
 
@@ -21,6 +21,11 @@ export class HeaderComponent implements OnInit {
   constructor(private winRef: WindowRefService) {
     this._window = winRef;
     this.minHeight = this._window.nativeWindow.innerHeight
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event){
+    this.minHeight = this._window.nativeWindow.innerHeight;
   }
 
   ngOnInit() {
