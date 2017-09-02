@@ -177,16 +177,14 @@ export class YouthKostaComponent implements OnInit {
 
   private loadConferenceInformation() {
     let prices: Array<Price> = new Array<Price>();
-    let earlyBird: Price = new Price('Early Bird Registration Sunday 01 Oct – Sunday 10 Dec','$240','$210');
-    let full: Price = new Price('Full Registration Monday 11 Dec – Tuesday 19 Dec','$260','$230');
+    let earlyBird: Price = new Price('Early Bird Registration Sunday 01 Oct – Sunday 10 Dec','$220','$190');
+    let full: Price = new Price('Full Registration Monday 11 Dec – Tuesday 19 Dec','$240','$210');
+    let family: Price = new Price('Family Discount: For more than 2 children','$200','$170');
     let ministry: Price = new Price('사역자','$120','$120');
-    let oneDay: Price = new Price('당일 (1일)*','$70','$70');
-    let oneDayPlusSleep: Price = new Price('당일 (1일 + 숙박)**','$100','$100');
     prices.push(earlyBird);
     prices.push(full);
+    prices.push(family);
     prices.push(ministry);
-    prices.push(oneDay);
-    prices.push(oneDayPlusSleep);
 
     let notes: Array<String> = new Array<String>();
     notes.push('*당일참석은 아침 6시부터 밤 12시까지이며 모든 식사를 포함합니다.');
