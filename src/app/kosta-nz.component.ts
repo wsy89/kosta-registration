@@ -65,14 +65,14 @@ export class KostaComponent implements OnInit {
   }
 
   private loadImages() {
-    this.galleryImages.push(new Image('gallery1-thumb.jpg', 'gallery1.jpg', ''));
-    this.galleryImages.push(new Image('gallery2-thumb.jpg', 'gallery2.jpg', ''));
-    this.galleryImages.push(new Image('gallery3-thumb.jpg', 'gallery3.jpg', ''));
-    this.galleryImages.push(new Image('gallery3-thumb.jpg', 'gallery3.jpg', ''));
-    this.galleryImages.push(new Image('gallery1-thumb.jpg', 'gallery1.jpg', ''));
-    this.galleryImages.push(new Image('gallery2-thumb.jpg', 'gallery2.jpg', ''));
-    this.galleryImages.push(new Image('gallery3-thumb.jpg', 'gallery3.jpg', ''));
-    this.galleryImages.push(new Image('gallery3-thumb.jpg', 'gallery3.jpg', ''));
+    this.galleryImages.push(new Image('kostanz1.jpg', 'gallery1.jpg', ''));
+    this.galleryImages.push(new Image('kostanz2.jpg', 'gallery2.jpg', ''));
+    this.galleryImages.push(new Image('kostanz3.jpg', 'gallery3.jpg', ''));
+    this.galleryImages.push(new Image('kostanz4.jpg', 'gallery3.jpg', ''));
+    this.galleryImages.push(new Image('kostanz5.jpg', 'gallery1.jpg', ''));
+    this.galleryImages.push(new Image('kostanz6.jpg', 'gallery2.jpg', ''));
+    this.galleryImages.push(new Image('kostanz7.jpg', 'gallery3.jpg', ''));
+    this.galleryImages.push(new Image('kostanz8.jpg', 'gallery3.jpg', ''));
   }
 
   private loadBasicDetails() {

@@ -67,14 +67,14 @@ export class YouthKostaComponent implements OnInit {
   }
 
   private loadImages() {
-    this.galleryImages.push(new Image('gallery1-thumb.jpg', 'gallery1.jpg', ''));
-    this.galleryImages.push(new Image('gallery2-thumb.jpg', 'gallery2.jpg', ''));
-    this.galleryImages.push(new Image('gallery3-thumb.jpg', 'gallery3.jpg', ''));
-    this.galleryImages.push(new Image('gallery1-thumb.jpg', 'gallery1.jpg', ''));
-    this.galleryImages.push(new Image('gallery2-thumb.jpg', 'gallery2.jpg', ''));
-    this.galleryImages.push(new Image('gallery3-thumb.jpg', 'gallery3.jpg', ''));
-    this.galleryImages.push(new Image('gallery1-thumb.jpg', 'gallery1.jpg', ''));
-    this.galleryImages.push(new Image('gallery1-thumb.jpg', 'gallery1.jpg', ''));
+    this.galleryImages.push(new Image('youthkostanz1.jpg', 'gallery1.jpg', ''));
+    this.galleryImages.push(new Image('youthkostanz2.jpg', 'gallery2.jpg', ''));
+    this.galleryImages.push(new Image('youthkostanz3.jpg', 'gallery3.jpg', ''));
+    this.galleryImages.push(new Image('youthkostanz4.jpg', 'gallery1.jpg', ''));
+    this.galleryImages.push(new Image('youthkostanz5.jpg', 'gallery2.jpg', ''));
+    this.galleryImages.push(new Image('youthkostanz6.jpg', 'gallery3.jpg', ''));
+    this.galleryImages.push(new Image('youthkostanz7.jpg', 'gallery1.jpg', ''));
+    this.galleryImages.push(new Image('youthkostanz8.jpg', 'gallery1.jpg', ''));
   }
 
   private loadBasicDetails() {
