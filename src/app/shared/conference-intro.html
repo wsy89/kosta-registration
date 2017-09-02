@@ -1,13 +1,13 @@
 <div class="tabs-wrapper tabs-horizontal">
   <div class="nav-wrapper">
     <span class="nav-current" (click)="toggleList()">
-      <h6 class="heading-alt"><span class="fa {{introductionList[currentView].icon}}"></span> {{introductionList[currentView].title}}</h6>
+      <h6 class="heading-alt"><span class="fa {{introductionList[currentView].icon}}"></span> {{introductionList[currentView].tabName}}</h6>
     </span>
 
     <ul class="nav nav-tabs nav-justified" [style.display]="shouldShowList ? 'block' : null">
       <li class="{{i===currentView ? 'active' : ''}}"  *ngFor="let intro of introductionList; let i = index">
         <a (click)="viewTab(i)" data-toggle="tab">
-          <h6 class="heading-alt"><span class="fa {{intro.icon}}"></span> {{intro.title}}</h6>
+          <h6 class="heading-alt"><span class="fa {{intro.icon}}"></span> {{intro.tabName}}</h6>
         </a>
       </li>
     </ul>
