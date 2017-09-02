@@ -5711,6 +5711,8 @@ button[type="submit"] .loading {
 }
 .speaker .about {
   padding: 0 15px;
+  word-break: break-all;
+  line-height: 25px;
 }
 .speaker .speaker-socials > li {
   padding: 0 10px;
