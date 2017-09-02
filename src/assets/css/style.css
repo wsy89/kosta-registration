@@ -5711,6 +5711,8 @@ button[type="submit"] .loading {
 }
 .speaker .about {
   padding: 0 15px;
+  word-break: break-all;
+  line-height: 25px;
 }
 .speaker .speaker-socials > li {
   padding: 0 10px;
@@ -6215,8 +6217,7 @@ button[type="submit"] .loading {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-  background-color: white;
-  /*background-color: #f3e832;*/
+  background-color: #f3e832;
 }
 .header.header-black .navigation-link {
   color: #00a695;
@@ -6253,7 +6254,6 @@ button[type="submit"] .loading {
   left: 0;
   z-index: 1000;
   opacity: 0.9;
-  background-color: white;
 }
 
 .header .fade-in-on-stick {
