@@ -78,10 +78,10 @@ export class YouthKostaComponent implements OnInit {
   }
 
   private loadBasicDetails() {
-    this.subTitle = 'YOUTH KOSTA';
-    this.title = 'YOUTH KOSTA';
-    this.location = 'Hamilton, Auckland';
-    this.datetime = '21.Nov ~ 24.Nov 2017';
+    this.subTitle = '';
+    this.title = '';
+    this.location = 'Christian Youth Camps';
+    this.datetime = '19.Dec-22.Dec 2017';
   }
 
   private loadIntroduction() {
