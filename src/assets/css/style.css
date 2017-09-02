@@ -2929,169 +2929,217 @@ li {
 @keyframes border-pulse-1 {
   0% {
     border-width: 26px;
+    border-color: #f1e931;
   }
   33.33333% {
     border-width: 3px;
+    border-color: #f39bbc;
   }
   66.66666% {
     border-width: 3px;
+    border-color: #00a695;
   }
   100% {
     border-width: 3px;
+    border-color: #5dbbcb;
   }
 }
 @-o-keyframes border-pulse-1 {
   0% {
     border-width: 26px;
+    border-color: #f1e931;
   }
   33.33333% {
     border-width: 3px;
+    border-color: #f39bbc;
   }
   66.66666% {
     border-width: 3px;
+    border-color: #00a695;
   }
   100% {
     border-width: 3px;
+    border-color: #5dbbcb;
   }
 }
 @-moz-keyframes border-pulse-1 {
   0% {
     border-width: 26px;
+    border-color: #f1e931;
   }
   33.33333% {
     border-width: 3px;
+    border-color: #f39bbc;
   }
   66.66666% {
     border-width: 3px;
+    border-color: #00a695;
   }
   100% {
     border-width: 3px;
+    border-color: #5dbbcb;
   }
 }
 @-webkit-keyframes border-pulse-1 {
   0% {
     border-width: 26px;
+    border-color: #f1e931;
   }
   33.33333% {
     border-width: 3px;
+    border-color: #f39bbc;
   }
   66.66666% {
     border-width: 3px;
+    border-color: #00a695;
   }
   100% {
     border-width: 3px;
+    border-color: #5dbbcb;
   }
 }
 @keyframes border-pulse-2 {
   0% {
     border-width: 0;
+    border-color: #f1e931;
   }
   33.33333% {
     border-width: 0;
+    border-color: #f39bbc;
   }
   66.66666% {
     border-width: 23px;
+    border-color: #00a695;
   }
   100% {
     border-width: 23px;
+    border-color: #5dbbcb;
   }
 }
 @-o-keyframes border-pulse-2 {
   0% {
     border-width: 0;
+    border-color: #f1e931;
   }
   33.33333% {
     border-width: 0;
+    border-color: #f39bbc;
   }
   66.66666% {
     border-width: 23px;
+    border-color: #00a695;
   }
   100% {
     border-width: 23px;
+    border-color: #5dbbcb;
   }
 }
 @-moz-keyframes border-pulse-2 {
   0% {
     border-width: 0;
+    border-color: #f1e931;
   }
   33.33333% {
     border-width: 0;
+    border-color: #f39bbc;
   }
   66.66666% {
     border-width: 23px;
+    border-color: #00a695;
   }
   100% {
     border-width: 23px;
+    border-color: #5dbbcb;
   }
 }
 @-webkit-keyframes border-pulse-2 {
   0% {
     border-width: 0;
+    border-color: #f1e931;
   }
   33.33333% {
     border-width: 0;
+    border-color: #f39bbc;
   }
   66.66666% {
     border-width: 23px;
+    border-color: #00a695;
   }
   100% {
     border-width: 23px;
+    border-color: #5dbbcb;
   }
 }
 @keyframes border-pulse-3 {
   0% {
     border-width: 0;
+    border-color: #f1e931;
   }
   33.33333% {
     border-width: 0;
+    border-color: #f39bbc;
   }
   66.66666% {
     border-width: 0;
+    border-color: #00a695;
   }
   100% {
     border-width: 23px;
+    border-color: #5dbbcb;
   }
 }
 @-o-keyframes border-pulse-3 {
   0% {
     border-width: 0;
+    border-color: #f1e931;
   }
   33.33333% {
     border-width: 0;
+    border-color: #f39bbc;
   }
   66.66666% {
     border-width: 0;
+    border-color: #00a695;
   }
   100% {
     border-width: 23px;
+    border-color: #5dbbcb;
   }
 }
 @-moz-keyframes border-pulse-3 {
   0% {
     border-width: 0;
+    border-color: #f1e931;
   }
   33.33333% {
     border-width: 0;
+    border-color: #f39bbc;
   }
   66.66666% {
     border-width: 0;
+    border-color: #00a695;
   }
   100% {
     border-width: 23px;
+    border-color: #5dbbcb;
   }
 }
 @-webkit-keyframes border-pulse-3 {
   0% {
     border-width: 0;
+    border-color: #f1e931;
   }
   33.33333% {
     border-width: 0;
+    border-color: #f39bbc;
   }
   66.66666% {
     border-width: 0;
+    border-color: #00a695;
   }
   100% {
     border-width: 23px;
+    border-color: #5dbbcb;
   }
 }
 /* ----------------------------------------------------------------------------
