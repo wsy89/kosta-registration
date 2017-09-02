@@ -164,10 +164,10 @@ export class YouthKostaComponent implements OnInit {
     lastDay.push(new ScheduleItem('1:50 PM', '3:15 PM', '폐회 예배', '송병주', '', 'fa-institution'));
     lastDay.push(new ScheduleItem('3:15 PM', '4:15 PM', '악수례 / 단체 사진촬영', '', '', 'fa-camera'));
 
-    let tuesday: Schedules = new Schedules('TUE 21 NOV', firstDay);
-    let wednesday: Schedules = new Schedules('WED 22 NOV', secondDay);
-    let thursday: Schedules = new Schedules('THUR 23 NOV', thirdDay);
-    let friday: Schedules = new Schedules('FRI 24 NOV', lastDay);
+    let tuesday: Schedules = new Schedules('TUE 19 DEC', firstDay);
+    let wednesday: Schedules = new Schedules('WED 20 DEC', secondDay);
+    let thursday: Schedules = new Schedules('THUR 21 DEC', thirdDay);
+    let friday: Schedules = new Schedules('FRI 22 DEC', lastDay);
     this.schedules.push(tuesday);
     this.schedules.push(wednesday);
     this.schedules.push(thursday);
