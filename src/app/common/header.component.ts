@@ -13,8 +13,8 @@ export class HeaderComponent implements OnInit {
   @Input() location;
   _window: WindowRefService;
   minHeight: number;
-  backgroundColour: String;
-  backgroundImage: String;
+  backgroundColour: String = 'bg1.png';
+  backgroundImage: String = '#f1e931';
   backgroundColours : String[];
   backgroundImages : String[];
 
