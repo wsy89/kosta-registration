@@ -13,8 +13,6 @@ import {Price} from './model/Price';
   templateUrl: 'kosta-nz.html'
 })
 export class KostaComponent implements OnInit {
-  _window: WindowRefService;
-  minHeight: number;
   currentSection: String;
   title: String;
   subTitle: String;
@@ -29,20 +27,12 @@ export class KostaComponent implements OnInit {
   phoneNumber: String;
   galleryImages: Array<Image>;
 
-  constructor(private winRef: WindowRefService) {
-    this._window = winRef;
-    this.minHeight = this._window.nativeWindow.innerHeight;
-
+  constructor() {
     this.kostaIntro = new Array<Introduction>();
     this.speakers = new Array<Speaker>();
     this.schedules = new Array<Schedules>();
     this.conferenceInfo = new Information();
     this.galleryImages = new Array<Image>();
-  }
-
-  @HostListener('window:resize', ['$event'])
-  onResize(event){
-    this.minHeight = this._window.nativeWindow.innerHeight;
   }
 
   ngOnInit() {

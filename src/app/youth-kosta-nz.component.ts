@@ -13,9 +13,6 @@ import {Price} from './model/Price';
   templateUrl: 'youth-kosta-nz.html'
 })
 export class YouthKostaComponent implements OnInit {
-
-  _window: WindowRefService;
-  minHeight: number;
   currentSection: String;
   title: String;
   subTitle: String;
@@ -30,20 +27,12 @@ export class YouthKostaComponent implements OnInit {
   galleryImages: Array<Image>;
   conferenceInfo: Information;
 
-  constructor(private winRef: WindowRefService) {
-    this._window = winRef;
-    this.minHeight = this._window.nativeWindow.innerHeight;
-
+  constructor() {
     this.kostaIntro = new Array<Introduction>();
     this.speakers = new Array<Speaker>();
     this.schedules = new Array<Schedules>();
     this.galleryImages = new Array<Image>();
     this.conferenceInfo = new Information();
-  }
-
-  @HostListener('window:resize', ['$event'])
-  onResize(event){
-    this.minHeight = this._window.nativeWindow.innerHeight;
   }
 
   ngOnInit() {
