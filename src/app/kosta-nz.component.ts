@@ -77,9 +77,9 @@ export class KostaComponent implements OnInit {
 
   private loadBasicDetails() {
     this.subTitle = '';
-    this.title = 'KOSTA';
+    this.title = '';
     this.location = 'University of Waikato';
-    this.datetime = '21 - 24.Nov.2017';
+    this.datetime = '21-24.Nov.2017';
   }
 
   private loadIntroduction() {
