@@ -114,9 +114,9 @@ export class YouthKostaComponent implements OnInit {
   }
 
   private loadSpeakers() {
-    this.speakers.push(new Speaker('../assets/img/speakers/speaker1.jpg', 'name', 'title', 'details'));
-    this.speakers.push(new Speaker('../assets/img/speakers/speaker1.jpg', 'name2', 'title3', 'details4'));
-    this.speakers.push(new Speaker('../assets/img/speakers/speaker1.jpg', 'name2', 'title3', 'details4'));
+    this.speakers.push(new Speaker('assets/img/speakers/speaker1.jpg', 'name', 'title', 'details'));
+    this.speakers.push(new Speaker('assets/img/speakers/speaker1.jpg', 'name2', 'title3', 'details4'));
+    this.speakers.push(new Speaker('assets/img/speakers/speaker1.jpg', 'name2', 'title3', 'details4'));
   }
 
   private loadSchedules() {

@@ -6975,7 +6975,8 @@ button[type="submit"] .loading {
     Theme styles
 ---------------------------------------------------------------------------- */
 .bg1 {
-  background-image: url("../img/backgrounds/bg1.jpg");
+  background-image: url("../img/backgrounds/bg1.png");
+  background-size: 100%;
 }
 .bg2 {
   background-image: url("../img/backgrounds/bg2.jpg");
