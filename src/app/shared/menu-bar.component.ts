@@ -49,7 +49,7 @@ export class MenuBarComponent implements OnInit {
     this.labelLink = "KOSTA";
 
     if(this.isKosta()){
-      this.registrationUrl = "https://docs.google.com/forms/d/e/1FAIpQLSe7aZPQTF7QtZVb6Y4g4NLw9QjA1WFcrJvu56r9KmVJtqdRPQ/viewform?usp=sf_link";
+      this.registrationUrl = "https://docs.google.com/forms/d/e/1FAIpQLSfJn3KmKBFt3F_f4oqbU6HNowetOlVF9sbzdR4RBiCG8alo1w/viewform?usp=sf_link";
       this.routerLink = "/youth-kosta";
       this.labelLink = "Y.KOSTA";
     }
