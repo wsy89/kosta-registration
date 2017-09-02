@@ -27,6 +27,7 @@ import {Ng2PageScrollModule} from 'ng2-page-scroll';
 import {RegisterModalComponent} from './modal/register-modal.component';
 import {SnsListComponent} from './common/sns-list.component';
 import {Ng2TrackScrollModule} from 'ng2-track-scroll';
+import {AboutKostaModalComponent} from './modal/about-kosta-modal.component';
 
 @NgModule({
   imports: [
@@ -56,7 +57,8 @@ import {Ng2TrackScrollModule} from 'ng2-track-scroll';
     ConferenceInfoComponent,
     ChooseKostaModalComponent,
     RegisterModalComponent,
-    SnsListComponent
+    SnsListComponent,
+    AboutKostaModalComponent
   ],
   providers: [
     appRoutingProviders,
