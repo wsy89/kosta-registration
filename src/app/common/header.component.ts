@@ -1,6 +1,5 @@
 import {Component, HostListener, Input, OnInit} from '@angular/core';
 import {WindowRefService} from '../service/window-ref.service';
-import {Observable} from 'rxjs/Observable';
 
 @Component({
   selector: 'header',
@@ -13,8 +12,8 @@ export class HeaderComponent implements OnInit {
   @Input() location;
   _window: WindowRefService;
   minHeight: number;
-  backgroundColour: String = 'bg1.png';
-  backgroundImage: String = '#f1e931';
+  backgroundColour: String = '#f1e931';
+  backgroundImage: String = 'bg1.png';
   backgroundColours : String[];
   backgroundImages : String[];
 
@@ -35,7 +34,6 @@ export class HeaderComponent implements OnInit {
     setInterval(() => {
       this.backgroundColour = this.backgroundColours[index];
       this.backgroundImage = this.backgroundImages[index];
-      console.log("here " + index);
       if (index == this.backgroundColours.length - 1) {
         index = 0;
       } else {
@@ -46,7 +44,6 @@ export class HeaderComponent implements OnInit {
 
   private changeBackground(index: number) {
     this.backgroundColour = this.backgroundColours[index];
-    console.log("here " + index);
     if (index == this.backgroundColours.length - 1) {
       return 0;
     } else {

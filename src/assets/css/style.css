@@ -7320,3 +7320,7 @@ button[type="submit"] .loading {
     display: none;
   }
 }
+
+.footer-spacing {
+  padding: 15px;
+}

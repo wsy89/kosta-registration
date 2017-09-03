@@ -62,7 +62,6 @@ export class MenuBarComponent implements OnInit {
     this.menuItems.push('Schedule');
     this.menuItems.push('Info');
     this.menuItems.push('Gallery');
-    this.menuItems.push('Contact');
   }
 
   isKosta(): boolean {
