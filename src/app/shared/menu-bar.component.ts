@@ -45,7 +45,7 @@ export class MenuBarComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.registrationUrl = "http://www.google.com";
+    this.registrationUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdhszY8cQUhE2zVETpXCrxeVS1VaZmooGKEJj1hV8aRFja21g/viewform?usp=sf_link";
     this.routerLink = "/kosta";
     this.labelLink = "KOSTA";
     this.logoName = "youth_logo.png";
