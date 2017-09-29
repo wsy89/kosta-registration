@@ -107,7 +107,7 @@ export class YouthKostaComponent implements OnInit {
       'assets/img/theme.png',
       false));
     this.kostaIntro.push(new Introduction('fa-video-camera', 'Video', '', '', '', true));
-    this.kostaIntro.push(new Introduction('fa-file-text-o', 'Promotion package', '', '', 'assets/img/etc/2017_Poster.png', false));
+    this.kostaIntro.push(new Introduction('fa-file-text-o', 'Promotion package', 'Coming Soon', '', 'assets/img/etc/2017_Poster.png', false));
   }
 
   private loadSpeakers() {
