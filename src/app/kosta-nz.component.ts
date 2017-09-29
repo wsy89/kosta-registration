@@ -114,6 +114,9 @@ export class KostaComponent implements OnInit {
     this.speakers.push(new Speaker('assets/img/speakers/K_chaedonguk.jpg', '채종욱 강사', '', 'GMP 선교사'));
     this.speakers.push(new Speaker('assets/img/speakers/speaker1.jpg', '박동희 강사', '', 'GMP 선교사'));
     this.speakers.push(new Speaker('assets/img/speakers/speaker1.jpg', '서재석 강사', '', 'Young2080 대표'));
+    for (var i = 0; i < 4; i++) {
+      this.speakers.push(new Speaker('assets/img/speakers/speaker1.jpg', 'Coming Soon', '', 'TBC'));  
+    }    
   }
 
   private loadSchedules() {
