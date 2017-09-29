@@ -7,6 +7,8 @@ import {Information} from '../model/information';
 })
 export class ConferenceInfoComponent implements OnInit {
   @Input() information : Information;
+  @Input() registrationUrl: String;
+  @Input() howToOfflineLink: String;
   ngOnInit() {
 
   }

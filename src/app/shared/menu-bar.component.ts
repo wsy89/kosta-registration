@@ -11,10 +11,10 @@ export class MenuBarComponent implements OnInit {
 
   @Input() type: String;
   @Input() current: String;
+  @Input() registrationUrl: String;
   _window: Window;
   stickMenu: boolean = false;
   isOpen: boolean = false;
-  registrationUrl: String;
   routerLink: String;
   labelLink: String;
   menuItems: Array<String>;
@@ -45,15 +45,13 @@ export class MenuBarComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.registrationUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdhszY8cQUhE2zVETpXCrxeVS1VaZmooGKEJj1hV8aRFja21g/viewform?usp=sf_link";
     this.routerLink = "/kosta";
     this.labelLink = "KOSTA";
     this.logoName = "youth_logo.png";
 
     if(this.isKosta()){
-      this.registrationUrl = "https://docs.google.com/forms/d/e/1FAIpQLSfJn3KmKBFt3F_f4oqbU6HNowetOlVF9sbzdR4RBiCG8alo1w/viewform?usp=sf_link";
       this.routerLink = "/youth-kosta";
-      this.labelLink = "Y.KOSTA";      
+      this.labelLink = "Y.KOSTA";
       this.logoName = "kosta_logo.png";
     }
     this.menuItems = new Array<String>();

@@ -24,8 +24,9 @@ export class KostaComponent implements OnInit {
   conferenceInfo: Information;
   address: String;
   email: String;
-  phoneNumber: String;
   galleryImages: Array<Image>;
+  registrationUrl: String;
+  howToOfflineLink: String;
 
   constructor() {
     this.kostaIntro = new Array<Introduction>();
@@ -33,6 +34,8 @@ export class KostaComponent implements OnInit {
     this.schedules = new Array<Schedules>();
     this.conferenceInfo = new Information();
     this.galleryImages = new Array<Image>();
+    this.registrationUrl = "https://docs.google.com/forms/d/e/1FAIpQLSfJn3KmKBFt3F_f4oqbU6HNowetOlVF9sbzdR4RBiCG8alo1w/viewform?usp=sf_link";
+    this.howToOfflineLink = "REGOFORM_17_kosta.pdf";
   }
 
   ngOnInit() {
@@ -96,7 +99,7 @@ export class KostaComponent implements OnInit {
       우리의 교회가 교회되어지고 일터가 또 하나의 교회가 되도록 
       학문과 직업이 연결되는 그 위대한 비전의 시간이기를 축복합니다.
       `,
-      'assets/img/theme.png'));      
+      'assets/img/theme.png'));
     this.kostaIntro.push(new Introduction('fa-video-camera', 'Video', 'Video', 'text2', 'assets/img/imac-371x412.png'));
     this.kostaIntro.push(new Introduction('fa-file-text-o', 'Promotion package', 'Promotion package', 'text2', 'assets/img/imac-371x412.png'));
   }
@@ -182,10 +185,6 @@ export class KostaComponent implements OnInit {
     notes.push("*당일참석은 아침 6시부터 밤 12시까지이며 모든 식사를 포함합니다.");
     notes.push("**숙박을 하는 당일참석은 아침 6시부터 다음날 12시까지이며 모든 식사를 포함합니다.");
 
-    let howTo: Array<String> = new Array<String>();
-    howTo.push("» ONLINE: 웹사이트를 통해 등록할 경우 여기를 클릭해 주세요.");
-    howTo.push("» OFFLINE: 여기를 클릭하여 신청서를 다운로드 받아 작성하신 후 우편으로 발송해 주세요.");
-
     let howToDeposit: Array<String> = new Array<String>();
     howToDeposit.push(`
       » CHEQUE:
@@ -206,11 +205,16 @@ export class KostaComponent implements OnInit {
     attention.push("11월 13일 까지 취소할 경우에 100% 환불되며, 그 이후는 환불이 되지 않습니다.");
     attention.push("집회 당일 등록하시는 경우에는 현금, 체크 또는 eftpos로 참가비를 받습니다.");
 
+    let location: Array<String> = new Array<String>();
+    location.push('location 1');
+    location.push('location 2');
+    location.push('location 3');
+
     this.conferenceInfo.prices = prices;
     this.conferenceInfo.notes = notes;
-    this.conferenceInfo.howTo = howTo;
     this.conferenceInfo.howToDeposite = howToDeposit;
     this.conferenceInfo.attention = attention;
+    this.conferenceInfo.location = location;
   }
 
 }

@@ -6,6 +6,7 @@ export class Information {
   private _howTo: Array<String>;
   private _howToDeposite: Array<String>;
   private _attention: Array<String>;
+  private _location: Array<String>;
 
 
   get prices(): Array<Price> {
@@ -46,5 +47,9 @@ export class Information {
 
   set attention(value: Array<String>) {
     this._attention = value;
+  }
+
+  set location(value: Array<String>) {
+    this._location= value;
   }
 }
