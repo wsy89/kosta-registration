@@ -1,42 +1,44 @@
 <h3 class="heading-alt">schedule</h3>
-<p class="text-alt" style="margin-bottom: 80px;">download <a>full version</a></p>
 
-<div class="col-md-10 col-md-offset-1">
+<p class="text-alt" style="margin-bottom: 80px;"><span class="highlight">coming soon</span></p>
+<!--<p class="text-alt" style="margin-bottom: 80px;">download <a>full version</a></p>-->
 
-  <div class="row schedule schedule-light">
+<!--<div class="col-md-10 col-md-offset-1">-->
 
-    <div class="nav-wrapper">                  
-      <span class="nav-current" (click)="toggleList()">
-        <h6 class="heading-alt">{{scheduleList[currentView].date}}</h6>
-      </span>
-  
-      <ul class="nav nav-schedule" [style.display]="shouldShowList ? 'block' : null">
-        <li class="{{i===currentView ? 'active' : ''}}"  *ngFor="let schedule of scheduleList; let i = index">
-          <a (click)="viewTab(i)" data-toggle="tab">
-            <h6 class="heading-alt">{{schedule.date}}</h6>
-          </a>
-        </li>
-      </ul>
-    </div>
-  
-    <div class="tab-content">
-      <div *ngFor="let schedule of scheduleList; let i = index" class="tab-pane fade {{i===currentView ? 'active in': ''}}">
-        <div class="panel-group">              
-          <div *ngFor="let item of schedule.schedules; let j=index" class="panel schedule-item">
-            <div class="schedule-item-toggle">
-              <strong class="time highlight">{{item.start}} - {{item.end}}</strong>
-              <div class="lecture-icon-wrapper"><span class="fa {{item.icon}}"></span></div>
-              <h6 class="title">{{item.title}}</h6>
-            </div>
-            <div *ngIf="item.speaker !== null" id="schedule_day{{i}}_time{{j}}" class="panel-collapse collapse in schedule-item-body">
-              <p class="text-alt speaker-wrapper"><strong class="highlight speaker-name">{{item.speaker}}</strong></p>
-              <p class="description">{{item.details}}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <!--<div class="row schedule schedule-light">-->
 
-</div>
+    <!--<div class="nav-wrapper">                  -->
+      <!--<span class="nav-current" (click)="toggleList()">-->
+        <!--<h6 class="heading-alt">{{scheduleList[currentView].date}}</h6>-->
+      <!--</span>-->
+  <!---->
+      <!--<ul class="nav nav-schedule" [style.display]="shouldShowList ? 'block' : null">-->
+        <!--<li class="{{i===currentView ? 'active' : ''}}"  *ngFor="let schedule of scheduleList; let i = index">-->
+          <!--<a (click)="viewTab(i)" data-toggle="tab">-->
+            <!--<h6 class="heading-alt">{{schedule.date}}</h6>-->
+          <!--</a>-->
+        <!--</li>-->
+      <!--</ul>-->
+    <!--</div>-->
+  <!---->
+    <!--<div class="tab-content">-->
+      <!--<div *ngFor="let schedule of scheduleList; let i = index" class="tab-pane fade {{i===currentView ? 'active in': ''}}">-->
+        <!--<div class="panel-group">              -->
+          <!--<div *ngFor="let item of schedule.schedules; let j=index" class="panel schedule-item">-->
+            <!--<div class="schedule-item-toggle">-->
+              <!--<strong class="time highlight">{{item.start}} - {{item.end}}</strong>-->
+              <!--<div class="lecture-icon-wrapper"><span class="fa {{item.icon}}"></span></div>-->
+              <!--<h6 class="title">{{item.title}}</h6>-->
+            <!--</div>-->
+            <!--<div *ngIf="item.speaker !== null" id="schedule_day{{i}}_time{{j}}" class="panel-collapse collapse in schedule-item-body">-->
+              <!--<p class="text-alt speaker-wrapper"><strong class="highlight speaker-name">{{item.speaker}}</strong></p>-->
+              <!--<p class="description">{{item.details}}</p>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+
+<!--</div>-->
 
