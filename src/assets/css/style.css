@@ -5733,6 +5733,7 @@ button[type="submit"] .loading {
 .speaker {
   margin-bottom: 40px;
   text-align: center;
+  height: 500px;
 }
 .speaker .photo-wrapper {
   margin: 0 auto 20px;
@@ -5746,6 +5747,7 @@ button[type="submit"] .loading {
 .speaker .photo-wrapper img {
   display: block;
   max-width: 100%;
+  width: 200px;
 }
 .speaker .name {
   font-size: 13px;

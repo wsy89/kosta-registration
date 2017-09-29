@@ -101,10 +101,13 @@ export class KostaComponent implements OnInit {
     this.kostaIntro.push(new Introduction('fa-file-text-o', 'Promotion package', 'Promotion package', 'text2', 'assets/img/imac-371x412.png'));
   }
 
-  private loadSpeakers() {
-    this.speakers.push(new Speaker('assets/img/speakers/speaker1.jpg', 'name', 'title', 'details'));
-    this.speakers.push(new Speaker('assets/img/speakers/speaker1.jpg', 'name2', 'title3', 'details4'));
-    this.speakers.push(new Speaker('assets/img/speakers/speaker1.jpg', 'name2', 'title3', 'details4'));
+  private loadSpeakers() {    
+    this.speakers.push(new Speaker('assets/img/speakers/yes.jpg', '윤은성 강사', 'title', 'details'));
+    this.speakers.push(new Speaker('assets/img/speakers/kdh.jpg', '김도현 강사', 'title3', 'Colorado Christian University 고등학교 졸업 후 가족과 미국으로 건너가 LA에서 이민생활을 시작했고, 나성영락교회 대학부 시절 하나님의 부르심을 받았다. UCLA에서 역사를 공부하고 Fuller (MDiv), Yale (STM)에서 공부한 후 Union 신학교에서 신약학으로 Ph.D.를 받았다. Sterling College에서 종교학 과장을 역임했으며 현재 Denver에 있는 Colorado Christian University에서 신약학과 헬라어를 가르치고 있다. 또한 장로교 목사로 볼더한인교회를 담임하고 있다. 저서로는 <나의 사랑하는 책 로마서>, <빌립보서 어떻게 읽을 것인가>가 있다.'));
+    this.speakers.push(new Speaker('assets/img/speakers/speaker1.jpg', '김창근 강사', 'title3', 'details4'));
+    this.speakers.push(new Speaker('assets/img/speakers/cjw.png', '채종욱 강사', 'title3', 'GBM Korea / GBM Asia (인도) 그룹회장이며, 미주 GMP 선교회 이사장과 사업체와 비영리구호단체인 빈손채움재단의 이사장이기도 하다. 비즈니스를 통해 선교적 삶을 살아가는 대안적 선교방식을 알리고 있다. 비즈니스선교모델을 개발하고 선교지에 적용하는 노력을 기울이며, 관심자들을 적극적으로 돕고 있다.'));
+    this.speakers.push(new Speaker('assets/img/speakers/speaker1.jpg', '박동희 강사', 'title3', 'details4'));
+    this.speakers.push(new Speaker('assets/img/speakers/speaker1.jpg', '서재석 강사', 'title3', 'details4'));
   }
 
   private loadSchedules() {
