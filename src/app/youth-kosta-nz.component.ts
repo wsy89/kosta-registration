@@ -102,15 +102,17 @@ export class YouthKostaComponent implements OnInit {
       우리의 교회가 교회되어지고 일터가 또 하나의 교회가 되도록 
       학문과 직업이 연결되는 그 위대한 비전의 시간이기를 축복합니다.
       `,
-      'assets/img/theme.png'));
-    this.kostaIntro.push(new Introduction('fa-video-camera', 'Video', 'Video', 'text2', 'assets/img/imac-371x412.png'));
-    this.kostaIntro.push(new Introduction('fa-file-text-o', 'Promotion package', 'Promotion package', 'text2', 'assets/img/imac-371x412.png'));
+      'assets/img/theme.png',
+      false));
+    this.kostaIntro.push(new Introduction('fa-video-camera', 'Video', '', '', '', true));
+    this.kostaIntro.push(new Introduction('fa-file-text-o', 'Promotion package', '', '', 'assets/img/etc/2017_Poster.png', false));
   }
 
   private loadSpeakers() {
     this.speakers.push(new Speaker('assets/img/speakers/YK_imseungmin.jpg', '임성민', 'title', 'details'));
     this.speakers.push(new Speaker('assets/img/speakers/YK_junghyemin.jpg', '정혜민', 'title3', 'details4'));
     this.speakers.push(new Speaker('assets/img/speakers/YK_koeunsik.jpg', '고은식', 'title3', 'details4'));
+    this.speakers.push(new Speaker('assets/img/speakers/speaker1.jpg', '이제환 강사', '', 'details4'));
   }
 
   private loadSchedules() {
