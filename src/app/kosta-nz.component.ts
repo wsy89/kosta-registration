@@ -101,7 +101,7 @@ export class KostaComponent implements OnInit {
       `,
       'assets/img/theme.png'));
     this.kostaIntro.push(new Introduction('fa-video-camera', 'Video', 'Video', 'text2', 'assets/img/imac-371x412.png'));
-    this.kostaIntro.push(new Introduction('fa-file-text-o', 'Promotion package', 'Promotion package', 'text2', 'assets/img/imac-371x412.png'));
+    this.kostaIntro.push(new Introduction('fa-file-text-o', 'Promotion package', '', '', 'assets/img/etc/2017_Poster.png'));
   }
 
   private loadSpeakers() {
