@@ -5,7 +5,7 @@ import {Schedules} from './model/schedules';
 import {ScheduleItem} from './model/scheduleItem';
 import {Image} from 'app/model/image';
 import {WindowRefService} from './service/window-ref.service';
-import {Information} from './model/information';
+import {Information, StyledNote} from './model/information';
 import {Price} from './model/Price';
 
 @Component({
@@ -105,13 +105,13 @@ export class KostaComponent implements OnInit {
     this.kostaIntro.push(new Introduction('fa-file-text-o', 'Promotion package', '', '', 'assets/img/etc/2017_Poster.png', false));
   }
 
-  private loadSpeakers() {    
-    this.speakers.push(new Speaker('assets/img/speakers/speaker1.jpg', '윤은성 강사', 'title', 'details'));
-    this.speakers.push(new Speaker('assets/img/speakers/K_kimdohyun.jpg', '김도현 강사', 'title3', 'Colorado Christian University 고등학교 졸업 후 가족과 미국으로 건너가 LA에서 이민생활을 시작했고, 나성영락교회 대학부 시절 하나님의 부르심을 받았다. UCLA에서 역사를 공부하고 Fuller (MDiv), Yale (STM)에서 공부한 후 Union 신학교에서 신약학으로 Ph.D.를 받았다. Sterling College에서 종교학 과장을 역임했으며 현재 Denver에 있는 Colorado Christian University에서 신약학과 헬라어를 가르치고 있다. 또한 장로교 목사로 볼더한인교회를 담임하고 있다. 저서로는 <나의 사랑하는 책 로마서>, <빌립보서 어떻게 읽을 것인가>가 있다.'));
-    this.speakers.push(new Speaker('assets/img/speakers/K_kimchanggeun.jpg', '김창근 강사', 'title3', 'details4'));
-    this.speakers.push(new Speaker('assets/img/speakers/K_chaedonguk.jpg', '채종욱 강사', 'title3', 'GBM Korea / GBM Asia (인도) 그룹회장이며, 미주 GMP 선교회 이사장과 사업체와 비영리구호단체인 빈손채움재단의 이사장이기도 하다. 비즈니스를 통해 선교적 삶을 살아가는 대안적 선교방식을 알리고 있다. 비즈니스선교모델을 개발하고 선교지에 적용하는 노력을 기울이며, 관심자들을 적극적으로 돕고 있다.'));
-    this.speakers.push(new Speaker('assets/img/speakers/speaker1.jpg', '박동희 강사', 'title3', 'details4'));
-    this.speakers.push(new Speaker('assets/img/speakers/speaker1.jpg', '서재석 강사', 'title3', 'details4'));
+  private loadSpeakers() {
+    this.speakers.push(new Speaker('assets/img/speakers/speaker1.jpg', '윤은성 강사', '', ''));
+    this.speakers.push(new Speaker('assets/img/speakers/K_kimdohyun.jpg', '김도현 강사', '', 'Colorado Christian University 고등학교 졸업 후 가족과 미국으로 건너가 LA에서 이민생활을 시작했고, 나성영락교회 대학부 시절 하나님의 부르심을 받았다. UCLA에서 역사를 공부하고 Fuller (MDiv), Yale (STM)에서 공부한 후 Union 신학교에서 신약학으로 Ph.D.를 받았다. Sterling College에서 종교학 과장을 역임했으며 현재 Denver에 있는 Colorado Christian University에서 신약학과 헬라어를 가르치고 있다. 또한 장로교 목사로 볼더한인교회를 담임하고 있다. 저서로는 <나의 사랑하는 책 로마서>, <빌립보서 어떻게 읽을 것인가>가 있다.'));
+    this.speakers.push(new Speaker('assets/img/speakers/K_kimchanggeun.jpg', '김창근 강사', '', ''));
+    this.speakers.push(new Speaker('assets/img/speakers/K_chaedonguk.jpg', '채종욱 강사', '', 'GBM Korea / GBM Asia (인도) 그룹회장이며, 미주 GMP 선교회 이사장과 사업체와 비영리구호단체인 빈손채움재단의 이사장이기도 하다. 비즈니스를 통해 선교적 삶을 살아가는 대안적 선교방식을 알리고 있다. 비즈니스선교모델을 개발하고 선교지에 적용하는 노력을 기울이며, 관심자들을 적극적으로 돕고 있다.'));
+    this.speakers.push(new Speaker('assets/img/speakers/speaker1.jpg', '박동희 강사', '', ''));
+    this.speakers.push(new Speaker('assets/img/speakers/speaker1.jpg', '서재석 강사', '', ''));
   }
 
   private loadSchedules() {
@@ -206,16 +206,25 @@ export class KostaComponent implements OnInit {
     attention.push("11월 13일 까지 취소할 경우에 100% 환불되며, 그 이후는 환불이 되지 않습니다.");
     attention.push("집회 당일 등록하시는 경우에는 현금, 체크 또는 eftpos로 참가비를 받습니다.");
 
-    let location: Array<String> = new Array<String>();
-    location.push('location 1');
-    location.push('location 2');
-    location.push('location 3');
+    let howToGetThere: Array<StyledNote> = new Array<StyledNote>();
+    howToGetThere.push(new StyledNote('By Car:', true));
+    howToGetThere.push(new StyledNote('구글 맵에 Auckland ~ University of Waikato Gate 1을 검색하시기 바랍니다.', false));
+    howToGetThere.push(new StyledNote('By Bus from Auckland Airport:', true));
+    howToGetThere.push(new StyledNote('nakedbus.com 혹은 intercity.co.nz에서 Auckland Airport ~ Waikato University (Hamilton)을 검색하신 후 예약하시면 됩니다.', false));
+    howToGetThere.push(new StyledNote('By Bus from Hamilton City Central:', true));
+    howToGetThere.push(new StyledNote('13번 & 17번', false));
+    howToGetThere.push(new StyledNote('요금(fare) $3.30 (Adult fare) (한시간 내에 transfer 가능, bus-it card 소지시 $2.40)', false));
+    howToGetThere.push(new StyledNote('Busit 안내 링크 http://www.busit.co.nz/Hamilton-routes/University/', false));
+
+    let parkingInfo: Array<String> = new Array<String>();
+    parkingInfo.push('Gate 1으로 들어오셔서 주차장에 차를 세우신 후 parking machine에서ticket을 구입하시고 자동차에 배치하시면 됩니다.');
 
     this.conferenceInfo.prices = prices;
     this.conferenceInfo.notes = notes;
     this.conferenceInfo.howToDeposite = howToDeposit;
     this.conferenceInfo.attention = attention;
-    this.conferenceInfo.location = location;
+    this.conferenceInfo.howToGetThere = howToGetThere;
+    this.conferenceInfo.parkingInfo = parkingInfo;
   }
 
 }

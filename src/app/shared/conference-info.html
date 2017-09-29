@@ -63,10 +63,37 @@
     <span *ngFor="let note of information.attention">
       <p>{{note}}</p>
     </span>
-    <br/>
-
-    <iframe [src]="url" width="100%" height="300" frameBorder="0"></iframe>
   </div>
 </div>
 
+<br/>
+<br/>
+
+<div class="howToGetThere align-left" *ngIf="information.howToGetThere != null && information.howToGetThere.length > 0">
+  <div class="col-md-10 col-md-offset-1">
+    <h6>찾아오시는 길</h6>
+    <span *ngFor="let styledNote of information.howToGetThere">
+      <span [class.highlight]="styledNote.isHighlighted">
+        <p>{{styledNote.note}}</p>
+      </span>
+    </span>
+  </div>
+</div>
+
+<br/>
+
+<div class="parkingInfo align-left" *ngIf="information.parkingInfo != null && information.parkingInfo.length > 0">
+  <div class="col-md-10 col-md-offset-1">
+    <h6>집회 장소 주차 안내</h6>
+    <span *ngFor="let note of information.parkingInfo">
+      <p>{{note}}</p>
+    </span>
+  </div>
+</div>
+
+<br/>
+
+<div class="col-md-10 col-md-offset-1">
+  <iframe [src]="url" width="100%" height="300" frameBorder="0"></iframe>
+</div>
 <br/>
