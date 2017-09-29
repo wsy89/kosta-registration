@@ -28,6 +28,7 @@ export class KostaComponent implements OnInit {
   registrationUrl: String;
   howToOfflineLink: String;
   mapUrl: String;
+  videoUrl: String;
 
   constructor() {
     this.kostaIntro = new Array<Introduction>();
@@ -38,6 +39,7 @@ export class KostaComponent implements OnInit {
     this.registrationUrl = "https://docs.google.com/forms/d/e/1FAIpQLSfJn3KmKBFt3F_f4oqbU6HNowetOlVF9sbzdR4RBiCG8alo1w/viewform?usp=sf_link";
     this.howToOfflineLink = "REGOFORM_17_kosta.pdf";
     this.mapUrl = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12612.542539237968!2d175.318458!3d-37.786861!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3d7f4d33e4d197ad!2sUniversity+of+Waikato!5e0!3m2!1sen!2snz!4v1414189741160";
+    this.videoUrl = "https://www.youtube.com/embed/0Te1LzIQiao"
   }
 
   ngOnInit() {
