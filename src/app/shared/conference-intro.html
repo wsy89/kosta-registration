@@ -17,9 +17,7 @@
     <div *ngFor="let intro of introductionList; let i = index" class="tab-pane fade {{i===currentView ? 'active in': ''}}">
       <div *ngIf="intro.video">
         <div class="modal-box iframe-box iframe-video">
-          <span class="close-btn icon icon-office-52"></span>
-
-          <iframe src="https://www.youtube.com/watch?v=0Te1LzIQiao" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/0Te1LzIQiao" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
       <div *ngIf="!intro.video">
