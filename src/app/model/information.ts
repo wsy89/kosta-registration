@@ -7,8 +7,7 @@ export class Information {
   private _howToDeposite: Array<String>;
   private _attention: Array<String>;
   private _location: Array<String>;
-
-
+  
   get prices(): Array<Price> {
     return this._prices;
   }
