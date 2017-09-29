@@ -15,12 +15,21 @@
 
   <div class="tab-content">
     <div *ngFor="let intro of introductionList; let i = index" class="tab-pane fade {{i===currentView ? 'active in': ''}}">
-      <div class="col-sm-5 img-column">
-        <img src="{{intro.image}}" alt="" class="img-responsive">
+      <div *ngIf="intro.video">
+        <div class="modal-box iframe-box iframe-video">
+          <span class="close-btn icon icon-office-52"></span>
+
+          <iframe src="https://www.youtube.com/watch?v=0Te1LzIQiao" frameborder="0" allowfullscreen></iframe>
+        </div>
       </div>
-      <div class="col-sm-7 align-left">
-        <h6>{{intro.title}}</h6>
-        <div [innerText]="intro.text"></div>
+      <div *ngIf="!intro.video">
+        <div class="col-sm-5 img-column">
+          <img src="{{intro.image}}" alt="" class="img-responsive">
+        </div>
+        <div class="col-sm-7 align-left">
+          <h6>{{intro.title}}</h6>
+          <div [innerText]="intro.text"></div>
+        </div>
       </div>
     </div>
   </div>
