@@ -116,7 +116,7 @@ export class YouthKostaComponent implements OnInit {
     this.speakers.push(new Speaker('assets/img/speakers/YK_koeunsik.jpg', '고은식 강사', '', ''));
     this.speakers.push(new Speaker('assets/img/speakers/speaker1.jpg', '이제환 강사', '', ''));
     for (var i = 0; i < 5; i++) {
-      this.speakers.push(new Speaker('assets/img/speakers/speaker1.jpg', 'Coming Soon', '', 'TBC'));  
+      this.speakers.push(new Speaker('assets/img/speakers/speaker1.jpg', 'Coming Soon', '', 'TBC'));
     }
   }
 
@@ -178,10 +178,10 @@ export class YouthKostaComponent implements OnInit {
 
   private loadConferenceInformation() {
     let prices: Array<Price> = new Array<Price>();
-    let earlyBird: Price = new Price('Early Bird Registration Sunday 01 Oct – Sunday 10 Dec','$220','$190');
-    let full: Price = new Price('Full Registration Monday 11 Dec – Tuesday 19 Dec','$240','$210');
-    let family: Price = new Price('Family Discount: For more than 2 children Sunday 01 Oct – Sunday 10 Dec','$200','$170');
-    let ministry: Price = new Price('사역자','$120','$120');
+    let earlyBird: Price = new Price('Early Bird Registration: ', 'Sunday 01 Oct – Sunday 10 Dec', '$220','$190');
+    let full: Price = new Price('Full Registration: ', 'For more than 2 children Sunday 01 Oct – Sunday 10 Dec', '$240','$210');
+    let family: Price = new Price('Family Discount: ', 'For more than 2 children Sunday 01 Oct – Sunday 10 Dec','$200','$170');
+    let ministry: Price = new Price('사역자', "",'$120','$120');
     prices.push(earlyBird);
     prices.push(full);
     prices.push(family);

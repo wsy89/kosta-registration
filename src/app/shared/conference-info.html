@@ -13,7 +13,7 @@
     </thead>
     <tbody>
     <tr *ngFor="let price of information.prices">
-      <td>{{price.description}}</td>
+      <td><strong>{{price.description}}</strong> {{price.date}}</td>
       <td>{{price.north}}</td>
       <td>{{price.south}}</td>
     </tr>

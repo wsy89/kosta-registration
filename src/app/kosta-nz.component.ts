@@ -176,11 +176,11 @@ export class KostaComponent implements OnInit {
 
   private loadConferenceInformation() {
     let prices: Array<Price> = new Array<Price>();
-    let earlyBird: Price = new Price("Early Bird Registration Sunday 01 Oct – Sunday 12 Nov","$240","$210");
-    let full: Price = new Price("Full Registration Monday 13 Nov – Tuesday 21 Nov","$260","$230");
-    let ministry: Price = new Price("사역자","$120","$120");
-    let oneDay: Price = new Price("당일 (1일)*","$70","$70");
-    let oneDayPlusSleep: Price = new Price("당일 (1일 + 숙박)**","$100","$100");
+    let earlyBird: Price = new Price("Early Bird Registration: ", "Sunday 01 Oct – Sunday 12 Nov", "$240", "$210");
+    let full: Price = new Price("Full Registration: ", "Monday 13 Nov – Tuesday 21 Nov","$260","$230");
+    let ministry: Price = new Price("사역자", "","$120","$120");
+    let oneDay: Price = new Price("당일 (1일)*", "","$70","$70");
+    let oneDayPlusSleep: Price = new Price("당일 (1일 + 숙박)**", "","$100","$100");
     prices.push(earlyBird);
     prices.push(full);
     prices.push(ministry);
