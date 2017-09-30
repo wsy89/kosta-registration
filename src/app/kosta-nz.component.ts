@@ -212,13 +212,13 @@ export class KostaComponent implements OnInit {
     attention.push("집회 당일 등록하시는 경우에는 현금, 체크 또는 eftpos로 참가비를 받습니다.");
 
     let howToGetThere: Array<StyledNote> = new Array<StyledNote>();
-    howToGetThere.push(new StyledNote('By Car:', true));
-    howToGetThere.push(new StyledNote('구글 맵에 Auckland ~ University of Waikato Gate 1을 검색하시기 바랍니다.', false));
-    howToGetThere.push(new StyledNote('By Bus from Auckland Airport:', true));
-    howToGetThere.push(new StyledNote('nakedbus.com 혹은 intercity.co.nz에서 Auckland Airport ~ Waikato University (Hamilton)을 검색하신 후 예약하시면 됩니다.', false));
-    howToGetThere.push(new StyledNote('By Bus from Hamilton City Central:', true));
-    howToGetThere.push(new StyledNote('13번 & 17번', false));
-    howToGetThere.push(new StyledNote('요금(fare) $3.30 (Adult fare) (한시간 내에 transfer 가능, bus-it card 소지시 $2.40)', false));
+    howToGetThere.push(new StyledNote('By Car: 구글 맵에 Auckland ~ University of Waikato Gate 1을 검색하시기 바랍니다.', false));
+    howToGetThere.push(new StyledNote('', false));
+    howToGetThere.push(new StyledNote('By Bus from Auckland Airport: nakedbus.com 혹은 intercity.co.nz에서 Auckland Airport ~ Waikato University (Hamilton)을 검색하신 후 예약하시면 됩니다.', false));
+    howToGetThere.push(new StyledNote('', false));
+    howToGetThere.push(new StyledNote('By Bus from Hamilton City Central: 13번 & 17번, 요금(fare) $3.30 (Adult fare) (한시간 내에 transfer 가능, bus-it card 소지시 $2.40)', false));
+    // howToGetThere.push(new StyledNote('13번 & 17번', false));
+    // howToGetThere.push(new StyledNote('요금(fare) $3.30 (Adult fare) (한시간 내에 transfer 가능, bus-it card 소지시 $2.40)', false));
     howToGetThere.push(new StyledNote('Busit 안내 링크 http://www.busit.co.nz/Hamilton-routes/University/', false));
 
     let parkingInfo: Array<String> = new Array<String>();
