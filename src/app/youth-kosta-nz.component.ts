@@ -207,7 +207,7 @@ export class YouthKostaComponent implements OnInit {
 
     let attention: Array<String> = new Array<String>();
     attention.push('신청서를 보냈어도 참가비를 완납하셔야 등록이 됨을 유의하시기 바랍니다.');
-    attention.push('11월 14일 까지 취소할 경우에 100% 환불되며 (할인등록 제외), 그 이후는 환불이 되지 않습니다.');
+    attention.push('12월 12일 까지 취소할 경우에 100% 환불되며 (할인등록 제외), 그 이후는 환불이 되지 않습니다.');
     attention.push('집회 당일 등록하시는 경우에는 현금 혹은 체크로 참가비를 받습니다.');
 
     this.conferenceInfo.prices = prices;
