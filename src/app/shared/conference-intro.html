@@ -15,12 +15,15 @@
 
   <div class="tab-content">
     <div *ngFor="let intro of introductionList; let i = index" class="tab-pane fade {{i===currentView ? 'active in': ''}}">
-      <div *ngIf="intro.video">
+      <div *ngIf="isVideo(intro.tabName)">
         <div class="modal-box iframe-box iframe-video">
           <iframe width="560" height="315" [src]="url" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
-      <div *ngIf="!intro.video">
+      <div *ngIf="isPromotion(intro.tabName)">
+        <a href="{{intro.image}}" target="_blank">Download</a>
+      </div>
+      <div *ngIf="isTheme(intro.tabName)">
         <div class="col-sm-5 img-column">
           <img src="{{intro.image}}" alt="" class="img-responsive">
         </div>

@@ -12,12 +12,12 @@ export class ConferenceIntroComponent {
   url: SafeResourceUrl;
   shouldShowList: boolean = false;
   currentView: number = 0;
-  
-  constructor(private sanitizer: DomSanitizer) {    
+
+  constructor(private sanitizer: DomSanitizer) {
   }
-  
+
   ngOnInit() {
-    this.url = this.sanitizer.bypassSecurityTrustResourceUrl(this.videoUrl);   
+    this.url = this.sanitizer.bypassSecurityTrustResourceUrl(this.videoUrl);
   }
 
   goTo(location: string): void {
@@ -28,8 +28,20 @@ export class ConferenceIntroComponent {
     this.shouldShowList = !this.shouldShowList;
   }
 
-  viewTab(viewNum: number){
+  viewTab(viewNum: number) {
     this.currentView = viewNum;
     this.shouldShowList = false;
+  }
+
+  isVideo(name: string) {
+    return name === "Video";
+  }
+
+  isTheme(name: string) {
+    return name === "Theme";
+  }
+
+  isPromotion(name: string) {
+    return name === "Promotion package";
   }
 }
