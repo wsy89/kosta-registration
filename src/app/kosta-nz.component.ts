@@ -104,7 +104,7 @@ export class KostaComponent implements OnInit {
       학문과 직업이 연결되는 그 위대한 비전의 시간이기를 축복합니다.
       `, 'assets/img/theme.png', false));
     this.kostaIntro.push(new Introduction('fa-video-camera', 'Video', '', '', '', true));
-    this.kostaIntro.push(new Introduction('fa-file-text-o', 'Promotion package', '', '', 'assets/img/etc/2017_Poster.png', false));
+    this.kostaIntro.push(new Introduction('fa-file-text-o', 'Promotion package', 'Coming Soon', '', 'assets/img/etc/2017_Poster.png', false));
   }
 
   private loadSpeakers() {
@@ -114,6 +114,9 @@ export class KostaComponent implements OnInit {
     this.speakers.push(new Speaker('assets/img/speakers/K_chaedonguk.jpg', '채종욱 강사', '', 'GMP 선교사'));
     this.speakers.push(new Speaker('assets/img/speakers/speaker1.jpg', '박동희 강사', '', 'GMP 선교사'));
     this.speakers.push(new Speaker('assets/img/speakers/speaker1.jpg', '서재석 강사', '', 'Young2080 대표'));
+    for (var i = 0; i < 4; i++) {
+      this.speakers.push(new Speaker('assets/img/speakers/speaker1.jpg', 'Coming Soon', '', 'TBC'));  
+    }    
   }
 
   private loadSchedules() {

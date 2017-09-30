@@ -107,7 +107,7 @@ export class YouthKostaComponent implements OnInit {
       'assets/img/theme.png',
       false));
     this.kostaIntro.push(new Introduction('fa-video-camera', 'Video', '', '', '', true));
-    this.kostaIntro.push(new Introduction('fa-file-text-o', 'Promotion package', '', '', 'assets/img/etc/2017_Poster.png', false));
+    this.kostaIntro.push(new Introduction('fa-file-text-o', 'Promotion package', 'Coming Soon', '', 'assets/img/etc/2017_Poster.png', false));
   }
 
   private loadSpeakers() {
@@ -115,6 +115,9 @@ export class YouthKostaComponent implements OnInit {
     this.speakers.push(new Speaker('assets/img/speakers/YK_junghyemin.jpg', '정혜민 강사', '', ''));
     this.speakers.push(new Speaker('assets/img/speakers/YK_koeunsik.jpg', '고은식 강사', '', ''));
     this.speakers.push(new Speaker('assets/img/speakers/speaker1.jpg', '이제환 강사', '', ''));
+    for (var i = 0; i < 5; i++) {
+      this.speakers.push(new Speaker('assets/img/speakers/speaker1.jpg', 'Coming Soon', '', 'TBC'));  
+    }
   }
 
   private loadSchedules() {
