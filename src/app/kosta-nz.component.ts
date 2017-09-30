@@ -219,7 +219,8 @@ export class KostaComponent implements OnInit {
     howToGetThere.push(new StyledNote('Busit 안내 링크 http://www.busit.co.nz/Hamilton-routes/University/', false));
 
     let parkingInfo: Array<String> = new Array<String>();
-    parkingInfo.push('Gate 1으로 들어오셔서 주차장에 차를 세우신 후 parking machine에서ticket을 구입하시고 자동차에 배치하시면 됩니다.');
+    parkingInfo.push('Gate 1으로 들어오셔서 주차장에 차를 세우신 후 parking machine에서 ticket을 구입하시고 자동차에 배치하시면 됩니다.');
+    parkingInfo.push('정확한 information은 와이카토 대학 웹사이트를 참고해주시기 바랍니다. (링크: https://www.waikato.ac.nz/fmd/getting-to-campus/index.shtml)');
 
     this.conferenceInfo.prices = prices;
     this.conferenceInfo.notes = notes;

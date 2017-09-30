@@ -185,8 +185,7 @@ export class YouthKostaComponent implements OnInit {
     prices.push(ministry);
 
     let notes: Array<String> = new Array<String>();
-    notes.push('*당일참석은 아침 6시부터 밤 12시까지이며 모든 식사를 포함합니다.');
-    notes.push('**숙박을 하는 당일참석은 아침 6시부터 다음날 12시까지이며 모든 식사를 포함합니다.');
+
 
     let howToDeposit: Array<String> = new Array<String>();
     howToDeposit.push(`
@@ -199,14 +198,14 @@ export class YouthKostaComponent implements OnInit {
       Bank: Westpac
       Branch: Downtown
       Account Name: KOSTA
-      Account Number: 03-1509-0195677-02 (청년 코스타)
+      Account Number: 03-1509-0195677-03 (청소년 코스타)
     `);
     howToDeposit.push('주의사항: 참가비를 입금할 때는 reference에 반드시 등록하신 영문이름과 같은 이름이나 핸드폰 번호를 적으셔야합니다.');
 
     let attention: Array<String> = new Array<String>();
     attention.push('신청서를 보냈어도 참가비를 완납하셔야 등록이 됨을 유의하시기 바랍니다.');
     attention.push('11월 14일 까지 취소할 경우에 100% 환불되며 (할인등록 제외), 그 이후는 환불이 되지 않습니다.');
-    attention.push('집회 당일 등록하시는 경우에는 현금, 체크 또는 eftpos로 참가비를 받습니다.');
+    attention.push('집회 당일 등록하시는 경우에는 현금 혹은 체크로 참가비를 받습니다.');
 
     this.conferenceInfo.prices = prices;
     this.conferenceInfo.notes = notes;
