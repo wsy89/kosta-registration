@@ -81,7 +81,7 @@ export class KostaComponent implements OnInit {
 
   private loadIntroduction() {
     this.kostaIntro.push(new Introduction('fa-book', 'Theme', '새 시대의 제사장과 소명', `
-      종교개혁 5백년을 기념하는 해입니다.
+      종교개혁 500년을 기념하는 해입니다.
       종교개혁의 중요한 교리적 기초가 만인제사장론 이었습니다. 
       사제만이 아닌 모든 신자가 제사장이라는 것이었습니다. 
       하나님과 인간 사이에 그리스도만이 유일한 중보자이시고 
