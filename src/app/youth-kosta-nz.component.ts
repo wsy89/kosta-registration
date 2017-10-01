@@ -111,7 +111,7 @@ export class YouthKostaComponent implements OnInit {
   }
 
   private loadSpeakers() {
-    this.speakers.push(new Speaker('assets/img/speakers/YK_imseungmin.jpg', '임성민 강사', '', ''));
+    this.speakers.push(new Speaker('assets/img/speakers/YK_imseungmin.jpg', '임승민 강사', '', ''));
     this.speakers.push(new Speaker('assets/img/speakers/YK_junghyemin.jpg', '정혜민 강사', '', ''));
     this.speakers.push(new Speaker('assets/img/speakers/YK_koeunsik.jpg', '고은식 강사', '', ''));
     this.speakers.push(new Speaker('assets/img/speakers/speaker1.jpg', '이제환 강사', '', ''));
