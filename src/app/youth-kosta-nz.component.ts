@@ -5,7 +5,7 @@ import {Speaker} from './model/speaker';
 import {Introduction} from './model/introduction';
 import {ScheduleItem} from './model/scheduleItem';
 import {WindowRefService} from './service/window-ref.service';
-import {Information} from 'app/model/information';
+import { Information, StyledNote } from 'app/model/information';
 import {Price} from './model/Price';
 
 @Component({
@@ -208,10 +208,15 @@ export class YouthKostaComponent implements OnInit {
     attention.push('12월 12일 까지 취소할 경우에 100% 환불되며 (할인등록 제외), 그 이후는 환불이 되지 않습니다.');
     attention.push('집회 당일 등록하시는 경우에는 현금 혹은 체크로 참가비를 받습니다.');
 
+    let howToGetThere: Array<StyledNote> = new Array<StyledNote>();
+    howToGetThere.push(new StyledNote('By Car: 구글 맵에 Christian Youth Camps Inc 혹은 148 Waingaro Rd, Ngaruawahia를 검색하시기 바랍니다.', false));
+    howToGetThere.push(new StyledNote('', false));
+
     this.conferenceInfo.prices = prices;
     this.conferenceInfo.notes = notes;
     this.conferenceInfo.howToDeposite = howToDeposit;
     this.conferenceInfo.attention = attention;
+    this.conferenceInfo.howToGetThere = howToGetThere;
   }
 
 }
