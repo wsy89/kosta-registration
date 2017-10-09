@@ -18,10 +18,10 @@
             <li class="navigation-item" *ngFor="let item of menuItems">
               <a pageScroll href="#{{item | lowercase}}" class="navigation-link" (click)="toggleState()" [ngClass]="{'active' : isActive(item)}">{{item}}</a>
             </li>
-            <li class="navigation-item"><a target="_blank" href="{{registrationUrl}}" class="navigation-link">Register</a></li>
+            <li class="navigation-item"><a routerLink="{{routerLink}}" (click)="_window.scrollTo(0,0)" class="navigation-link">{{labelLink}}</a></li>
           </ul>
 
-          <a routerLink="{{routerLink}}" (click)="_window.scrollTo(0,0)" class="pull-right btn ">{{labelLink}}</a>
+          <a target="_blank" href="{{registrationUrl}}" class="pull-right btn">Register</a>
         </div>
       </div>
     </div>
