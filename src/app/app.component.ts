@@ -13,9 +13,9 @@ export class AppComponent {
     router.events.subscribe((val) => {
       if(val instanceof NavigationEnd){
         if(val.url.indexOf("youth") !== -1){
-          this.emailAddress = "youth.kosta@gmail.com";
+          this.emailAddress = "youth.kostanz@gmail.com";
         } else {
-          this.emailAddress = "kosta@gmail.com";
+          this.emailAddress = "kostanz@gmail.com";
         }
       } 
     });
