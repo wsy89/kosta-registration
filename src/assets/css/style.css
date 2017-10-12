@@ -2590,8 +2590,8 @@ li {
   bottom: 40px;
 }
 .img-column {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  /*padding-top: 20px;*/
+  /*padding-bottom: 20px;*/
 }
 .list {
   padding: 5px 0;
@@ -5750,7 +5750,7 @@ button[type="submit"] .loading {
   width: 200px;
 }
 .speaker .name {
-  font-size: 13px;
+  font-size: 17px;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 14px;
@@ -5760,9 +5760,9 @@ button[type="submit"] .loading {
   font-size: 14px;
 }
 .speaker .about {
-  padding: 0 15px;
-  word-break: break-all;
-  line-height: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 20px;
 }
 .speaker .speaker-socials > li {
   padding: 0 10px;
@@ -7329,4 +7329,86 @@ button[type="submit"] .loading {
 
 #aboutKostaModal {
   color: black;
+}
+
+
+/*-------------------------------------------------*/
+
+
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+.container {
+  height: 100vh;
+}
+.below {
+  height: 100vh;
+}
+i {
+  display: block;
+  color: #fff;
+}
+.arrow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -20px;
+  width: 40px;
+  height: 60px; /*change with size of arrow to make sit on bottom */
+  /*   background-image: url(); */
+  /*   background-size: contain; */
+}
+.arrow i {
+  color: white;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
 }

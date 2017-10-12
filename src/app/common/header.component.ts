@@ -16,15 +16,23 @@ export class HeaderComponent implements OnInit {
   backgroundImage: String = 'bg1.png';
   backgroundColours : String[];
   backgroundImages : String[];
+  arrowOpacity: number;
 
   constructor(private winRef: WindowRefService) {
     this._window = winRef;
     this.minHeight = this._window.nativeWindow.innerHeight
+    this.arrowOpacity = 1;
   }
 
   @HostListener('window:resize', ['$event'])
   onResize(event){
     this.minHeight = this._window.nativeWindow.innerHeight;
+  }
+
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.arrowOpacity = 1 - this._window.nativeWindow.pageYOffset/ 250;
   }
 
   ngOnInit() {
