@@ -6,17 +6,8 @@ import { DomSanitizer, SafeResourceUrl} from '@angular/platform-browser';
   selector: 'conference-info',
   templateUrl: 'conference-info.html'
 })
-export class ConferenceInfoComponent implements OnInit {
+export class ConferenceInfoComponent {
   @Input() information : Information;
   @Input() registrationUrl: String;
   @Input() howToOfflineLink: String;
-  @Input() mapUrl: string;
-  url: SafeResourceUrl;
-
-  constructor(private sanitizer: DomSanitizer) {    
-  }
-
-  ngOnInit() {
-    this.url = this.sanitizer.bypassSecurityTrustResourceUrl(this.mapUrl);   
-  }
 }

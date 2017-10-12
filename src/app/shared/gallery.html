@@ -1,9 +1,9 @@
-<h3>previous events</h3>
-<p class="text-alt">see what we did <span class="highlight">lately</span></p>
+<h3>gallery</h3>
+<p class="text-alt">#{{isYouth? 'youth' : ''}}kostanz<span class="highlight">16</span></p>
 <br/>
 
 <div class="row">
-  <div class="col-xs-6 col-md-3" style="padding: 15px" *ngFor="let image of imageList; let i = index">   
+  <div class="col-xs-6 col-md-3" style="padding: 15px" *ngFor="let image of imageList; let i = index">
     <gallery-thumbnail [image]="image" [index]="i"></gallery-thumbnail>
   </div>
 </div>

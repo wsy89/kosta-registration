@@ -28,6 +28,7 @@ import {RegisterModalComponent} from './modal/register-modal.component';
 import {SnsListComponent} from './common/sns-list.component';
 import {Ng2TrackScrollModule} from 'ng2-track-scroll';
 import {AboutKostaModalComponent} from './modal/about-kosta-modal.component';
+import {ConferenceVenueComponent} from './shared/conference-venue.component';
 
 @NgModule({
   imports: [
@@ -55,6 +56,7 @@ import {AboutKostaModalComponent} from './modal/about-kosta-modal.component';
     GalleryThumbnailComponent,
     GalleryModalComponent,
     ConferenceInfoComponent,
+    ConferenceVenueComponent,
     ChooseKostaModalComponent,
     RegisterModalComponent,
     SnsListComponent,
