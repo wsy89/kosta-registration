@@ -108,14 +108,14 @@ export class KostaComponent implements OnInit {
   }
 
   private loadSpeakers() {
-    this.speakers.push(new Speaker('assets/img/speakers/K_yooneunsung.jpeg', '윤은성 강사', '', '이름없는 교회 담임. 한국 어깨동무사역원 대표'));
-    this.speakers.push(new Speaker('assets/img/speakers/K_kimdohyun.jpg', '김도현 강사', '', 'Colorado Christian College 교수'));
-    this.speakers.push(new Speaker('assets/img/speakers/K_kimchanggeun.jpeg', '김창근 강사', '', '무학교회 담임'));
-    this.speakers.push(new Speaker('assets/img/speakers/K_jeongyungsook.jpeg', '정경숙 강사', '', '무학교회 사모'));
-    this.speakers.push(new Speaker('assets/img/speakers/K_chaedonguk.jpg', '채종욱 강사', '', 'GMP 선교사'));
-    this.speakers.push(new Speaker('assets/img/speakers/K_parkdonghee.jpeg', '박동희 강사', '', 'GMP 선교사'));
-    this.speakers.push(new Speaker('assets/img/speakers/K_suhjaeseok.jpeg', '서재석 강사', '', 'Young2080 대표'));
-    this.speakers.push(new Speaker('assets/img/speakers/speaker1.jpg', 'Coming Soon', '', 'TBC'));    
+    this.speakers.push(new Speaker('assets/img/speakers/K_yooneunsung.jpeg', '윤은성 강사', '', new Array<String>('이름없는 교회 담임','한국 어깨동무사역원 대표')));
+    this.speakers.push(new Speaker('assets/img/speakers/K_kimdohyun.jpg', '김도현 강사', '', new Array<String>('Colorado Christian College 교수')));
+    this.speakers.push(new Speaker('assets/img/speakers/K_kimchanggeun.jpeg', '김창근 강사', '', new Array<String>('무학교회 담임')));
+    this.speakers.push(new Speaker('assets/img/speakers/K_jeongyungsook.jpeg', '정경숙 강사', '', new Array<String>('무학교회 사모')));
+    this.speakers.push(new Speaker('assets/img/speakers/K_chaedonguk.jpg', '채종욱 강사', '', new Array<String>('GMP 선교사')));
+    this.speakers.push(new Speaker('assets/img/speakers/K_parkdonghee.jpeg', '박동희 강사', '', new Array<String>('GMP 선교사')));
+    this.speakers.push(new Speaker('assets/img/speakers/K_suhjaeseok.jpeg', '서재석 강사', '', new Array<String>('Young2080 대표')));
+    this.speakers.push(new Speaker('assets/img/speakers/speaker1.jpg', 'Coming Soon', '', new Array<String>('TBC')));    
   }
 
   private loadSchedules() {

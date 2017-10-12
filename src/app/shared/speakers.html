@@ -8,6 +8,6 @@
     <div class="photo-wrapper rounded"><img src="{{speaker.image}}" class="img-responsive"></div>
     <h3 class="name">{{speaker.name}}</h3>
     <!-- <p class="text-alt"><small>{{speaker.title}}</small></p> -->
-    <p class="about">{{speaker.about}}</p>
+    <p *ngFor="let aboutText of speaker.about" class="about">{{aboutText}}</p>
   </div>
 </div>
