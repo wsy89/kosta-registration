@@ -2453,7 +2453,7 @@ li {
 }
 .section {
   position: relative;
-  padding: 90px 0;
+  padding: 45px 0;
 }
 .fullwidth-section {
   zoom: 1;
@@ -6303,7 +6303,7 @@ button[type="submit"] .loading {
   right: 0;
   left: 0;
   z-index: 1000;
-  opacity: 0.9;
+  opacity: 1;
 }
 
 .header .fade-in-on-stick {

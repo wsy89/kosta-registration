@@ -2,6 +2,11 @@
 <br />
 <br />
 
+<div class="col-md-10 col-md-offset-1" style="padding-bottom: 20px;">
+  <iframe [src]="url" width="100%" height="300" frameBorder="0"></iframe>
+</div>
+<br/>
+
 <div class="howToGetThere align-left" *ngIf="information.howToGetThere != null && information.howToGetThere.length > 0">
   <div class="col-md-10 col-md-offset-1" style="padding-bottom: 20px;">
     <span *ngFor="let styledNote of information.howToGetThere">
@@ -23,9 +28,4 @@
   </div>
 </div>
 
-<br/>
-
-<div class="col-md-10 col-md-offset-1" style="padding-bottom: 20px;">
-  <iframe [src]="url" width="100%" height="300" frameBorder="0"></iframe>
-</div>
 <br/>
