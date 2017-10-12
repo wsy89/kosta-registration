@@ -5750,7 +5750,7 @@ button[type="submit"] .loading {
   width: 200px;
 }
 .speaker .name {
-  font-size: 13px;
+  font-size: 17px;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 14px;
@@ -5760,9 +5760,9 @@ button[type="submit"] .loading {
   font-size: 14px;
 }
 .speaker .about {
-  padding: 0 15px;
-  word-break: break-all;
-  line-height: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 20px;
 }
 .speaker .speaker-socials > li {
   padding: 0 10px;
