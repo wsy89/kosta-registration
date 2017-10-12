@@ -7383,12 +7383,6 @@ button[type="submit"] .loading {
     transform: translateY(-15px);
   }
 }
-.container {
-  height: 100vh;
-}
-.below {
-  height: 100vh;
-}
 i {
   display: block;
   color: #fff;
