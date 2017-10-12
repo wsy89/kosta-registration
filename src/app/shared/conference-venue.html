@@ -9,10 +9,8 @@
 
 <div class="howToGetThere align-left" *ngIf="information.howToGetThere != null && information.howToGetThere.length > 0">
   <div class="col-md-10 col-md-offset-1" style="padding-bottom: 20px;">
-    <span *ngFor="let styledNote of information.howToGetThere">
-      <span [class.highlight]="styledNote.isHighlighted">
-        <p>{{styledNote.note}}</p>
-      </span>
+    <span *ngFor="let styledNote of information.howToGetThere" [class.highlight]="styledNote.isHighlighted">
+      <p>{{styledNote.note}}</p>
     </span>
   </div>
 </div>

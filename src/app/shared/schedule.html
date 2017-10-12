@@ -28,7 +28,7 @@
             <div class="schedule-item-toggle">
               <strong class="time highlight">{{item.start}} - {{item.end}}</strong>
               <div class="lecture-icon-wrapper"><span class="fa {{item.icon}}"></span></div>
-              <h6 class="title">{{item.title}}</h6>
+              <span class="time">{{item.title}}</span>
             </div>
             <div *ngIf="item.speaker !== null" id="schedule_day{{i}}_time{{j}}" class="panel-collapse collapse in schedule-item-body">
               <p class="text-alt speaker-wrapper"><strong class="highlight speaker-name">{{item.speaker}}</strong></p>
