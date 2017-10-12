@@ -7383,10 +7383,6 @@ button[type="submit"] .loading {
     transform: translateY(-15px);
   }
 }
-i {
-  display: block;
-  color: #fff;
-}
 .arrow {
   position: absolute;
   bottom: 0;
@@ -7399,6 +7395,7 @@ i {
 }
 .arrow i {
   color: white;
+  display: block;
 }
 
 .bounce {
