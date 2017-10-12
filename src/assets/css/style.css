@@ -7403,6 +7403,9 @@ i {
   /*   background-image: url(); */
   /*   background-size: contain; */
 }
+.arrow i {
+  color: white;
+}
 
 .bounce {
   -moz-animation: bounce 2s infinite;
