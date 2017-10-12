@@ -4,7 +4,7 @@ export class Information {
   private _prices: Array<Price>;
   private _notes: Array<String>;
   private _howTo: Array<String>;
-  private _howToDeposite: Array<String>;
+  private _howToDeposit: String;
   private _attention: Array<String>;
   private _howToGetThere: Array<StyledNote>;
   private _parkingInfo: Array<String>;
@@ -33,12 +33,12 @@ export class Information {
     this._howTo = value;
   }
 
-  get howToDeposite(): Array<String> {
-    return this._howToDeposite;
+  get howToDeposit(): String {
+    return this._howToDeposit;
   }
 
-  set howToDeposite(value: Array<String>) {
-    this._howToDeposite = value;
+  set howToDeposit(value: String) {
+    this._howToDeposit = value;
   }
 
   get attention(): Array<String> {

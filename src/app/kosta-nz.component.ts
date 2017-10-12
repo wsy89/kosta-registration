@@ -223,9 +223,6 @@ export class KostaComponent implements OnInit {
     notes.push("*당일참석은 아침 6시부터 밤 12시까지이며 모든 식사를 포함합니다.");
     notes.push("**숙박을 하는 당일참석은 아침 6시부터 다음날 12시까지이며 모든 식사를 포함합니다.");
 
-    let howToDeposit: Array<String> = new Array<String>();
-    howToDeposit.push('03-1509-0195677-02 (청년 코스타)');
-
     let attention: Array<String> = new Array<String>();
     attention.push("신청서를 보냈어도 참가비를 완납하셔야 등록이 됨을 유의하시기 바랍니다.");
     attention.push("11월 13일 까지 취소할 경우에 100% 환불되며, 그 이후는 환불이 되지 않습니다.");
@@ -247,7 +244,7 @@ export class KostaComponent implements OnInit {
 
     this.conferenceInfo.prices = prices;
     this.conferenceInfo.notes = notes;
-    this.conferenceInfo.howToDeposite = howToDeposit;
+    this.conferenceInfo.howToDeposit = '03-1509-0195677-02 (청년 코스타)';
     this.conferenceInfo.attention = attention;
     this.conferenceInfo.howToGetThere = howToGetThere;
     this.conferenceInfo.parkingInfo = parkingInfo;

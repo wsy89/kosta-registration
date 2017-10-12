@@ -182,10 +182,6 @@ export class YouthKostaComponent implements OnInit {
 
     let notes: Array<String> = new Array<String>();
 
-
-    let howToDeposit: Array<String> = new Array<String>();    
-    howToDeposit.push('03-1509-0195677-03 (청소년 코스타)');
-
     let attention: Array<String> = new Array<String>();
     attention.push('신청서를 보냈어도 참가비를 완납하셔야 등록이 됨을 유의하시기 바랍니다.');
     attention.push('12월 12일 까지 취소할 경우에 100% 환불되며 (할인등록 제외), 그 이후는 환불이 되지 않습니다.');
@@ -197,7 +193,7 @@ export class YouthKostaComponent implements OnInit {
 
     this.conferenceInfo.prices = prices;
     this.conferenceInfo.notes = notes;
-    this.conferenceInfo.howToDeposite = howToDeposit;
+    this.conferenceInfo.howToDeposit = '03-1509-0195677-03 (청소년 코스타)';
     this.conferenceInfo.attention = attention;
     this.conferenceInfo.howToGetThere = howToGetThere;
   }
