@@ -21,7 +21,14 @@
         </div>
       </div>
       <div *ngIf="isPromotion(intro.tabName)">
-        <a href="{{intro.image}}" target="_blank">2017 KOSTA 포스터</a>
+        <div class="col-sm-5 img-column">
+          <img src="{{intro.image}}" alt="" class="img-responsive">
+        </div>
+        <div class="col-sm-7 align-left">
+          <h6>{{intro.title}}</h6>
+          <div [innerText]="intro.text"></div>
+          <a class="inline link" *ngFor="let key of intro.links.keys()" href="{{intro.links.get(key)}}" target="_blank">{{key}}</a> <br/>
+        </div>
       </div>
       <div *ngIf="isTheme(intro.tabName)">
         <div class="col-sm-5 img-column">
