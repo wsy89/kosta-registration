@@ -105,9 +105,12 @@ export class YouthKostaComponent implements OnInit {
       학문과 직업이 연결되는 그 위대한 비전의 시간이기를 축복합니다.
       `,
       'assets/img/theme.png',
-      false));
-    this.kostaIntro.push(new Introduction('fa-video-camera', 'Video', '', '', '', true));
-    this.kostaIntro.push(new Introduction('fa-file-text-o', 'Promotion package', 'Coming Soon', '', 'assets/img/etc/2017_Poster.png', false));
+      false, null));
+    this.kostaIntro.push(new Introduction('fa-video-camera', 'Video', '', '', '', true, null));
+
+    let linkMap= new Map<String,String>();
+    linkMap.set('2017 KOSTA 포스터', 'assets/img/etc/2017_Poster.png');
+    this.kostaIntro.push(new Introduction('fa-file-text-o', 'Promotion package', 'KOSTA를 함께 홍보해주세요', '', 'assets/img/theme.png', false, linkMap));
   }
 
   private loadSpeakers() {
