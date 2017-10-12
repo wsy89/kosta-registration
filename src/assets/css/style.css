@@ -7403,3 +7403,14 @@ button[type="submit"] .loading {
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
 }
+
+.how-to-pay p{
+  margin: 0px;
+}
+
+.attention-section p{
+  margin: 0px;
+  color: red;
+  font-style: italic;
+  font-size: small;
+}

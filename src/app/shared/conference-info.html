@@ -49,9 +49,17 @@
 <div class="howToDeposite align-left">
   <div class="col-md-10 col-md-offset-1" style="padding-bottom: 20px;">
     <h6>납입 방법</h6>
-    <span *ngFor="let note of information.howToDeposite">
-      <p>{{note}}</p>
-    </span>
+    <div class="how-to-pay">
+      <p><b>CHEQUE:</b></p>
+      <p>우편 발송 주소: PO Box 300487, Albany, Auckland 0752 (봉투에 "KOSTA"라고 기입).</p>        
+      <p>체크 받는 사람 (Payable to)은 "KOSTA"로 해주시기 바랍니다.</p>
+      <br/>
+      <p><b>BANK DEPOSIT:</b></p>
+      <p>Bank: Westpac</p>
+      <p>Account Name: KOSTA</p>
+      <p *ngFor="let note of information.howToDeposite">Account Number: {{note}}</p>
+      <p><i>주의사항: 참가비를 입금할 때는 reference에 반드시 등록하신 영문이름과 같은 이름이나 핸드폰 번호를 적으셔야합니다.</i></p>
+    </div>   
   </div>
 </div>
 
@@ -59,10 +67,9 @@
 
 <div class="attention align-left">
   <div class="col-md-10 col-md-offset-1" style="padding-bottom: 20px;">
-    <h6>유의 사항</h6>
-    <span *ngFor="let note of information.attention">
-      <p>{{note}}</p>
-    </span>
+    <div class="attention-section">
+      <p *ngFor="let note of information.attention">{{note}}</p>
+    </div>   
   </div>
 </div>
 

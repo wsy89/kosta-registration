@@ -183,20 +183,8 @@ export class YouthKostaComponent implements OnInit {
     let notes: Array<String> = new Array<String>();
 
 
-    let howToDeposit: Array<String> = new Array<String>();
-    howToDeposit.push(`
-      » CHEQUE:
-      우편 발송 주소: PO Box 300487, Albany, Auckland 0752 (봉투에 "KOSTA"라고 기입).
-      체크 받는 사람 (Payable to)은 "KOSTA"로 해주시기 바랍니다.
-    `);
-    howToDeposit.push(`
-      » BANK DEPOSIT:
-      Bank: Westpac
-      Branch: Downtown
-      Account Name: KOSTA
-      Account Number: 03-1509-0195677-03 (청소년 코스타)
-    `);
-    howToDeposit.push('주의사항: 참가비를 입금할 때는 reference에 반드시 등록하신 영문이름과 같은 이름이나 핸드폰 번호를 적으셔야합니다.');
+    let howToDeposit: Array<String> = new Array<String>();    
+    howToDeposit.push('03-1509-0195677-03 (청소년 코스타)');
 
     let attention: Array<String> = new Array<String>();
     attention.push('신청서를 보냈어도 참가비를 완납하셔야 등록이 됨을 유의하시기 바랍니다.');
