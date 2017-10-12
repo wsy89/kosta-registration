@@ -112,13 +112,13 @@ export class KostaComponent implements OnInit {
 
   private loadSpeakers() {
     this.speakers.push(new Speaker('assets/img/speakers/K_kimdohyun.jpg', '김도현 강사', '',
-      new Array<String>('현) Denver에 있는 Colorado Christian University 교수, (신약학과 헬라어)',
-      '현) 장로교 볼더 한인 교회 담임목사',
+      new Array<String>('Colorado Christian University 교수',
+      '장로교 볼더 한인 교회 담임목사',
       '전) Sterling College 종교학 과장',
       '저서: ‘나의 사랑하는 책 로마서’, ‘빌립보서 어떻게 읽을것인가’')
       ));
     this.speakers.push(new Speaker('assets/img/speakers/K_kimchanggeun.jpeg', '김창근 강사', '',
-      new Array<String>('현) 무학교회 담임 목사',
+      new Array<String>('무학교회 담임 목사',
       '서강대학교 전자공학 전공',
       '장로회 신학대학 대학원',
       'San Francisco Theological Seminary (DMin)')
@@ -126,31 +126,31 @@ export class KostaComponent implements OnInit {
     this.speakers.push(new Speaker('assets/img/speakers/K_kimhaeyoung.jpeg', '김해영 강사', '',
       new Array<String>('밀알복지재단 희망사업본부장')));
     this.speakers.push(new Speaker('assets/img/speakers/K_parkdonghee.jpeg', '박동희 강사', '',
-      new Array<String>('G.M.P 선교사',
+      new Array<String>('GMP 선교사',
       'Hosung Inc. / R&D Director',
       '미주 기독교 방송 큐티 사역담당',
       'Korea & New York 두란노서원 실행이사',
-      '미주 New York Scripture Union/ Q.T 사역미주강사')
+      'New York Scripture Union / Q.T 사역강사')
       ));
     this.speakers.push(new Speaker('assets/img/speakers/K_suhjaeseok.jpeg', '서재석 강사', '',
-      new Array<String>('현) Young 2080 대표',
-      '현) 청년대학생들을 위한 QTzine (월간) 편집인',
-      '전) IVP와 복음과 상황 (원간)의 편집장',
-      '역서: ‘첫 아침을 주님과 함께’ (This Morning with God), ‘문서운동 핸드북’)')
+      new Array<String>('Young 2080 대표',
+      'QTzine (월간) 편집인',
+      '전) IVP와 복음과 상황 (월간)의 편집장',
+      '역서: ‘첫 아침을 주님과 함께’ (This Morning with God), ‘문서운동 핸드북’')
       ));
     this.speakers.push(new Speaker('assets/img/speakers/K_yooneunsung.jpeg', '윤은성 강사', '',
-      new Array<String>('현)이름없는교회 담임목사',
-      '현)어깨동무사역원 한국 대표',
-      '현)어깨동무학교 교장)')
+      new Array<String>('이름없는교회 담임목사',
+      '어깨동무사역원 한국 대표',
+      '어깨동무학교 교장')
       ));
     this.speakers.push(new Speaker('assets/img/speakers/K_jeongyungsook.jpeg', '정경숙 강사', '',
       new Array<String>('무학교회 사모')));
     this.speakers.push(new Speaker('assets/img/speakers/K_chaedonguk.jpg', '채종욱 강사', '',
       new Array<String>('GMP 선교사, BAM 선교사',
-      '현) 미국 KOSTA 공동대표',
-      '현) GBM Korea/ GBM Asia (인도) 그룹 회장',
-      '현) 미주 Global Missions Pioneers (GMP) 선교회 이사장',
-      '현) 비영리구호단체인 빈손채움재단의 이사장')
+      '미국 KOSTA 공동대표',
+      'GBM Korea/ GBM Asia (인도) 그룹 회장',
+      '미주 GMP 선교회 이사장',
+      '빈손채움재단의 이사장')
       ));
   }
 
