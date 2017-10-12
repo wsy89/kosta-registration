@@ -114,7 +114,7 @@ export class YouthKostaComponent implements OnInit {
     this.speakers.push(new Speaker('assets/img/speakers/YK_imseungmin.jpg', '임승민 강사', '', new Array<String>('대전 소망교회 부목사','CYCAS KOREA 코치','RUN & LEARN SPORTS ACADEMY 대표')));
     this.speakers.push(new Speaker('assets/img/speakers/YK_junghyemin.jpeg', '정혜민 강사', '', new Array<String>('브리지임팩트사역원 연구개발팀 간사','CTS 라디오 Joy "정혜민의 비빔톡" 진행','경인여대 출강 (기독교개론)')));
     this.speakers.push(new Speaker('assets/img/speakers/YK_koeunsik.jpeg', '고은식 강사', '', new Array<String>('브리지임팩트사역원 공동대표','도서출팔 BIM 대표')));
-    this.speakers.push(new Speaker('assets/img/speakers/speaker1.jpg', '이제환 강사', '', new Array<String>('')));
+    this.speakers.push(new Speaker('assets/img/speakers/yk_LeeJaeHwan.jpg', '이제환 강사', '', new Array<String>('')));
     this.speakers.push(new Speaker('assets/img/speakers/speaker1.jpg', 'Coming Soon', '', new Array<String>('TBC')));
   }
 
