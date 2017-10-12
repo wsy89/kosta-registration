@@ -30,9 +30,16 @@
 
 <section id="info" class="section align-center" trackScroll (trackScrollEnter)="enter('info')">
   <div class="container">
-    <conference-info [mapUrl]="mapUrl" [registrationUrl]="registrationUrl" [howToOfflineLink]="howToOfflineLink" [information]="conferenceInfo"></conference-info>
+    <conference-info [registrationUrl]="registrationUrl" [howToOfflineLink]="howToOfflineLink" [information]="conferenceInfo"></conference-info>
   </div>
 </section>
+
+<section id="venue" class="section align-center" trackScroll (trackScrollEnter)="enter('venue')">
+  <div class="container">
+    <conference-venue [mapUrl]="mapUrl" [information]="conferenceInfo"></conference-venue>
+  </div>
+</section>
+
 
 <section id="gallery" class="section align-center" trackScroll (trackScrollEnter)="enter('gallery')">
   <div class="container">

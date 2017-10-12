@@ -59,6 +59,7 @@ export class MenuBarComponent implements OnInit {
     this.menuItems.push('Speakers');
     this.menuItems.push('Schedule');
     this.menuItems.push('Info');
+    this.menuItems.push('Venue');
     this.menuItems.push('Gallery');
   }
 
