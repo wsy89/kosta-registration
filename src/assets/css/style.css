@@ -3801,6 +3801,9 @@ button.btn.btn-block {
     width: 100%;
     text-align: left;
   }
+  .schedule.schedule-light .schedule-item .schedule-item-toggle span.time {
+    padding-left: 40px;
+  }
   .schedule.schedule-light .schedule-item .schedule-item-toggle .lecture-icon-wrapper {
     position: absolute;
     top: 30px;
@@ -3852,6 +3855,7 @@ button.btn.btn-block {
     height: 30px;
     font-size: 16px;
     line-height: 28px;
+    padding-top: 7px;
   }
   .schedule.schedule-light .schedule-item .schedule-item-toggle .title {
     padding-left: 35px;
