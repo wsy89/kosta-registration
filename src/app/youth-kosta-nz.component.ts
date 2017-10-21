@@ -118,7 +118,7 @@ export class YouthKostaComponent implements OnInit {
     this.speakers.push(new Speaker('assets/img/speakers/YK_junghyemin.jpeg', '정혜민 강사', '', new Array<String>('브리지임팩트사역원 연구개발팀 간사','CTS 라디오 Joy "정혜민의 비빔톡" 진행','경인여대 출강 (기독교개론)')));
     this.speakers.push(new Speaker('assets/img/speakers/YK_koeunsik.jpeg', '고은식 강사', '', new Array<String>('브리지임팩트사역원 공동대표','도서출팔 BIM 대표')));
     this.speakers.push(new Speaker('assets/img/speakers/YK_leewoongyong.png', '이웅용 강사', '', new Array<String>('거못 감리교회 담임목사','RUN & LEARN SPORTS ACADEMY 대표', '한국성서유니온선교회 COWORKER', '매일 성경 큐티 아이/청소년 매일 성경 집필진', 'EBS FOUNDER(EBCAMP, EXCAMP, EBSCHOOL)', 'ISC CYCAS KOREA CHIEF(INTERNATIONAL SPORTS COALITION CYCAS)')));
-    this.speakers.push(new Speaker('assets/img/speakers/speaker1.jpg', '이루다 강사', '', new Array<String>('')));
+    this.speakers.push(new Speaker('assets/img/speakers/yk_LeeLooDa.png', '이루다 강사', '', new Array<String>('G4R  Campus Ministry Director' ,'SAM국제강사')));
     this.speakers.push(new Speaker('assets/img/speakers/speaker1.jpg', 'Coming Soon', '', new Array<String>('TBC')));
   }  
 
