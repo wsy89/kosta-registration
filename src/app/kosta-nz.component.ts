@@ -162,41 +162,44 @@ export class KostaComponent implements OnInit {
     firstDay.push(new ScheduleItem('5:00 PM', '5:30 PM', '조별 모임', '', '', 'fa-users'));
     firstDay.push(new ScheduleItem('5:30 PM', '6:30 PM', '저녁 식사', '', '', 'fa-cutlery'));
     firstDay.push(new ScheduleItem('6:30 PM', '9:30 PM', '저녁 집회', '', '', 'fa-institution'));
-    firstDay.push(new ScheduleItem('9:40 PM', '11:00 PM', '조별 나눔', '', '', 'fa-users'));
+    firstDay.push(new ScheduleItem('9:35 PM', '11:00 PM', '조별 나눔', '', '', 'fa-users'));
 
     let secondDay: Array<ScheduleItem> = new Array<ScheduleItem>();
     secondDay.push(new ScheduleItem('7:00 AM', '8:00 AM', '조별 QT 및 나눔', '', '', 'fa-users'));
     secondDay.push(new ScheduleItem('8:00 AM', '9:00 AM', '아침 식사', '', '', 'fa-cutlery'));
-    secondDay.push(new ScheduleItem('9:15 AM', '10:55 AM', '성경 강해', '', '', 'fa-institution'));
-    secondDay.push(new ScheduleItem('11:20 AM', '12:30 PM', '오전특강', '', '', 'fa-institution'));
+    secondDay.push(new ScheduleItem('9:10 AM', '10:50 AM', '성경 강해', '', '', 'fa-institution'));
+    secondDay.push(new ScheduleItem('10:50 AM', '11:00 AM', '책소개', '', '', 'fa-thumbs-up'));
+    secondDay.push(new ScheduleItem('11:20 AM', '12:30 PM', '주제 강의', '', '', 'fa-institution'));
     secondDay.push(new ScheduleItem('12:30 PM', '1:30 PM', '점심식사', '', '', 'fa-cutlery'));
-    secondDay.push(new ScheduleItem('1:50 PM', '3:20 PM', '세미나1', '', '', 'fa-edit'));
-    secondDay.push(new ScheduleItem('3:40 PM', '5:10 PM', '세미나2', '', '', 'fa-edit'));
+    secondDay.push(new ScheduleItem('2:00 PM', '3:30 PM', '세미나1', '', '', 'fa-edit'));
+    secondDay.push(new ScheduleItem('3:50 PM', '5:20 PM', '세미나2', '', '', 'fa-edit'));
 
     secondDay.push(new ScheduleItem('5:30 PM', '6:30 PM', '저녁 식사', '', '', 'fa-cutlery'));
     secondDay.push(new ScheduleItem('6:30 PM', '9:30 PM', '저녁 집회', '', '', 'fa-institution'));
-    secondDay.push(new ScheduleItem('9:40 PM', '11:00 PM', '조별 나눔', '', '', 'fa-users'));
+    secondDay.push(new ScheduleItem('9:35 PM', '11:00 PM', '조별 나눔', '', '', 'fa-users'));
 
     let thirdDay: Array<ScheduleItem> = new Array<ScheduleItem>();
     thirdDay.push(new ScheduleItem('7:00 AM', '8:00 AM', '조별 QT 및 나눔', '', '', 'fa-users'));
     thirdDay.push(new ScheduleItem('8:00 AM', '9:00 AM', '아침 식사', '', '', 'fa-cutlery'));
-    thirdDay.push(new ScheduleItem('9:15 AM', '10:55 AM', '성경 강해', '', '', 'fa-institution'));
-    thirdDay.push(new ScheduleItem('11:20 AM', '12:30 PM', '주제 강의', '', '', 'fa-institution'));
+    thirdDay.push(new ScheduleItem('9:10 AM', '10:50 AM', '성경 강해', '', '', 'fa-institution'));
+    thirdDay.push(new ScheduleItem('10:50 AM', '11:00 AM', '책소개', '', '', 'fa-thumbs-up'));
+    thirdDay.push(new ScheduleItem('11:20 AM', '12:30 PM', '간증', '', '', 'fa-institution'));
     thirdDay.push(new ScheduleItem('12:30 PM', '1:30 PM', '점심식사', '', '', 'fa-cutlery'));
-    thirdDay.push(new ScheduleItem('1:50 PM', '3:20 PM', '세미나3', '', '', 'fa-edit'));
-    thirdDay.push(new ScheduleItem('3:40 PM', '5:10 PM', '세미나4 / 교역자 세미나', '', '', 'fa-edit'));
+    thirdDay.push(new ScheduleItem('2:00 PM', '3:30 PM', '세미나3', '', '', 'fa-edit'));
+    thirdDay.push(new ScheduleItem('3:50 PM', '5:20 PM', '세미나4 / 교역자 세미나', '', '', 'fa-edit'));
 
     thirdDay.push(new ScheduleItem('5:30 PM', '6:30 PM', '저녁 식사', '', '', 'fa-cutlery'));
-    thirdDay.push(new ScheduleItem('6:30 PM', '9:30 PM', '저녁 집회', '', '', 'fa-institution'));
-    thirdDay.push(new ScheduleItem('9:40 PM', '11:00 PM', '조별 나눔', '', '', 'fa-users'));
+    thirdDay.push(new ScheduleItem('6:30 PM', '9:35 PM', '저녁 집회', '', '', 'fa-institution'));
+    thirdDay.push(new ScheduleItem('9:40 PM', '11:15 PM', '조별 나눔', '', '', 'fa-users'));
 
     let lastDay: Array<ScheduleItem> = new Array<ScheduleItem>();
     lastDay.push(new ScheduleItem('7:00 AM', '8:00 AM', '조별 QT 및 나눔', '', '', 'fa-users'));
     lastDay.push(new ScheduleItem('8:00 AM', '9:00 AM', '숙소 Checkout 후 아침 식사', '', '', 'fa-cutlery'));
-    lastDay.push(new ScheduleItem('9:15 AM', '10:55 AM', '성경 강해', '', '', 'fa-institution'));
+    lastDay.push(new ScheduleItem('9:15 AM', '10:50 AM', '성경 강해', '', '', 'fa-institution'));
+    lastDay.push(new ScheduleItem('10:50 AM', '11:00 AM', '책소개', '', '', 'fa-thumbs-up'));
     lastDay.push(new ScheduleItem('11:20 AM', '12:30 PM', '주제 강의', '', '', 'fa-institution'));
     lastDay.push(new ScheduleItem('12:30 PM', '1:30 PM', '점심식사', '', '', 'fa-cutlery'));
-    lastDay.push(new ScheduleItem('1:50 PM', '3:15 PM', '폐회 예배', '', '', 'fa-institution'));
+    lastDay.push(new ScheduleItem('2:00 PM', '3:15 PM', '폐회 예배', '', '', 'fa-institution'));
     lastDay.push(new ScheduleItem('3:15 PM', '4:15 PM', '악수례 / 단체 사진촬영', '', '', 'fa-camera'));
 
     let tuesday: Schedules = new Schedules('TUE 21 NOV', firstDay);
@@ -236,7 +239,7 @@ export class KostaComponent implements OnInit {
     howToGetThere.push(new StyledNote('By Car:', false));
     howToGetThere.push(new StyledNote('구글 맵에 University of Waikato Gate 1을 검색하시기 바랍니다.', false));
     howToGetThere.push(new StyledNote('', false));
-    howToGetThere.push(new StyledNote('By Bus:', false)); 
+    howToGetThere.push(new StyledNote('By Bus:', false));
     howToGetThere.push(new StyledNote('from Auckland Airport: nakedbus.com 혹은 intercity.co.nz에서 Auckland Airport - Waikato University (Hamilton)을 검색하신 후 예약하시면 됩니다.', false));
     howToGetThere.push(new StyledNote('from Hamilton City Central: 13번 & 17번, 요금(fare) $3.30 (Adult fare) (한시간 내에 transfer 가능, bus-it card 소지시 $2.40)', false));
     // howToGetThere.push(new StyledNote('13번 & 17번', false));
