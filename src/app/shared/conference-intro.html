@@ -27,7 +27,10 @@
         <div class="col-sm-7 align-left">
           <h6>{{intro.title}}</h6>
           <div [innerText]="intro.text"></div>
-          <!--<a class="inline link" *ngFor="let key of intro.links.keys()" href="{{intro.links.get(key)}}" target="_blank">{{key}}</a> <br/>-->
+          <span *ngFor="let entry of intro.links | keys">
+            <a class="inline link"  href="{{entry.value}}" target="_blank">{{entry.key}}</a> <br/>
+
+          </span>
         </div>
       </div>
       <div *ngIf="isTheme(intro.tabName)">
