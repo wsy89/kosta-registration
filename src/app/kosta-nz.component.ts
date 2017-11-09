@@ -139,7 +139,7 @@ export class KostaComponent implements OnInit {
       '역서: ‘첫 아침을 주님과 함께’ (This Morning with God), ‘문서운동 핸드북’')
       ));
     this.speakers.push(new Speaker('assets/img/speakers/K_yooneunsung.jpeg', '윤은성 강사', '',
-      new Array<String>('이름없는교회 담임목사',
+      new Array<String>('심플교회 담임목사',
       '어깨동무사역원 한국 대표',
       '어깨동무학교 교장')
       ));
