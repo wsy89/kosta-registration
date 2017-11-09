@@ -39,7 +39,7 @@ export class YouthKostaComponent implements OnInit {
     this.registrationUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdhszY8cQUhE2zVETpXCrxeVS1VaZmooGKEJj1hV8aRFja21g/viewform?usp=sf_link";
     this.howToOfflineLink = "REGOFORM_17_youth_kosta.pdf";
     this.mapUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3157.9675922582987!2d175.13563445048277!3d-37.673469279678855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d3afa756ded3d%3A0xf8df657a75de88a1!2sChristian+Youth+Camps+Inc!5e0!3m2!1sen!2snz!4v1506677091536";
-    this.videoUrl = "https://www.youtube.com/embed/0Te1LzIQiao"
+    this.videoUrl = "https://www.youtube.com/embed/QweTEjN6QmM"
   }
 
   ngOnInit() {
