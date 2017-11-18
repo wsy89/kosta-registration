@@ -2,7 +2,7 @@ import {Component, HostListener, OnInit} from '@angular/core';
 import {Image} from './model/image';
 import {Schedules} from './model/schedules';
 import {Speaker} from './model/speaker';
-import {Introduction} from './model/introduction';
+import {Introduction, Links} from './model/introduction';
 import {ScheduleItem} from './model/scheduleItem';
 import {WindowRefService} from './service/window-ref.service';
 import { Information, StyledNote } from 'app/model/information';
@@ -108,8 +108,9 @@ export class YouthKostaComponent implements OnInit {
       false, null));
     this.kostaIntro.push(new Introduction('fa-video-camera', 'Video', '', '', '', true, null));
 
-    let linkMap= new Map<String,String>();
-    linkMap.set('2017 KOSTA 포스터', 'assets/img/etc/2017_Poster.png');
+    let linkMap= new Array<Links>();
+    linkMap.push(new Links('2017 KOSTA 포스터', 'assets/img/etc/2017_Poster.png'));
+    linkMap.push(new Links('2017 KOSTA 주제문', 'assets/pdf/2017_KOSTA_THEME.pdf'));
     this.kostaIntro.push(new Introduction('fa-file-text-o', 'Promotion package', 'KOSTA를 함께 홍보해주세요', '', 'assets/img/theme.png', false, linkMap));
   }
 

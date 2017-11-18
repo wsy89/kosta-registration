@@ -29,7 +29,6 @@ import {SnsListComponent} from './common/sns-list.component';
 import {Ng2TrackScrollModule} from 'ng2-track-scroll';
 import {AboutKostaModalComponent} from './modal/about-kosta-modal.component';
 import {ConferenceVenueComponent} from './shared/conference-venue.component';
-import {KeysPipe} from './pipe/keys-pipe';
 
 @NgModule({
   imports: [
@@ -62,7 +61,6 @@ import {KeysPipe} from './pipe/keys-pipe';
     RegisterModalComponent,
     SnsListComponent,
     AboutKostaModalComponent,
-    KeysPipe
   ],
   providers: [
     appRoutingProviders,
