@@ -1,11 +1,9 @@
-<span class="icon section-icon icon-badges-votes-01"></span>
-<h3>Previous events</h3>
-<p class="text-alt">see what we did <span class="highlight">lately</span></p>
+<h3>gallery</h3>
+<p class="text-alt"><span class="highlight">#{{isYouth? 'youth' : ''}}kostanz16</span></p>
 <br/>
 
-<div class="gallery masonry">
-  <span class="masonry-item" *ngFor="let image of imageList; let i = index">
+<div class="row">
+  <div class="col-xs-6 col-md-3" style="padding: 15px" *ngFor="let image of imageList; let i = index">
     <gallery-thumbnail [image]="image" [index]="i"></gallery-thumbnail>
-  </span>
-
+  </div>
 </div>

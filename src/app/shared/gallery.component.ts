@@ -7,6 +7,7 @@ import {Image} from '../model/image';
 })
 export class GalleryComponent implements OnInit {
   @Input() imageList: Array<Image>;
+  @Input() isYouth: boolean;
   ngOnInit() {
 
   }

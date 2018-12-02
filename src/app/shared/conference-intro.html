@@ -1,13 +1,49 @@
 <div class="tabs-wrapper tabs-horizontal">
-  <tabs [tabsStyle]="'nav-tabs'">
-    <tab *ngFor="let intro of introductionList" [tabTitle]="intro.title">
-      <div class="col-sm-5 img-column">
-        <img src="{{intro.image}}" alt="" class="img-responsive" />
+  <div class="nav-wrapper">
+    <span class="nav-current" (click)="toggleList()">
+      <h6 class="heading-alt"><span class="fa {{introductionList[currentView].icon}}"></span> {{introductionList[currentView].tabName}}</h6>
+    </span>
+
+    <ul class="nav nav-tabs nav-justified" [style.display]="shouldShowList ? 'block' : null">
+      <li class="{{i===currentView ? 'active' : ''}}"  *ngFor="let intro of introductionList; let i = index">
+        <a (click)="viewTab(i)" data-toggle="tab">
+          <h6 class="heading-alt"><span class="fa {{intro.icon}}"></span> {{intro.tabName}}</h6>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="tab-content">
+    <div *ngFor="let intro of introductionList; let i = index" class="tab-pane fade {{i===currentView ? 'active in': ''}}">
+      <div *ngIf="isVideo(intro.tabName)">
+        <div class="modal-box iframe-box iframe-video">
+          <iframe width="560" height="315" [src]="url" frameborder="0" allowfullscreen></iframe>
+        </div>
       </div>
-      <div class="col-sm-7 align-left">
-        <h6>{{intro.title}}</h6>
-        {{intro.text}}
+      <div *ngIf="isPromotion(intro.tabName)">
+        <div class="col-sm-5 img-column">
+          <img src="{{intro.image}}" alt="" class="img-responsive">
+        </div>
+        <div class="col-sm-7 align-left">
+          <h6>{{intro.title}}</h6>
+          <div [innerText]="intro.text"></div>
+          <span *ngFor="let link of intro.links">
+            <a class="inline link"  href="{{link.link}}" target="_blank">{{link.name}}</a> <br/>
+          </span>
+        </div>
       </div>
-    </tab>
-  </tabs>
+      <div *ngIf="isTheme(intro.tabName)">
+        <div class="col-sm-5 img-column">
+          <img src="{{intro.image}}" alt="" class="img-responsive">
+        </div>
+        <div class="col-sm-7 align-left">
+          <h6>{{intro.title}}</h6>
+          <div [innerText]="intro.text"></div>
+          <br/>
+          <a  href="assets/pdf/2017_theme.pdf" target="_blank"><strong>2017 KOSTA 주제문을 여기서 다운받으세요.</strong></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>

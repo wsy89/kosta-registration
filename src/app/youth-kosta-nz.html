@@ -1,1 +1,49 @@
-Youth Kosta
+
+<header [title]="title" [subTitle]="subTitle" [location]="location" [date]="datetime"></header>
+
+<menu-bar [type]="'youth-kosta'" [registrationUrl]="registrationUrl" [current]="currentSection"></menu-bar>
+
+<section id="about" class="section align-center" trackScroll (trackScrollEnter)="enter('about')">
+  <div class="container">
+    <h3>#youthkostanz17</h3>
+    <p class="text-alt">Date: <span class="highlight">19-22 Dec 2017</span> Venue: <span class="highlight">Christian Youth Camps Inc</span></p>
+    <br />
+    <br />
+
+    <conference-intro [videoUrl]="videoUrl" [introductionList]="kostaIntro"></conference-intro>
+
+  </div>
+</section>
+
+
+<section id="speakers" class="section align-center" trackScroll (trackScrollEnter)="enter('speakers')">
+  <div class="container">
+    <speakers [speakerList]="speakers"></speakers>
+  </div>
+</section>
+
+<section id="schedule" class="section align-center" trackScroll (trackScrollEnter)="enter('schedule')">
+  <div class="container">
+    <schedule [scheduleList]="schedules"></schedule>
+  </div>
+</section>
+
+<section id="info" class="section align-center" trackScroll (trackScrollEnter)="enter('info')">
+  <div class="container">
+    <conference-info [registrationUrl]="registrationUrl" [howToOfflineLink]="howToOfflineLink" [information]="conferenceInfo"></conference-info>
+  </div>
+</section>
+
+<section id="venue" class="section align-center" trackScroll (trackScrollEnter)="enter('venue')">
+  <div class="container">
+    <conference-venue [mapUrl]="mapUrl" [information]="conferenceInfo"></conference-venue>
+  </div>
+</section>
+
+
+<section id="gallery" class="section align-center" trackScroll (trackScrollEnter)="enter('gallery')">
+  <div class="container">
+
+    <gallery [imageList]="galleryImages" [isYouth]="true"></gallery>
+  </div>
+</section>

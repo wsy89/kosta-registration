@@ -1,36 +1,43 @@
+<h3 class="heading-alt">schedule</h3>
 
-<h5 class="heading-alt">Schedule</h5>
-<p class="text-alt" style="margin-bottom: 80px;">for 4 days</p>
+<!-- <p class="text-alt" style="margin-bottom: 80px;">download <a>full version</a></p> -->
+<p class="text-alt" style="margin-bottom: 80px;">as of <a>12 Oct 2017</a></p>
 
 <div class="col-md-10 col-md-offset-1">
 
   <div class="row schedule schedule-light">
 
-    <tabs [tabsStyle]="'nav-schedule'">
-      <div class="tab-content">
-        <tab *ngFor="let schedule of scheduleList; let i=index" [tabTitle]="schedule.date">
-          <!-- Accordion start -->
-          <div class="panel-group" id="schedule_day{{i}}_timeline">
+    <div class="nav-wrapper">
+      <span class="nav-current" (click)="toggleList()">
+        <h6 class="heading-alt">{{scheduleList[currentView].date}}</h6>
+      </span>
 
-            <!-- Lecture start -->
-            <div *ngFor="let item of schedule.schedules; let j=index" class="panel schedule-item">
-              <div class="schedule-item-toggle">
-                <strong class="time highlight">{{item.start}} - {{item.end}}</strong>
-                <div class="lecture-icon-wrapper"><span class="fa {{item.icon}}"></span></div>
-                <h6 class="title">{{item.title}}</h6>
-              </div>
-              <div *ngIf="item.speaker !== null" id="schedule_day{{i}}_time{{j}}" class="panel-collapse collapse in schedule-item-body">
-                <p class="text-alt speaker-wrapper"><strong class="highlight speaker-name">{{item.speaker}}</strong></p>
-                <p class="description">{{item.details}}</p>
-              </div>
+      <ul class="nav nav-schedule secondBg" [style.display]="shouldShowList ? 'block' : null">
+        <li class="secondBg {{i===currentView ? 'active' : ''}}"  *ngFor="let schedule of scheduleList; let i = index">
+          <a (click)="viewTab(i)" data-toggle="tab" class="secondBg">
+            <h6 class="heading-alt second">{{schedule.date}}</h6>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="tab-content secondBg">
+      <div *ngFor="let schedule of scheduleList; let i = index" class="tab-pane fade {{i===currentView ? 'active in': ''}}">
+        <div class="panel-group">
+          <div *ngFor="let item of schedule.schedules; let j=index" class="panel schedule-item">
+            <div class="schedule-item-toggle">
+              <strong class="time highlight">{{item.start}} - {{item.end}}</strong>
+              <div class="lecture-icon-wrapper"><span class="fa {{item.icon}}"></span></div>
+              <span class="time">{{item.title}}</span>
             </div>
-            <!-- Lecture end -->
-
+            <div *ngIf="item.speaker !== null" id="schedule_day{{i}}_time{{j}}" class="panel-collapse collapse in schedule-item-body">
+              <p class="text-alt speaker-wrapper"><strong class="highlight speaker-name">{{item.speaker}}</strong></p>
+              <p class="description">{{item.details}}</p>
+            </div>
           </div>
-          <!-- Accordion end -->
-        </tab>
+        </div>
       </div>
-    </tabs>
+    </div>
   </div>
 
 </div>

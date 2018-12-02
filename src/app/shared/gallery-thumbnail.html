@@ -1,5 +1,5 @@
-<a (click)="galleryModal.open()" class="gallery-thumb-link gallery-{{index}}">
+<div class="gallery-{{index}}">
   <img src="assets/img/gallery/{{image.thumbnail}}" alt="">
-</a>
+</div>
 
 <gallery-modal [image]="image" [index]="index"></gallery-modal>

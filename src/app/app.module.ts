@@ -18,20 +18,25 @@ import {RegistrationComponent} from './shared/registeration.component';
 import {WindowRefService} from './service/window-ref.service';
 import {TabsComponent} from './shared/tabs.component';
 import {TabComponent} from './shared/tab.component';
-import {GalleryComponent} from "./shared/gallery.component";
-import {ConferenceInfoComponent} from "./shared/conference-info.component";
-import {ChooseKostaModalComponent} from "./modal/choose-kosta-modal.component";
+import {GalleryComponent} from './shared/gallery.component';
+import {ConferenceInfoComponent} from './shared/conference-info.component';
+import {ChooseKostaModalComponent} from './modal/choose-kosta-modal.component';
 import {GalleryModalComponent} from './modal/gallery-modal.component';
 import {GalleryThumbnailComponent} from './shared/gallery-thumbnail.component';
 import {Ng2PageScrollModule} from 'ng2-page-scroll';
 import {RegisterModalComponent} from './modal/register-modal.component';
+import {SnsListComponent} from './common/sns-list.component';
+import {Ng2TrackScrollModule} from 'ng2-track-scroll';
+import {AboutKostaModalComponent} from './modal/about-kosta-modal.component';
+import {ConferenceVenueComponent} from './shared/conference-venue.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
     routing,
-    Ng2PageScrollModule.forRoot()
+    Ng2PageScrollModule.forRoot(),
+    Ng2TrackScrollModule.forRoot()
   ],
   declarations: [
     AppComponent,
@@ -51,8 +56,11 @@ import {RegisterModalComponent} from './modal/register-modal.component';
     GalleryThumbnailComponent,
     GalleryModalComponent,
     ConferenceInfoComponent,
+    ConferenceVenueComponent,
     ChooseKostaModalComponent,
-    RegisterModalComponent
+    RegisterModalComponent,
+    SnsListComponent,
+    AboutKostaModalComponent,
   ],
   providers: [
     appRoutingProviders,

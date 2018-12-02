@@ -1,13 +1,13 @@
-<div id="contacts-map" class="map" data-settings="map-settings.json" style="height:560px;"></div>
+<!--<div id="contacts-map" class="map" style="height:560px;"></div>-->
+<img id="contacts-map" [style.height.px]="560" [style.width.px]="imgWidth" src="assets/img/content2.jpg" alt="">
 
 <div class="container contacts-on-map-container">
   <div class="contacts-on-map">
-    <h3>Location</h3>
+    <h3>contact</h3>
 
     <ul class="list">
       <li><i class="fa fa-map-marker"></i>{{address}}</li>
       <li><i class="fa fa-envelope"></i>{{email}}</li>
-      <li><i class="fa fa-phone"></i>{{phone}}</li>
     </ul>
   </div>
 </div>
